@@ -1,7 +1,137 @@
-extends ./_layout.pug
+<!DOCTYPE html>
+<html lang="en">
 
-block content
-  include ./_partials/post/post-list.pug
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
 
-  if theme.post_list.paginate.home
-    include ./_partials/widgets/paginator.pug
+    <title>fmkli个人主页</title>
+    <link rel="stylesheet" type="text/css" href="./css/FiraCode.css">
+    <link rel="stylesheet" type="text/css" href="./css/nutssss.css">
+    <link rel="icon" href="./favicon.ico">
+</head>
+
+<body>
+    <div id="box">
+        <!-- 个人资料卡片 -->
+        <div class="meBox">
+            <!-- 头像 -->
+            <div class="headPhoto"></div>
+            <!-- 介绍 -->
+            <div class="meBox-title">
+                <p>I'm fmkli</p>
+                <div class="fg"></div>
+            </div>
+            <div class="meBox-text">
+                <p>一名bilibili的卑微UP猪<img src="./img/fish.png" alt="咸鱼" style="width: 20px; vertical-align:middle;"></p>
+                <p>爱瞎倒腾网站</p>
+                <p>你看，又换了</p>
+            </div>
+            <!-- 两个按钮 -->
+            <div class="meBox-Button">
+                <a href="https://blog.fmkli.ga">blog</a>
+                <a href="https://space.bilibili.com/543825809">bilibili</a>
+            </div>
+        </div>
+
+        <!-- 伪终端介绍 -->
+        <div id="cmdBox">
+            <!-- 第一个终端 -->
+            <div class="cmd">
+                <!-- 三个按钮 -->
+                <div class="click">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <!-- 顶部标题 -->
+                <div class="title">
+                    <span>fmkli.js.org | bash1</span>
+                </div>
+                <!-- 终端内文字 -->
+                <div class="cmdText">
+                    <span style="color: rgb(0, 190, 0);">root@fmkli</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">cat /me.txt</span>
+                    <p>爱玩电脑，对html一知半解</p>
+                    <p>正在学习编程，正在超提前预备期末考试</p>
+	            <p>不如在<a href="https://space.bilibili.com/543825809">bilibili</a>里关注我</p>
+                    <span style="color: rgb(0, 190, 0);">root@fmkli</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./link.sh</span>
+		    <br/>
+		    <a href="https://cfstar.top">超凡实验室</a>
+			</br>
+			<a href="https://www.yfun.top/">hifun blog</a>
+			</br>
+		    <a href="https://govmoe.com/">MoYuBLOG</a>
+	            <br>	
+		    <span style="color: rgb(0, 190, 0);">root@fmkli</span>
+                    <span style="color: blue;">~</span>
+		    <span style="color: rgb(39, 39, 39);">./lyb.sh</span>
+		    <br>
+		    <p><a href="https://fmkli.js.org/lyb.html">留言板（点我前往）</a></p>
+                </div>
+            </div>
+            <!-- 第二个终端 -->
+            <div class="cmd cmd2">
+                <!-- 三个按钮 -->
+                <div class="click">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <!-- 顶部标题 -->
+                <div class="title">
+                    <span>fmkli.js.org | bash2</span>
+                </div>
+                <!-- 终端内文字 -->
+                <div class="cmdText">
+                    <span style="color: rgb(0, 190, 0);">root@fmkli</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./links.sh</span>
+                    <p>我的其他站点：</p>
+                    <ul class="ul">
+                        <li><a href="https://Blog.fmkli.ga">Fmkli's Blog</a></li>
+                        <li><a href="https://fmkli.js.org/website%20navigation/">fk导航页</a></li>
+                        <li><a href="http://bbs.fmkli.ga/">FK论坛</a></li>
+                        <li><a href="http://fkhost.ml/">fk免费主机</a></li>
+	        <li><a href="http://fkblog.5ay.xyz/">fmkli的公共博客</li>
+	        <li><a href="https://fmkli362082388.wordpress.com/">fmkli的备用博客</a></li>
+                    </ul>
+                    <span style="color: rgb(0, 190, 0);">root@fmkli</span>
+                    <span style="color: blue;">~</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <div id="footer">
+        <p>© 2020 fmkli</p>
+        <p>THEME MADE BY Nutssss</a></p>
+    </div>
+    <script>
+        !function () {
+            // 添加事件监听
+            document.addEventListener('visibilitychange', function () {
+                let pageVisibility = document.visibilityState
+                // 页面变为不可见时触发 
+                if (pageVisibility == 'hidden') {
+
+                    document.title = 'Fmkli:不要离开我awa'
+
+                }
+                // 页面变为可见时触发 
+                if (pageVisibility == 'visible') {
+
+                    document.title = 'Fmkli个人主页'
+
+                }
+            })
+        }()
+    </script>
+</body>
+
+</html>
