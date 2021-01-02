@@ -1,0 +1,303 @@
+.login {
+    width: 360px;
+}
+
+.g-bd {
+    width: 360px;
+    /* padding-bottom: 36px; */
+    overflow: visible;
+}
+
+.w-exception-normal .cnt .note {
+    font-size: 18px; 
+}
+
+.m-cnt {
+    padding: 0 24px;
+    width: 312px;
+}
+
+.headimg {
+    display: none;
+}
+
+.m-header {
+    padding: 0;
+    height: 18px;
+    margin: 0;
+}
+
+.m-footer {
+    display: none;
+}
+
+.fur-change-email {
+    height: 24px;
+    line-height: 24px;
+    font-size: 0;
+}
+
+.m-cnt .m-nerror .ferrortail, .m-cnt .m-nerror .ferrortail2, .m-cnt .m-nerror .ferrortail3 {
+    width: 16px !important;
+    height: 16px !important;
+    background: url("https://mimg.127.net/p/freemail/index/lib/img/urs/ico-error.png") no-repeat !important;
+}
+
+.u-loginbtn {
+    background: #3B78DD;
+    border-radius: 5px;
+}
+
+.u-loginbtn:hover {
+    background: #1760D7;
+}
+
+.u-loginbtn:active {
+    color: white;
+    background: #1760D7;
+}
+
+.w-exception,
+.w-exception-normal {
+    width: 360px;
+}
+
+.w-exception .cnt {
+    width: 312px;
+    padding-left: 24px;
+    padding-right: 0;
+}
+
+.w-exception-normal .cnt {
+    width: 312px;
+    padding-left: 24px;
+    padding-right: 0;
+}
+
+input::-webkit-input-placeholder {
+    color: #DBDBDB;
+}
+
+input:-moz-placeholder {
+    color: #DBDBDB;
+}
+
+/* 十天内登录 */
+.m-cnt .m-unlogin .b-unlogn {
+    display: none;
+    float: left;
+    border-right: none;
+    width: 110px;
+}
+
+.m-cnt .m-unlogin .b-unlogn label {
+    font-size: 14px;
+    color: #999;
+    line-height: 18px;
+}
+
+.m-cnt .m-nerror {
+    margin-top: 8px;
+}
+
+.m-cnt .m-nerror .ferrorhead {
+    width: 290px;
+    margin-left: 5px;
+    font-size: 12px;
+    color: #CC0000;
+    line-height: 16px;
+    margin-top: -1px;
+}
+
+.m-cnt .u-input input {
+    padding-left: 14px;
+    width: 213px !important;
+    height: 46px;
+    line-height: 46px;
+    border-radius: 5px;
+}
+
+.m-cnt .m-unlogin .b-unlogn .u-checkbox {
+    width: 16px;
+    height: 16px;
+    border: 1px solid #D0D0D0;
+    border-radius: 2px;
+}
+
+.m-cnt .m-unlogin .b-unlogn .u-checkbox-select {
+    width: 16px;
+    height: 16px;
+    background: url("https://mimg.127.net/p/freemail/index/lib/img/urs/ico-checked.png") no-repeat;
+}
+
+.m-cnt #login-form .m-ckcnt {
+    margin-top: 22px;
+}
+
+.m-cnt .u-clear {
+    margin-top: 15px;
+    width: 17px;
+    height: 17px;
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAiCAYAAAA6RwvCAAAAAXNSR0IArs4c6QAAAvZJREFUWAnNmLuOEzEUhmcmFEhRREORpEHKJjVCPAQX8QILvAWIBu0WrGgQvAULL4A28BAIUScbiYakoEFRJJok/N9oPHIcezKTC6wlxzM+t3+Oj4+PE0cV2mQyqc9ms3uLxeKhxI7U28vlso2KOI5/aqBfJklyUa/XvzSbzRm0Mi0uwzQYDO7I4ImMPdB4vYyMeP+It6/xrNfrfdskUwhkNBrdms/nr6XksZQW8oYMCchStA+1Wu1lp9P5EeQLEYbDIV//Uf1GiKfKvAD9Vj/udrt9n1zimxSIZwLwaV8gsIEudKLbZ3PN3TAqGN/6mPc1p2B+Ls+8s/WtAMmWA094PWUL7vKsJVqoP7KXKQeSBeb3fS5HEVhiRgF82wRw/uXsjhAI5YNIeaFIr5eGDLK+hq1sR6bk1CPkCb19FTH3kBFGUaPRINii8XgcKaEZUuEIiFarRaKLptNppGS4xi8aW/suecZ45NQHAkmUAAKFKC7jGRsEsujwNWyqn0CLSdti/KWJYMZ0FRd5pgpvCkAZWB6/mXB2FIGAmeXAuPgKPVMVBLqxDYYkO8CYK2ybwGwDwhgEAzHCKVqqhcDsAiIzfHRND+kxXgqJmAwYsyMYaQQzS1cUPymj/6edSLgSEPQYMCZmdgTBB7TN9vXj/Iezib6GqqpSc2PCeKZsnnGNgQGPVALigiAmymxt17jzngK5dCaDrz4QxIsbM1t4hjo3uQhatgghEIZlFzBguDopPiv5P5svc8dNnnD5q3pGgd4Hg9m+rxS5HMlrjRKgap5wwaDD17CpfgYtrz9Uk7wXuic+AWoSjnIMVGl4ExC+WgQ9AnGuWuRp+mwUX5lSkdpRCI/VFwbcoUZsYMvUq9gxMZLapKoWw4tDATB6sWFX8MznMWKYGLML1hvFzApQm2eb58wTgFi506DLCwRCdsf5v1dOgOA67h36inN179aGb1NDFh3ocpfDlg16xGbKrhunmruv5QoW2baMjO/vbwlbMc+H/KPmL9JkIg6u4L56AAAAAElFTkSuQmCC");
+    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAAXNSR0IArs4c6QAAAU9JREFUOBGtVEtugzAQta1ICKnAIoKq+7LKYbprtjlB98kxcoJu210OkxW9QEFZAJUQG+h7VgY5cdSPxEiW7Zl5j+fxGK2urCzLu6ZpNsMwPCG0wlhinDCOxphDHMevWZZ9YT+ZnlZYFEXxjGk/juO963fXWutP7F/yPH8Xv5EFCLYAv/1EwFzGmcd8wVolVMCAOP86Q9WaijRrUNf1hyhI01T1fa9QF48L9VBBEKiqqmyMR0uS5NGwiELACAlQOEWAa9zTz7gYccQvzrcg/kkBATQqEgKonuICIH6BDa/xwuQoJArDUEVRpG4RnEErkrAPPCORELRt6ylwAEteMRvJMx6BCkjA+bpGDuBEJUeMB8fp1aDrOltU5shRnXx2sjk4Do9AgKzJrVsjfpY+maVj7duxrav1zj3Wb2t0604e4Syv+IKEX+dbwg3863/yDQGe1OH1XGbFAAAAAElFTkSuQmCC") \9;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: 0 0;
+}
+
+/* 手机验证 */
+.m-cnt .m-pc {
+    width: 180px;
+}
+
+.m-cnt .pcbtn a {
+    background-color: #3B78DD;
+    border-radius: 5px;
+}
+
+.m-cnt .m-pc .pcin {
+    width: 128px !important;
+}
+
+/* 调整登录按钮 */
+.loginbox {
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+.loginbox .u-loginbtn {
+    width: 312px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    border: none;
+}
+
+.m-cnt .m-unlogin {
+    /* padding-bottom: 42px; */
+    font-size: 0;
+    height: 16px;
+    line-height: 16px;
+}
+
+/* 忘记密码 */
+.m-cnt .m-unlogin .forgetpwd {
+    float: none;
+    position: fixed;
+    bottom: 50px;
+    left: 102px;
+    /* color: #3B78DD; */
+    color: #666666;
+    font-size: 14px;
+    line-height: 20px;
+    height: auto;
+}
+
+/* 去注册按钮 */
+.m-cnt .m-unlogin .u-regbtn.bgcolor {
+    position: fixed;
+    bottom: 50px;
+    right: 101px;
+    /* color: #3B78DD; */
+    color: #666666;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.m-cnt .m-unlogin a.forgetpwd:after {
+    content: '';
+    padding-left: 1px;
+    width: 0;
+    height: 13px;
+    background-color: #666;
+    position: absolute;
+    top: 3px;
+    right: -5px;
+    color: #666666;
+}
+
+.m-cnt .m-unlogin .u-regbtn.bgcolor:hover {
+    color: #3f3f3f !important;
+}
+
+.m-cnt .m-unlogin .u-regbtn.bgcolor:active {
+    color: #3f3f3f;
+}
+
+/* 忘记密码样式 */
+.m-cnt .m-unlogin .forgetpwd:hover {
+    color: #3f3f3f;
+}
+
+.m-cnt .m-unlogin .forgetpwd:active {
+    color: #3f3f3f;
+}
+
+.m-cnt .inputbox {
+    border-color: #DADADA;
+    height: 46px;
+    border-radius: 5px;
+}
+
+.m-cnt .inputbox.active {
+    border-color: #3B78DD;
+}
+
+.m-cnt .inputbox .u-logo {
+    display: none;
+}
+
+.m-cnt .pr-domain {
+    top: 0;
+    right: -84px !important;
+    color: #666;
+    height: 46px;
+    line-height: 46px;
+    margin-right: 10px;
+}
+
+/* 二次登录页面按钮样式修改 */
+/* 左按钮 */
+.u-btn.bgcolor {
+    height: 44px;
+    line-height: 44px;
+    color: #3B78DD;
+    border: 1px solid #a7d4bd;
+    border-radius: 4px;
+    background: #E6F3EC;
+}
+
+.u-btn.bgcolor:hover {
+    background: #cee7da;
+}
+
+.u-btn.bgcolor:active {
+    background: #daede3;
+}
+
+/* 右按钮 */
+.btncolor {
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background: #3B78DD;
+}
+
+.btncolor:hover {
+    background: #1760D7;
+}
+
+.btncolor:active {
+    background: #1760D7;
+}
+
+/* 错误样式 */
+.m-cnt .m-nerror .ferrorhead, .m-cnt .m-nerror .ferrorhead2, .m-cnt .m-nerror .ferrorhead3, .m-cnt .m-nerror .ferrorhead4 {
+    width: 290px;
+    margin-left: 6px;
+    line-height: 17px;
+}
+
+.m-cnt .u-label {
+    left: 14px;
+}

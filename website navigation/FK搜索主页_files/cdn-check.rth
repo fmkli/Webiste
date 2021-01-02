@@ -1,0 +1,1 @@
+if(window.fetch){fetch('https://cdn.retiehe.com/generate_204').then(function(response){if(response.ok){if(document.cookie.indexOf('cdn=off')!=-1){document.cookie='cdn=on';}}else{throw null;}}).catch(function(){if(document.cookie.indexOf('cdn=off')==-1){document.cookie='cdn=off';location.reload();}});}
