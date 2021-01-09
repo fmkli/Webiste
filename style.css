@@ -142,13 +142,7 @@ strike {
     font-size: 24px;
 }
 
-.photo-bg {
-    /* background-image: url(assets/background.jpg); */
-    background-image: url();
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+
 
 footer p {
     font-size: 12px;
