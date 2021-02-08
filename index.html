@@ -1,64 +1,125 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="en">
 
 <head>
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-LWZR449ZL2"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-LWZR449ZL2');
-</script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>fmkli | fmkli.js.org</title>
-    <link rel="icon" type="image/ico" href="https://s1.ax1x.com/2020/08/10/aqsA9f.png">
-    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.12.1/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://cdn.staticfile.org/popper.js/1.15.0/umd/popper.min.js"></script>
-  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta name="viewport"
+        content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
 
+    <title>Fmkli | 一个爱van游戏的人</title>
+    <meta name="description"
+        content="
+        我是fmkli，爱van游戏，爱淦网站，爱生活">
+    <meta name="keywords" content="我是fmkli,我的bilibili:fmkli">
+    <link rel="stylesheet" type="text/css" href="./css/FiraCode.css">
+    <link rel="stylesheet" type="text/css" href="./css/nutssss.css">
+    <link rel="icon" href="./favicon.ico">
 </head>
 
 <body>
-    <div id="main" class="container">
-        <div class="row my-card justify-content-center">
-            <div class="col-lg-8 card">
-                <h1>我是fmkli，这里是我的主页！</h1>
-                <p>我是一名bilibili的卑微UP猪</p>
-                <p>爱瞎倒腾网站</p>
-                <p>你看，又换了</p>
-               <p>爱玩电脑，对html一知半解</p>
-                <p>正在学习编程，正在超提前预备期末考试</p>
-	 <p>不如在<a href="https://space.bilibili.com/543825809">bilibili</a>里关注我</p>
-               <h3>新年快乐！<h3>
-		       <h2>友链</h2>
-		    <a href="https://www.yfun.top/">hifun blog</a>
-		       <a href="https://govmoe.com/">MoYuBLOG</a>
-		       <a href="https://cfstar.top/">CFStar</a>
-		       <a href="https://mc-bob.now.sh">bob实况的网站</a>
-		       <h2>我的站点：</h2>
-		        <a href="https://blog.fmkli.ga">fmkli的blog</a>
-                        <a href="https://fmkli.js.org/website%20navigation/">fk导航页</a>
-                        <a>fk免费主机(下线)</a>
-		       <a href="https://fmkli362082388.wordpress.com/">fmkli的备用博客</a>
-		       <a href="http://fmkli.ys168.com/">fmkli的网盘</a>
-		       <a href="https://blog.fmkli.ga/guestbook/">留言板</a>
-		       <a href="https://fmkli.js.org/32日.html">32日</a>
-			   <br>
-                <footer>
-                    <p>Copyright 2021 - Now <a href="https://fmkli.js.org" target="_blank">fmkli的主页</a></p>
-		    <hr>
-			<a href="https://qm.qq.com/cgi-bin/qm/qr?k=3Fm2LbV15-Mvcc1aqS6MyX9o_cy6d2HY&authKey=%2BpEPZZiwE5d4BGH%2FPXoAH24xhG56rURlKSuPXp9d76MTpbzCCd88QkZ9gEeMW9g%2F&noverify=0&group_code=700737220">2021/2 CYZ软件发布</a>
-                </footer>
+    <div id="box">
+        <!-- 个人资料卡片 -->
+        <div class="meBox">
+            <!-- 头像 -->
+            <div class="headPhoto"></div>
+            <!-- 介绍 -->
+            <div class="meBox-title">
+                <p>I'm fmkli</p>
+                <div class="fg"></div>
+            </div>
+            <div class="meBox-text">
+                <p>一条咸鱼<img src="./img/fish.png" alt="咸鱼" style="width: 20px; vertical-align: middle;"></p>
+                <p>爱好淦网站，van游戏</p>
+                <p>瞎折腾浪费时间最在行</p>
+                <a href="https://space.bilibili.com/543825809">fmkli的bilibili</a>
+            </div>
+            <!-- 两个按钮 -->
+            <div class="meBox-Button">
+                <a href="https://blog.fmkli.ga">blog</a>
+                <a href="https://space.bilibili.com/543825809">bilibili</a>
             </div>
         </div>
 
+        <!-- 伪终端介绍 -->
+        <div id="cmdBox">
+            <!-- 第一个终端 -->
+            <div class="cmd">
+                <!-- 三个按钮 -->
+                <div class="click">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <!-- 顶部标题 -->
+                <div class="title">
+                    <span>fmkli- bash</span>
+                </div>
+                <!-- 终端内文字 -->
+                <div class="cmdText">
+                    <span style="color: rgb(0, 190, 0);">root@fmkli</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./tianqi.sh</span>
+                    <br />
+                    <p>北京天气</p>
+                    <iframe scrolling="no" src="https://tianqiapi.com/api.php?style=tc&skin=pitaya" frameborder="0"
+                        width="350" height="24" allowtransparency="true"></iframe>
+                    <br />
+                    <span style="color: rgb(0, 190, 0);">root@fmkli</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">cat /me.txt</span>
+                    <p>喜欢玩电脑</p>
+                    <p>喜欢一切好玩</p>
+                    <p>喜欢和别人玩耍</p>
+                    <p>一起玩才好玩</p>
+                    <p>这是我的好朋友：<a href="https://space.bilibili.com/401947867/">bob实况</a></p>
+                    <span style="color: rgb(0, 190, 0);">root@nutssss</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);"></span>
+                </div>
+            </div>
+            <!-- 第二个终端 -->
+            <div class="cmd cmd2">
+                <!-- 三个按钮 -->
+                <div class="click">
+                    <div class="red"></div>
+                    <div class="yellow"></div>
+                    <div class="green"></div>
+                </div>
+                <!-- 顶部标题 -->
+                <div class="title">
+                    <span>fmkli - bash</span>
+                </div>
+                <!-- 终端内文字 -->
+                <div class="cmdText">
+                    <span style="color: rgb(0, 190, 0);">root@fmkli</span>
+                    <span style="color: blue;">~</span>
+                    <span style="color: rgb(39, 39, 39);">./links.sh</span>
+                    <p>我的其他站点：</p>
+                    <ul class="ul">
+                        <li><a href="https://blog.fmkli.ga">fmkli的blog</a></li>
+                        <li><a href="https://fmkli.js.org/website%20navigation/">fk导航页</a></li>
+                        <li><a href="https://fmkli362082388.wordpress.com/">fmkli的备用博客</a></li>
+                        <li><a href="https://blog.fmkli.ga/guestbook/">留言板</a></li>                    
+                    </ul>
+                    <p>友链：</p>
+                    <ul class="ul">
+                        <li><a href="https://www.yfun.top/">hifun blog</a></li>
+                        <li><a href="https://govmoe.com/">MoYuBLOG</a></li>
+                        <li><a href="https://cfstar.top/">CFStar</a></li>
+                        <li><a href="https://mc-bob.now.sh">bob实况的网站</a></li>                    
+                    </ul>
+                    <span style="color: rgb(0, 190, 0);">root@fmkli</span>
+                    <span style="color: blue;">~</span>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- 页脚 -->
+    <div id="footer">
+        <p>© 2021 fmkli</p>
+        <p>THEME MADE BY Nutssss</a></p>
+    </div>
+</body>
+
+</html>
