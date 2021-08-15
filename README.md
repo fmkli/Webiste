@@ -6,7 +6,7 @@
 欢迎访问我的小站 
 ## 我的github：[https://github.com/fmkli/](https://github.com/fmkli/)   
 ## 我的bilibili：[https://space.bilibili.com/543825809](https://space.bilibili.com/543825809)    
-## 我的电子邮件：fmkli@outlook.com  
+## 我的电子邮件：imfmkli@outlook.com  
 ## 我的博客：[https://blog.fmkli.ga](https://blog.fmkli.ga)  
 ## 我的备用博客：[http://fmkli.ccaeo.com/](http://fmkli.ccaeo.com/)  
 ## FK导航页：[https://fmkli.js.org/website%20navigation/](https://fmkli.js.org/website%20navigation/)  
