@@ -15,7 +15,6 @@
 ## 二级域名：[http://dm.fkhost.ml/](http://dm.fkhost.ml/)  
 ## Fmkli的个人盘：[https://pan.fmkli.ga/](https://pan.fmkli.ga/)  
 ## 邮箱申请：[https://fmkli.js.org/fkemail/](https://fmkli.js.org/fkemail/)  
-## 白嫖的域名：[https://imfmkli.xyz](https://imfmkli.xyz)
 ## 白嫖的域名：[https://fmkli.fun](https://fmkli.fun)
 # 友链  
 Bob实况：[https://boblive.vercel.app/](https://boblive.vercel.app/)    
