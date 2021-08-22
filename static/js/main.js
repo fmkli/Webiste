@@ -56,7 +56,7 @@ function Init(feedType, feedPath, bgArr, senArr) {
     feed.addEventListener("load", function () {
         qSlt(".article-container").classList.add("loaded");
         if (feed.status !== 200) {
-            setArtTip('<i class="fa fa-warning"></i><p class="article-empty-tip">暂时无法连接到博客</p>');
+            setArtTip('<i class="fa fa-warning"></i><p class="article-empty-tip">跳转中~等下哦~</p>');
             return;
         }
         try {
