@@ -1,168 +1,150 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-CN">
+
 <head>
     <meta charset="UTF-8">
-    <title>Fmkli - awa</title>
-    <meta name="keywords" content="Fmkli"/>
-    <meta name="description" content="Fmkli" />
-    <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="static/css/loading.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fmkli的站点</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+        integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous" />
+    <link rel="stylesheet" href="home.css">
 </head>
-<body class="locked">
-    <div class="self-avatar flex-center">
-        <div class="loading-mask fixed-layer no-delay"></div>
-        <div class="loading-wrapper">
-            <svg class="loading-indicator no-delay" width="128" height="128">
-                <g class="circle-rotating">
-                    <g class="circle-step">
-                        <circle cx="64" cy="64" r="56" class="circle-line"></circle>
-                    </g>
-                </g>
-            </svg>
-            <img alt="" src="https://fmkli.js.org/Flysoft_files/fmkli.png" class="avatar-img no-delay"/>
-        </div>
-        <div class="loading-text text-center">
-            <p class="loading-pre">慢慢加载...........</p>
-            <p class="avatar-name">Fmkli的个人网站</p>
-            <p class="dokidoki-text"></p>
+
+<body class="">
+    <!-- Banner -->
+    <div class="mdui-appbar mdui-shadow-0 mdui-appbar-fixed mdui-text-color-white">
+        <div class="mdui-toolbar mdui-color-theme">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon"
+                mdui-drawer="{target: '#left-drawer',overlay: true}"><i class="mdui-icon material-icons">menu</i></a>Fmkli</a>
+            <div class="mdui-toolbar-spacer"></div>
         </div>
     </div>
-    <div class="background-layer fixed-layer"></div>
-    <div class="background-filter fixed-layer"></div>
-    <div class="content-layer flex-center">
-        <div class="content-container">
-            <div class="self-wrapper">
-                <div class="self-content links-container flex-center text-center">
-                    <a href="https://blog.fmkli.fun/" class="link-item">
-                        <div class="link-icon"><i class="fa fa-home"></i></div>
-                        <div>博客</div>
-                    </a>
-                    <a href="http://fmkli.ccaeo.com/" class="link-item">
-                        <div class="link-icon"><i class="fa fa-home"></i></div>
-                        <div>备用博客</div>
-                    </a>
-                    <a href="https://space.bilibili.com/543825809" class="link-item">
-                        <div class="link-icon"><i class="fa fa-play-circle"></i></div>
-                        <div>Bilibili</div>
-                    </a>
-                    <a href="https://github.com/fmkli/" class="link-item">
-                        <div class="link-icon"><i class="fa fa-github"></i></div>
-                        <div>Github</div>
-                    </a>
-                    <a href="http://fmkli.ccaeo.com/bbs/upload/" class="link-item">
-                        <div class="link-icon"><i class="fa fa-archive"></i></div>
-                        <div>FKFK论坛</div>
-                    </a>
-                    <a href="https://pan.fmkli.ga/" class="link-item">
-                        <div class="link-icon"><i class="fa fa-archive"></i></div>
-                        <div>Fmkli的个人盘</div>
-                    </a>
-                </div><div class="self-content article-container">
-                    <div class="article-content"></div>
-                    <div class="article-loading flex-center">
-                        <svg style="visibility: hidden" class="loading-indicator" width="128" height="128">
-                            <g class="circle-rotating">
-                                <g class="circle-step">
-                                    <circle cx="64" cy="64" r="56" class="circle-line"></circle>
-                                </g>
-                            </g>
-                        </svg>
-                        <span class="text-center">Loading...</span>
-                    </div>
-                </div><div class="self-content">
-                    <div class="info-container">
-	          关于：<br>
-                        介是个Fmkli的主页~<br>
-链接：<br>
-<a href="https://fmkli.js.org/website%20navigation/">FK导航页（点我）</a><br><hr>
-<a href="http://fkhost.ml">FK免费网站托管（点我）</a>
-<br>
-<hr>
-<a href="http://dm.fkhost.ml/">二级域名申请（点我）</a>
-<br>
-<hr>
-<a href="https://fmkli.js.org/fkemail/">邮箱申请（点我）</a>
-                    </div>
+    <nav id="banner" class="mdui-container-fluid mdui-valign">
+        <h2 style="color:white!important;" class="banner-title mdui-center mdui-text-color-theme">
+            看来又有一位小可爱来到这了呢awa
+        </h2>
+    </nav>
 
-            </div>
-            </div>
-            <div class="self-switcher">
-                <div class="switcher-btn text-center" id="switcher-btn-1">
-                    <div class="btn-icon"><i class="fa fa-link"></i></div>
-                    <div class="btn-text">链接</div>
-                </div>
-                <a href="https://blog.fmkli.ga"><div class="switcher-btn text-center" id="switcher-btn-2">
-                    <div class="btn-icon"><i class="fa fa-book"></i></div>
-                    <div class="btn-text">Fmkli的博客</div>
-                </div></a>
-                <div class="switcher-btn text-center" id="switcher-btn-3">
-                    <div class="btn-icon"><i class="fa fa-info-circle"></i></div>
-                    <div class="btn-text">关于/Fmkli的服务</div>
-                </div>
-                <div class="btn-select-indicator"></div>
-            </div>
+    <!-- 介绍卡片 -->
+    <div class="mdui-card card">
+
+        <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">Fmkli</div>
         </div>
-        <div class="footer-container text-center">© 2021 By <a href="https://fmkli.js.org">Fmkli</a></div>
+
+        <!-- 卡片的内容 -->
+        <div class="mdui-card-content mdui-typo">蛤，小可爱，我是Fmkli，一位学生，喜欢编程，喜欢火车！<br />还请多多指教！
+            <br>欢迎在 Bilibili 上 <a href="https://space.bilibili.com/543825809" rel="nofollow">关注我</a> 或 通过BiliBili<a
+                href="" rel="nofollow">与我交流awa</a>。
+            <br>你也可以通过邮箱找到我：<code>fmkli@mail.fmkli.ga</code>
+        </div>
+
     </div>
-    </body>
 
-<link rel="stylesheet" href="static/css/main.css">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/ClassicOldSong/typinyin.js@0.1.3/typinyin.css">
-<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans" media="none" onload="this.media='all'">
-<script src="https://cdn.jsdelivr.net/gh/ClassicOldSong/typinyin.js@master/typinyin.min.js"></script>
-<script src="static/js/main.js"></script>
-<script>
-    (function () {
-        var feedType = "json";
-        var feedPath = "feed.php";
-        var bgArr = [{
-            "url": "https://bu.dusays.com/2021/07/21/e43d8338764be.jpg",
-            "thumb": "https://bu.dusays.com/2021/07/21/e43d8338764be.jpg"
-        },{
-            "url": "https://bu.dusays.com/2021/07/21/e43d8338764be.jpg",
-            "thumb": "https://bu.dusays.com/2021/07/21/e43d8338764be.jpg"
-        }];
-        var senArr = [
-            {
-                ch: ["什么","？","又","一位","小可爱","来了","！"],
-                py: ["shen'me","？","you","yi'wei","xiao'ke'ai","lai'le","！"],
-            }, {
-                ch: ["awa"],
-                py: ["awa"],
-            }
-        ];
+    <!-- 近期文章 -->
+    <div class="mdui-card card">
 
-        Init(feedType, feedPath, bgArr, senArr);
-    })();
-</script>
-<style>
-    .content-container[data-selection="1"] .self-wrapper {
-        transform: translateX(0%);
-    }
-    .content-container[data-selection="1"] .btn-select-indicator {
-        transform: translateX(0%);
-    }
-    .content-container[data-selection="2"] .self-wrapper {
-        transform: translateX(-33.33%);
-    }
-    .content-container[data-selection="2"] .btn-select-indicator {
-        transform: translateX(100%);
-    }
-    .content-container[data-selection="3"] .self-wrapper {
-        transform: translateX(-66.66%);
-    }
-    .content-container[data-selection="3"] .btn-select-indicator {
-        transform: translateX(200%);
-    }
-    .content-container[data-selection="1"] #switcher-btn-1 .btn-icon .fa,.content-container[data-selection="2"] #switcher-btn-2 .btn-icon .fa,.content-container[data-selection="3"] #switcher-btn-3 .btn-icon .fa{
-        font-size: 2.5rem;
-        transform: translateY(.1em);
-    }
-    .content-container[data-selection="1"] #switcher-btn-1 .btn-text, .content-container[data-selection="2"] #switcher-btn-2 .btn-text, .content-container[data-selection="3"] #switcher-btn-3 .btn-text {
-        opacity: 0;
-    }
-</style>
+        <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">近期文章</div>
+            <div class="mdui-card-primary-subtitle">最近在 Fmkli 上发布的 5 瞎乱写文章</div>
+        </div>
+
+        <!-- 卡片的内容 -->
+        <div class="mdui-card-content" id="posts">
+            <div id="posts-label" class="mdui-list"></div>
+            <div id="post-spinner" class="mdui-spinner mdui-spinner-colorful mdui-center"></div>
+        </div>
+
+    </div>
+
+    <!-- 最新天气，CYF 的 API 删了，到时候再补上 
+    <div class="mdui-card card">
+
+        <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">天气情况</div>
+            <div class="mdui-card-primary-subtitle">您所在位置的天气信息</div>
+        </div>
+        
+        <div class="mdui-card-content" id="posts">
+            <div class="mdui-tab mdui-tab-full-width" mdui-tab>
+                <a href="#day-weather" class="mdui-ripple">早晨</a>
+                <a href="#night-weather" class="mdui-ripple">夜晚</a>
+
+            </div>
+            <div id="day-weather"></div>
+            <div id="night-weather"></div>
+            <div id="weather-spinner" class="mdui-spinner mdui-spinner-colorful mdui-center"></div>
+        </div>
+
+    </div>-->
+
+    <!-- 抽屉栏 -->
+    <div class="mdui-drawer mdui-color-white mdui-drawer-close" id="left-drawer">
+        <ul class="mdui-list">
+            <li class="mdui-subheader">你拉开了这个网站的抽屉！</li>
+            <li class="mdui-subheader">相关链接</li>
+
+            <li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://blog.fmkli.ga'">
+                <i class="mdui-list-item-icon mdui-icon material-icons">library_books</i>
+                <div class="mdui-list-item-content">Fmkli的Blog</div>
+            </li>
+
+            <li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://fmkli.js.org/detaile.html'"> <i
+                    class="mdui-list-item-icon mdui-icon material-icons">wifi_tethering</i>
+                <div class="mdui-list-item-content">公共服务</div>
+            </li>
+
+            <li class="mdui-subheader">找到我</li>
+            <li class="mdui-list-item mdui-ripple" onclick="window.open('https://github.com/fmkli');"> <i
+                    class="mdui-list-item-icon mdui-icon material-icons">code</i>
+                <div class="mdui-list-item-content">GitHub</div>
+            </li>
+            <li class="mdui-list-item mdui-bilibili" onclick="window.open('https://space.bilibili.com/543825809');"> <i
+                    class="mdui-list-item-icon mdui-icon material-icons">group</i>
+                <div class="mdui-list-item-content">BiliBili频道</div>
+            </li>
+            <li class="mdui-list-item mdui-ripple" onclick="mdui.alert('fmkli@mail.fmkli.ga')"> <i
+                    class="mdui-list-item-icon mdui-icon material-icons">mail</i>
+                <div class="mdui-list-item-content">Email</div>
+            </li>
+        </ul>
+
+    </div>
+    <!-- 赞赏弹窗 -->
+    <div class="mdui-dialog" id="support">
+        <div class="mdui-tab mdui-tab-full-width" id="support-tab">
+            <a href="#w-q-a" class="mdui-ripple">微信 / QQ / 爱发电</a>
+            <a href="#verus-coin" class="mdui-ripple">Verus Coin</a>
+            <a href="#xmr" class="mdui-ripple">XMR</a>
+        </div>
+        <div id="w-q-a" class="mdui-p-a-2">
+                <a href="https://donate.rth.app" target="_blank"><img src="https://bu.dusays.com/2021/08/02/efe5990eff9e7.png" alt="微信 / QQ / 爱发电"
+                      class="mdui-center"></a>
+        </div>
+        <div id="verus-coin" class="mdui-p-a-2">
+            <p class="mdui-text-center">Address: REGgJT9m9A2vpLjWtuNeR96dnR4hmjDBQp </p>
+            <img src="https://explorer.verus.io/qr/REGgJT9m9A2vpLjWtuNeR96dnR4hmjDBQp" alt="QR Code"
+                    class="mdui-center">
+        </div>
+        <div id="xmr" class="mdui-p-a-2">
+            <p class="mdui-text-center">Address: 47wcW1VrGmh6WkDGHB3YquLUJRLDWbwsJW7JB1W78QwZE1QeidVLjqp15CJ3my2wKABPZkS7en6QDHoCmmAqM9mzH6cZgGZ </p>
+        </div>
+    </div>
+
+    <footer class="mdui-text-center">
+        <p>&copy; 2021 Fmkli</p><hr>
+        <p>感谢<a href="https://yfun.top">YFun</a>提供此页面！</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+        integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+        crossorigin="anonymous"></script>
+    <script src="home.js"></script>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+    </script>
+    <!--  -->
+</body>
+
 </html>
