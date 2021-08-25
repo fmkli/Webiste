@@ -17,13 +17,13 @@
         <div class="mdui-toolbar mdui-color-theme">
             <a href="javascript:;" class="mdui-btn mdui-btn-icon"
                 mdui-drawer="{target: '#left-drawer',overlay: true}"><i class="mdui-icon material-icons">menu</i></a>
-            <a href="/" class="mdui-typo-title">YFun</a>
+            <a href="/" class="mdui-typo-title">Fmkli的站点</a>
             <div class="mdui-toolbar-spacer"></div>
         </div>
     </div>
     <nav id="banner" class="mdui-container-fluid mdui-valign">
         <h2 style="color:white!important;" class="banner-title mdui-center mdui-text-color-theme">
-            Page Not Found
+          404
         </h2>
     </nav>
 
@@ -35,9 +35,7 @@
         </div>
 
         <!-- 卡片的内容 -->
-        <div class="mdui-card-content mdui-typo">这里似乎没有你所寻找的内容，试着检查地址栏和域名是否正确。
-            <br>
-            您所寻找的页面可能在 YFun's Blog 可用：<span id="blog-link"></span>
+        <div class="mdui-card-content mdui-typo">这里似乎没有你所寻找的内容nie，试着检查地址栏和域名是否正确。
 
         </div>
 
@@ -47,51 +45,58 @@
     <!-- 抽屉栏 -->
     <div class="mdui-drawer mdui-color-white mdui-drawer-close" id="left-drawer">
         <ul class="mdui-list">
+            <li class="mdui-subheader">你拉开了这个网站的抽屉！</li>
             <li class="mdui-subheader">相关链接</li>
 
-            <li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://blog.yfun.top'">
+            <li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://blog.fmkli.ga'">
                 <i class="mdui-list-item-icon mdui-icon material-icons">library_books</i>
-                <div class="mdui-list-item-content">YFun's Blog</div>
+                <div class="mdui-list-item-content">Fmkli的Blog</div>
             </li>
-            <li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://note.yfun.top'">
+            
+            <li class="mdui-list-item mdui-ripple" onclick="window.location.href='http://fmkli.ccaeo.com/'">
                 <i class="mdui-list-item-icon mdui-icon material-icons">library_books</i>
-                <div class="mdui-list-item-content">YFun's Note</div>
+                <div class="mdui-list-item-content">Fmkli的备用Blog</div>
             </li>
 
-            <li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://blog.yfun.top/status/'"> <i
-                    class="mdui-list-item-icon mdui-icon material-icons">center_focus_weak</i>
-                <div class="mdui-list-item-content">状态监控</div>
-            </li>
-
-            <li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://cdn.yfun.top/info.html'"> <i
-                    class="mdui-list-item-icon mdui-icon material-icons">wifi_tethering</i>
+            <li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://fmkli.js.org/detaile.html'"> <i
+                    class="mdui-list-item-icon mdui-icon material-icons">event</i>
                 <div class="mdui-list-item-content">公共服务</div>
             </li>
 
+            <li class="mdui-list-item mdui-ripple" onclick="window.location.href='http://fmkli.ccaeo.com/bbs/upload/'">
+                <i class="mdui-list-item-icon mdui-icon material-icons">wifi_tethering</i>
+                <div class="mdui-list-item-content">FKFK论坛</div>
+            </li>
+            
+            <li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://pan.fmkli.ga/'">
+                <i class="mdui-list-item-icon mdui-icon material-icons">input</i>
+                <div class="mdui-list-item-content">Fmkli的网盘</div>
+            </li>
+            
             <li class="mdui-subheader">找到我</li>
-            <li class="mdui-list-item mdui-ripple" onclick="window.open('http://github.com/oCoke');"> <i
+            
+            <li class="mdui-list-item mdui-ripple" onclick="window.open('https://github.com/fmkli');"> <i
                     class="mdui-list-item-icon mdui-icon material-icons">code</i>
                 <div class="mdui-list-item-content">GitHub</div>
             </li>
-            <li class="mdui-list-item mdui-ripple" onclick="window.open('https://t.me/always_explore');"> <i
+            <li class="mdui-list-item mdui-bilibili" onclick="window.open('https://space.bilibili.com/543825809');"> <i
                     class="mdui-list-item-icon mdui-icon material-icons">group</i>
-                <div class="mdui-list-item-content">Telegram 频道</div>
+                <div class="mdui-list-item-content">BiliBili频道</div>
             </li>
-            <li class="mdui-list-item mdui-ripple" onclick="window.open('https://t.me/yfun2021');"> <i
-                    class="mdui-list-item-icon mdui-icon material-icons">airplanemode_active</i>
-                <div class="mdui-list-item-content">Telegram</div>
-            </li>
-            <li class="mdui-list-item mdui-ripple" onclick="mdui.alert('awa#outlook.ie (# => @)')"> <i
+            <li class="mdui-list-item mdui-ripple" onclick="mdui.alert('fmkli@mail.fmkli.ga')"> <i
                     class="mdui-list-item-icon mdui-icon material-icons">mail</i>
                 <div class="mdui-list-item-content">Email</div>
             </li>
+            <li class="mdui-list-item mdui-ripple" onclick="mdui.alert('你真的点我了awa（别打我）', '震惊')"> <i
+                    class="mdui-list-item-icon mdui-icon material-icons">mail</i>
+                <div class="mdui-list-item-content">点我awa是笨蛋</div>
+            </li>    
         </ul>
 
     </div>
 
-
     <footer class="mdui-text-center">
-        <p>&copy; 2021 YFun (@oCoke)</p>
+        <p>&copy; 2021 Fmkli的站点</p>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
