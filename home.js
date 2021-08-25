@@ -32,7 +32,7 @@ document.onreadystatechange = function () {
         $.ajax({
             method: 'GET',
             url: 'https://api.rss2json.com/v1/api.json?rss_url=https://blog.fmkli.ga/atom.xml',
-            // url: 'https://blog.yfun.top/search.json',
+            // url: 'https://blog.fmkli.ga/search.json',
             success: function (data) {
                 var data = JSON.parse(data).items;
                 // var data = JSON.parse(data);
@@ -40,7 +40,7 @@ document.onreadystatechange = function () {
                 for (var i = 0; i <= 4; i++) {
                     var element = document.createElement('a');
                     element.href = data[i].link;
-                    // element.href = "https://blog.yfun.top" + data[i].url;
+                    // element.href = "https://blog.fmkli.ga" + data[i].url;
                     element.classList = "mdui-list-item mdui-ripple";
                     element.textContent = data[i].title;
                     element.target = "blank"
