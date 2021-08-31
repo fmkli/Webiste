@@ -91,26 +91,6 @@
     <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
         <a href="https://myssl.com/fmkli.js.org?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
     </div>
-<div  id="right-menu">
-    <div class="menu-item"><a href="https://fmkli.js.org">Fmkli</a></div>
-    <div class="menu-item"><a href="https://blog.fmkli.ga">Fmkli的博客</a></div>
-    <div class="menu-item-separator"></div>
-    <div class="menu-item">你右键了awa</div>
-    <div class="menu-item">awa</div>
-</div>
-    <script type="text/javascript">
-        window.oncontextmenu = function(e){
-            e.preventDefault(); //阻止浏览器自带的右键菜单显示
-            var menu = document.getElementById("right-menu");
-            menu.style.display = "block"; //将自定义的“右键菜单”显示出来
-            menu.style.left = e.clientX + "px";  //设置位置，跟随鼠标
-            menu.style.top = e.clientY+"px"; 
-        }
-        window.onclick = function(e){ //点击窗口，右键菜单隐藏
-            var menu = document.getElementById("right-menu");
-            menu.style.display = "none";
-        }
-    </script>
 </body>
 
 </html>
