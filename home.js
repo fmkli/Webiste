@@ -31,7 +31,7 @@ document.onreadystatechange = function () {
         /* Posts */
         $.ajax({
             method: 'GET',
-            url: 'https://api.rss2json.com/v1/api.json?rss_url=https://blog.fmkli.ga/atom.xml',
+            url: 'https://api.rss2json.com/v1/api.json?rss_url=https://fmkli.js.org/blog/feed.xml',
             // url: 'https://blog.fmkli.ga/search.json',
             success: function (data) {
                 var data = JSON.parse(data).items;
