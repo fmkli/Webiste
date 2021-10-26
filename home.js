@@ -138,10 +138,10 @@ document.addEventListener('visibilitychange', function () {
     if (document.visibilityState == 'hidden') {
         // 如果页面不可见
         // 设定新标题
-        document.title = 'fmkli.js.org崩溃了qaq';
+        document.title = '别走啊｜д•´)!! - Fmkli的站点';
     } else {
         // 欢迎信息
-        document.title = "fmkli.js.org恢复啦awa";
+        document.title = "欢迎回来_(:зゝ∠)_ - Fmkli的站点";
         // 1 秒后恢复原始信息
         setTimeout(function () {
             document.title = normal_title
