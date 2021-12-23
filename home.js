@@ -40,7 +40,7 @@ document.onreadystatechange = function () {
                 for (var i = 0; i <= 4; i++) {
                     var element = document.createElement('a');
                     element.href = data[i].link;
-                    element.href = "https://blog.fmkli.ga" + data[i].url;
+                    // element.href = "https://blog.fmkli.ga" + data[i].url;
                     element.classList = "mdui-list-item mdui-ripple";
                     element.textContent = data[i].title;
                     element.target = "blank"
