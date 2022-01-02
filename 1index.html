@@ -20,7 +20,7 @@
 <div id="clickCanvas" style=" position:fixed;left:0;top:0;z-index:999999999;pointer-events:none;"></div>
 <!--没错，就是上面这一行-->
 
-
+<!--鼠标特效-->
 <script>
     /*
     * 鼠标点击特效，canvas点击效果，第二版
@@ -119,8 +119,11 @@
        });
    }
 </script>
-    
+
+    <!--聊天js-->
     <script src="//topurl.cn/chat.js" async="async" fold></script>
+    <!--聊天js-->
+
     <!-- PWA -->
     <script>
         // 判断浏览器是否支持 service worker
@@ -143,6 +146,7 @@
    
     <!-- PWA END -->
     <!-- Banner -->
+
     <div class="mdui-appbar mdui-shadow-0 mdui-appbar-fixed mdui-text-color-white">
         <div class="mdui-toolbar mdui-color-theme">
             <a href="javascript:;" class="mdui-btn mdui-btn-icon"
@@ -200,7 +204,21 @@
 
     </div>
 
-    <!-- 近期文章 -->
+    <!-- RRS -->
+    <div class="mdui-card card">
+
+        <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">博客RRS</div>
+        </div>
+
+        <!-- 卡片的内容 -->
+        <div class="mdui-card-content mdui-typo">
+        Fmkli的博客的RRS：<a href="https://blog.fmkli.ga/feed">https://blog.fmkli.ga/feed</a><br>欢迎订阅
+        </div>
+
+    </div>
+
+    <!-- 近期文章，但是有点问题，撤掉
     <div class="mdui-card card">
 
         <div class="mdui-card-primary">
@@ -214,7 +232,7 @@
             <div id="post-spinner" class="mdui-spinner mdui-spinner-colorful mdui-center"></div>
         </div>
 
-    </div>
+    </div> -->
 
     <!-- 最新天气，CYF 的 API 删了，到时候再补上 
     <div class="mdui-card card">
