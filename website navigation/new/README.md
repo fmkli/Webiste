@@ -1,4 +1,4 @@
-# 请去 [https://github.com/fmkli/fmkli.github.io/discussions](https://github.com/fmkli/fmkli.github.io/discussions) 发Discussions申请  
+# 请去 [https://github.com/fmkli/fmkli/discussions](https://github.com/fmkli/fmkli/discussions) 发Discussions申请  
 可申请收录或者添加更多常用  
 （也没多少人申请吧awa）  
 格式如下  
