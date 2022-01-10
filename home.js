@@ -138,7 +138,7 @@ document.addEventListener('visibilitychange', function () {
     if (document.visibilityState == 'hidden') {
         // 如果页面不可见
         // 设定新标题
-        document.title = '别走啊｜д•´)!! - Fmkli的站点';
+        document.title = '大爷来玩啊[doge]';
     } else {
         // 欢迎信息
         document.title = "欢迎回来_(:зゝ∠)_ - Fmkli的站点";
