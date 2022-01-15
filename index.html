@@ -1,262 +1,178 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-
+<html>
 <head>
-    <meta http-equiv="keywords" content="fmkli的网站,fmkli的窝,www.imfmkli.top">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
     <title>I'm Fmkli</title>
-    <link rel="stylesheet" href="./mdui2/css/mdui.min.css"
-        integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous" />
-    <link rel="stylesheet" href="home.css">
-    <link rel="manifest" href="manifest.json">
-    
-    <!-- Matomo -->
-    <script>
-      var _paq = window._paq = window._paq || [];
-      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-      _paq.push(['trackPageView']);
-      _paq.push(['enableLinkTracking']);
-      (function() {
-        var u="https://stat.ahdark.com/";
-        _paq.push(['setTrackerUrl', u+'matomo.php']);
-        _paq.push(['setSiteId', '12']);
-        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
-        g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
-      })();
-</script>
-<!-- End Matomo Code -->
+    <link rel="stylesheet" href="https://cdn.w3cbus.com/library/mdui/1.0.2/css/mdui.min.css"/>
+    <style>
 
-</head>
-
-<body class="">
-    
-<!--如果移动端不显示请参考上面的网址进行替换下面这一行-->
-<div id="clickCanvas" style=" position:fixed;left:0;top:0;z-index:999999999;pointer-events:none;"></div>
-<!--没错，就是上面这一行-->
-
-<!--鼠标特效-->
-<script>
-    /*
-    * 鼠标点击特效，canvas点击效果，第二版
-    * 原文地址：https://www.iowen.cn/canvas-click-effect-second-edition
-    */
-    
-    /*下面这一行包含了sketch.min.js的源码，如果你的网站已经引用了，可酌情删掉*/
-   /* Copyright (C) 2013 Justin Windle sketch.min.js, http://soulwire.co.uk */
-   var Sketch=function(){"use strict";function e(e){return"[object Array]"==Object.prototype.toString.call(e)}function t(e){return"function"==typeof e}function n(e){return"number"==typeof e}function o(e){return"string"==typeof e}function r(e){return E[e]||String.fromCharCode(e)}function i(e,t,n){for(var o in t)(n||!e.hasOwnProperty(o))&&(e[o]=t[o]);return e}function u(e,t){return function(){e.apply(t,arguments)}}function a(e){var n={};for(var o in e)n[o]=t(e[o])?u(e[o],e):e[o];return n}function c(e){function n(n){t(n)&&n.apply(e,[].splice.call(arguments,1))}function u(e){for(_=0;_<J.length;_++)G=J[_],o(G)?O[(e?"add":"remove")+"EventListener"].call(O,G,k,!1):t(G)?k=G:O=G}function c(){L(T),T=I(c),U||(n(e.setup),U=t(e.setup),n(e.resize)),e.running&&!j&&(e.dt=(B=+new Date)-e.now,e.millis+=e.dt,e.now=B,n(e.update),e.autoclear&&K&&e.clear(),n(e.draw)),j=++j%e.interval}function l(){O=Y?e.style:e.canvas,D=Y?"px":"",e.fullscreen&&(e.height=w.innerHeight,e.width=w.innerWidth),O.height=e.height+D,O.width=e.width+D,e.retina&&K&&X&&(O.height=e.height*X,O.width=e.width*X,O.style.height=e.height+"px",O.style.width=e.width+"px",e.scale(X,X)),U&&n(e.resize)}function s(e,t){return N=t.getBoundingClientRect(),e.x=e.pageX-N.left-w.scrollX,e.y=e.pageY-N.top-w.scrollY,e}function f(t,n){return s(t,e.element),n=n||{},n.ox=n.x||t.x,n.oy=n.y||t.y,n.x=t.x,n.y=t.y,n.dx=n.x-n.ox,n.dy=n.y-n.oy,n}function g(e){if(e.preventDefault(),W=a(e),W.originalEvent=e,W.touches)for(M.length=W.touches.length,_=0;_<W.touches.length;_++)M[_]=f(W.touches[_],M[_]);else M.length=0,M[0]=f(W,V);return i(V,M[0],!0),W}function h(t){for(t=g(t),q=(Q=J.indexOf(z=t.type))-1,e.dragging=/down|start/.test(z)?!0:/up|end/.test(z)?!1:e.dragging;q;)o(J[q])?n(e[J[q--]],t):o(J[Q])?n(e[J[Q++]],t):q=0}function p(t){F=t.keyCode,H="keyup"==t.type,Z[F]=Z[r(F)]=!H,n(e[t.type],t)}function v(t){e.autopause&&("blur"==t.type?b:C)(),n(e[t.type],t)}function C(){e.now=+new Date,e.running=!0}function b(){e.running=!1}function P(){(e.running?b:C)()}function A(){K&&e.clearRect(0,0,e.width,e.height)}function S(){R=e.element.parentNode,_=x.indexOf(e),R&&R.removeChild(e.element),~_&&x.splice(_,1),u(!1),b()}var T,k,O,R,N,_,D,B,G,W,z,F,H,q,Q,j=0,M=[],U=!1,X=w.devicePixelRatio,Y=e.type==m,K=e.type==d,V={x:0,y:0,ox:0,oy:0,dx:0,dy:0},J=[e.element,h,"mousedown","touchstart",h,"mousemove","touchmove",h,"mouseup","touchend",h,"click",y,p,"keydown","keyup",w,v,"focus","blur",l,"resize"],Z={};for(F in E)Z[E[F]]=!1;return i(e,{touches:M,mouse:V,keys:Z,dragging:!1,running:!1,millis:0,now:0/0,dt:0/0,destroy:S,toggle:P,clear:A,start:C,stop:b}),x.push(e),e.autostart&&C(),u(!0),l(),c(),e}for(var l,s,f="E LN10 LN2 LOG2E LOG10E PI SQRT1_2 SQRT2 abs acos asin atan ceil cos exp floor log round sin sqrt tan atan2 pow max min".split(" "),g="__hasSketch",h=Math,d="canvas",p="webgl",m="dom",y=document,w=window,x=[],v={fullscreen:!0,autostart:!0,autoclear:!0,autopause:!0,container:y.body,interval:1,globals:!0,retina:!1,type:d},E={8:"BACKSPACE",9:"TAB",13:"ENTER",16:"SHIFT",27:"ESCAPE",32:"SPACE",37:"LEFT",38:"UP",39:"RIGHT",40:"DOWN"},C={CANVAS:d,WEB_GL:p,WEBGL:p,DOM:m,instances:x,install:function(t){if(!t[g]){for(var o=0;o<f.length;o++)t[f[o]]=h[f[o]];i(t,{TWO_PI:2*h.PI,HALF_PI:h.PI/2,QUATER_PI:h.PI/4,random:function(t,o){return e(t)?t[~~(h.random()*t.length)]:(n(o)||(o=t||1,t=0),t+h.random()*(o-t))},lerp:function(e,t,n){return e+n*(t-e)},map:function(e,t,n,o,r){return(e-t)/(n-t)*(r-o)+o}}),t[g]=!0}},create:function(e){return e=i(e||{},v),e.globals&&C.install(self),l=e.element=e.element||y.createElement(e.type===m?"div":"canvas"),s=e.context=e.context||function(){switch(e.type){case d:return l.getContext("2d",e);case p:return l.getContext("webgl",e)||l.getContext("experimental-webgl",e);case m:return l.canvas=l}}(),e.container.appendChild(l),C.augment(s,e)},augment:function(e,t){return t=i(t||{},v),t.element=e.canvas||e,t.element.className+=" sketch",i(e,t,!0),c(e)}},b=["ms","moz","webkit","o"],P=self,A=0,S="AnimationFrame",T="request"+S,k="cancel"+S,I=P[T],L=P[k],O=0;O<b.length&&!I;O++)I=P[b[O]+"Request"+S],L=P[b[O]+"Cancel"+T];return P[T]=I=I||function(e){var t=+new Date,n=h.max(0,16-(t-A)),o=setTimeout(function(){e(t+n)},n);return A=t+n,o},P[k]=L=L||function(e){clearTimeout(e)},C}();
-    /*没错，就是上面这一行*/
-    
-   //---
-   if(document.getElementById("clickCanvas")) {
-       function Particle(x, y, radius) {
-           this.init(x, y, radius);
-       }
-       Particle.prototype = {
-           init : function(x, y, radius) {
-               this.alive = true;
-               this.radius = radius || 10;
-               this.wander = 0.15;
-               this.theta = random(TWO_PI);
-               this.drag = 0.92;
-               this.color = '#ffeb3b';
-    
-               this.x = x || 0.0;
-               this.y = y || 0.0;
-               this.vx = 0.0;
-               this.vy = 0.0;
-           },
-           move : function() {
-               this.x += this.vx;
-               this.y += this.vy;
-               this.vx *= this.drag;
-               this.vy *= this.drag;
-               this.theta += random(-0.5, 0.5) * this.wander;
-               this.vx += sin(this.theta) * 0.1;
-               this.vy += cos(this.theta) * 0.1;
-               this.radius *= 0.96;
-               this.alive = this.radius > 0.5;
-           },
-           draw : function(ctx) {
-               ctx.beginPath();
-               ctx.arc(this.x, this.y, this.radius, 0, TWO_PI);
-               ctx.fillStyle = this.color;
-               ctx.fill();
-           }
-       };
-       var MAX_PARTICLES = 50;
-       //圆点颜色库
-       var COLOURS = [ "#5ee4ff", "#f44033", "#ffeb3b", "#F38630", "#FA6900", "#f403e8", "#F9D423" ];
-       var particles = [];
-       var pool = [];
-       var clickparticle = Sketch.create({
-           container : document.getElementById('clickCanvas')
-       });
-       clickparticle.spawn = function(x, y) {
-           if (particles.length >= MAX_PARTICLES)
-               pool.push(particles.shift());
-           particle = pool.length ? pool.pop() : new Particle();
-           particle.init(x, y, random(5, 20));//圆点大小范围
-           particle.wander = random(0.5, 2.0);
-           particle.color = random(COLOURS);
-           particle.drag = random(0.9, 0.99);
-           theta = random(TWO_PI);
-           force = random(1, 5);
-           particle.vx = sin(theta) * force;
-           particle.vy = cos(theta) * force;
-           particles.push(particle);
-       };
-       clickparticle.update = function() {
-           var i, particle;
-           for (i = particles.length - 1; i >= 0; i--) {
-               particle = particles[i];
-               if (particle.alive)
-                   particle.move();
-               else
-                   pool.push(particles.splice(i, 1)[0]);
-           }
-       };
-       clickparticle.draw = function() {
-           clickparticle.globalCompositeOperation = 'lighter';
-           for ( var i = particles.length - 1; i >= 0; i--) {
-               particles[i].draw(clickparticle);
-           }
-       };
-       //按下时显示效果，mousedown 换成 click 为点击时显示效果（我用的 click）
-       document.addEventListener("mousedown", function(e) {
-           var max, j;
-           //排除一些元素
-           "TEXTAREA" !== e.target.nodeName && "INPUT" !== e.target.nodeName && "A" !== e.target.nodeName && "I" !== e.target.nodeName && "IMG" !== e.target.nodeName 
-           && function() {
-               for (max = random(15, 20), j = 0; j < max; j++) 
-               clickparticle.spawn(e.clientX, e.clientY);
-           }();
-       });
-   }
-</script>
-
-    <!-- PWA -->
-    <script>
-        // 判断浏览器是否支持 service worker
-        if ('serviceWorker' in navigator) {
-            // load 事件完成之后才注册 service worker
-            window.addEventListener('load', function () {
-                // 注册 sw.js
-                navigator.serviceWorker.register('/sw.js')
-                    .then(function (registration) {
-                        // 注册成功
-                        console.log('sw.js 注册成功', registration.scope);
-                    })
-                    .catch(function (err) {
-                        // 注册失败:(
-                        console.log('sw.js 注册失败 ', err);
-                    });
-            });
+        #banner {
+            background-image: url("https://q2.a1pic.cn/2021/12/23/IYXs.jpg");
+            background-size:cover;
+            background-repeat:no-repeat;
+            background-attachment:fixed;
+            background-position: center center;
+            height: 100vh;
+            width: 100%;
+            /* filter: brightness(0.8);
+            -webkit-filter: brightness(0.8);
+            -moz-filter: brightness(0.8);
+            -o-filter:  brightness(0.8);
+            -ms-filter:  brightness(0.8); */
         }
-    </script>
-   
-    <!-- PWA END -->
-    <!-- Banner -->
+        .banner-title {
+            font-weight: 400;
+            filter: brightness(1.3);
+            -webkit-filter: brightness(1.3);
+            -moz-filter: brightness(1);
+            -o-filter:  brightness(1);
+            -ms-filter:  brightness(1);
+        }
+    </style>
+    <script>
 
-    <div class="mdui-appbar mdui-shadow-0 mdui-appbar-fixed mdui-text-color-white">
-        <div class="mdui-toolbar mdui-color-theme">
-            <a href="javascript:;" class="mdui-btn mdui-btn-icon"
-                mdui-drawer="{target: '#left-drawer',overlay: true}"><i class="mdui-icon material-icons">menu</i></a>Fmkliの鸽子主页</a>
-            <div class="mdui-toolbar-spacer"></div>
+    </script>
+</head>
+<body onload="test()">
+    <!-- 工具栏 -->
+    <div class="mdui-appbar mdui-appbar-fixed">
+        <div class="mdui-toolbar mdui-color-cyan">
+        <a class="mdui-btn" mdui-drawer="{target: '#left-drawer'}"><i class="mdui-icon material-icons">menu</i></a>
+        <a href="javascript:;" class="mdui-typo-title">Fmkli的鸽子主页</a>
+        <div class="mdui-toolbar-spacer"></div>
+        <!-- 按钮 -->
+        <a href="javascript:location.reload();" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">refresh</i></a>
+        <a class="mdui-btn" mdui-drawer="{target: '#left-drawer'}"><i class="mdui-icon material-icons">menu</i></a>
+        </div>
+        <div class="mdui-tab mdui-color-cyan" mdui-tab>
+        <a href="#tab1" class="mdui-ripple mdui-ripple-white">主页</a>
+        <a href="#tab2" class="mdui-ripple mdui-ripple-white">更多</a>
+        <a href="#tab3" class="mdui-ripple mdui-ripple-white">关于</a>
         </div>
     </div>
     <nav id="banner" class="mdui-container-fluid mdui-valign">
         <h1 style="color:white!important;" class="banner-title mdui-center mdui-text-color-theme">
-            <center>Fmkli在此祝大家新年快乐！万事如意！</center><br><center>Fmkliの网站</center><br>
+            欢迎访问Fmkli的网站，往下翻！<br>图片地点：天目湖
         </h1>
     </nav>
 
-    <!-- 介绍卡片 -->
-    <div class="mdui-card card">
+    <div class="mdui-container-fluid">
+        <div id="tab1">
+            <br>
+            <!-- 介绍卡片 -->
+            <div class="mdui-card card">
 
-        <div class="mdui-card-primary">
-            <div class="mdui-card-primary-title">Fmkli</div>
-        </div>
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">Fmkli</div>
+                </div>
+                <!-- 卡片的内容 -->
+                <div class="mdui-card-content mdui-typo">
+                    <p>本主页由Fmkli使用mdui框架制作，使用了一些Yfun的主页css代码，谢谢！<br>
+                    蛤，小可爱，我是Fmkli，一位学生，喜欢编程，喜欢火车！<br />详细可看关于页面</br>还请多多指教！
+                    <br>欢迎在 Bilibili 上 <a href="https://space.bilibili.com/543825809" >关注我</a> 或 通过BiliBili<a
+                        href="https://message.bilibili.com/#/whisper/mid543825809" rel="nofollow">与我交流awa</a>。
+                    <br>你也可以通过邮箱找到我：<code>fmkli2@qq.com</code>
+                    <br>留言去：<a href="https://blog.imfmkli.top/留言板/">https://blog.imfmkli.top/留言板/</a>
+                    <br>也可以捐赠一下我拉（害羞羞）：<a href="https://afdian.net/@imfmkli">爱发电</a>
+                </div>
+            </div>
 
-        <!-- 卡片的内容 -->
-        <div class="mdui-card-content mdui-typo"><img src="//bu.dusays.com/2021/08/27/ec457187a2a54.png" width="100" height="100"><br>蛤，小可爱，我是Fmkli，一位学生，喜欢编程，喜欢火车！<br />详细可看<a href="https://blog.imfmkli.top/关于我/">https://blog.imfmkli.top/关于我/</a></br>还请多多指教！
-            <br>欢迎在 Bilibili 上 <a href="https://space.bilibili.com/543825809" rel="nofollow">关注我</a> 或 通过BiliBili<a
-                href="https://message.bilibili.com/#/whisper/mid543825809" rel="nofollow">与我交流awa</a>。
-            <br>你也可以通过邮箱找到我：<code>fmkli2@qq.com</code>
-            <br>留言去：<a href="https://blog.imfmkli.top/留言板/">https://blog.imfmkli.top/留言板/</a>
-            <br>也可以捐赠一下我拉（害羞羞）：<a href="https://afdian.net/@imfmkli">爱发电</a>
-        </div>
+            <br>
+            <!-- 诗词卡片 -->
+            <div class="mdui-card card">
 
-    </div>
+                <div class="mdui-card-primary">
+                    <div id="hitokoto_from" class="mdui-card-primary-title">诗词获取中！</div>
+                </div>
 
-    <!-- 公告 -->
-    <div class="mdui-card card">
-
-        <div class="mdui-card-primary">
-            <div class="mdui-card-primary-title">公告</div>
-        </div>
-
-        <!-- 卡片的内容 -->
-        <div class="mdui-card-content mdui-typo">
-        <h4>域名换新<a href="http://www.imfmkli.top/">imfmkli.top</a><br></h4>
-        <p></p>
-        </div>
-
-    </div>
-
-    <!-- RRS -->
-    <div class="mdui-card card">
-
-        <div class="mdui-card-primary">
-            <div class="mdui-card-primary-title">博客RRS</div>
-        </div>
-
-        <!-- 卡片的内容 -->
-        <div class="mdui-card-content mdui-typo">
-        Fmkli的博客的RRS：<a href="https://blog.imfmkli.top/feed">https://blog.imfmkli.top/feed</a><br>欢迎订阅
-        </div>
-
-    </div>
-
-    <!-- 近期文章，但是有点问题，撤掉
-    <div class="mdui-card card">
-
-        <div class="mdui-card-primary">
-            <div class="mdui-card-primary-title">近期文章</div>
-            <div class="mdui-card-primary-subtitle">Fmkli 发布的 5篇 瞎乱写文章和状态</div>
-        </div>
-
-        <div class="mdui-card-content" id="posts">
-            <div id="posts-label" class="mdui-list"></div>
-            <div id="post-spinner" class="mdui-spinner mdui-spinner-colorful mdui-center"></div>
-        </div>
-
-    </div>-->
-
-    <!-- 最新天气，CYF 的 API 删了，到时候再补上 
-    <div class="mdui-card card">
-
-        <div class="mdui-card-primary">
-            <div class="mdui-card-primary-title">天气情况</div>
-            <div class="mdui-card-primary-subtitle">您所在位置的天气信息</div>
-        </div>
-        
-        <div class="mdui-card-content" id="posts">
-            <div class="mdui-tab mdui-tab-full-width" mdui-tab>
-                <a href="#day-weather" class="mdui-ripple">早晨</a>
-                <a href="#night-weather" class="mdui-ripple">夜晚</a>
+                <!-- 卡片的内容 -->
+                <div class="mdui-card-content mdui-typo">
+                    <!-- 请注意，以下的示例包含超链接，您可能需要手动配置样式使其不变色。如果您嫌麻烦，可以移除。 -->
+                        <p id="hitokoto"><a href="#" id="hitokoto_text">:D 获取中...</a></p></center>
+                    <!-- 以下写法，选取一种即可 -->
+                </div>
 
             </div>
-            <div id="day-weather"></div>
-            <div id="night-weather"></div>
-            <div id="weather-spinner" class="mdui-spinner mdui-spinner-colorful mdui-center"></div>
-        </div>
+            <br>
+            <!-- 提示 -->
+            <div class="mdui-card card">
 
-    </div>-->
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">提示</div>
+                </div>
+
+                <!-- 卡片的内容 -->
+                <div class="mdui-card-content mdui-typo">
+                    可以通过上面的Tab选择卡切换页面
+                </div>
+
+            </div>
+        </div>
+        <div id="tab2">
+            <br>
+            <!-- 公告 -->
+            <div class="mdui-card card">
+
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">公告</div>
+                </div>
+
+                <!-- 卡片的内容 -->
+                <div class="mdui-card-content mdui-typo">
+                <h4>域名换新<a href="http://www.imfmkli.top/">imfmkli.top</a><br></h4>
+                <p></p>
+                </div>
+            </div>
+            <br>
+            <!-- RRS -->
+            <div class="mdui-card card">
+
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">博客RRS</div>
+                </div>
+
+                <!-- 卡片的内容 -->
+                <div class="mdui-card-content mdui-typo">
+                Fmkli的博客的RRS：<a href="https://blog.imfmkli.top/feed">https://blog.imfmkli.top/feed</a><br>欢迎订阅
+                </div>
+
+            </div>
+
+        </div>
+        <div id="tab3">
+            <br>
+            <!-- 关于卡片 -->
+            <div class="mdui-card card">
+
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">关于我</div>
+                </div>
+
+                <!-- 卡片的内容 -->
+                <div class="mdui-card-content mdui-typo">
+                    <p>
+                        <h1>我在2020年4月25日星期六成功建立B站号</h1><br>
+            
+                        学生一个<br>
+                        QQ：2058264685<br>
+                        Email：fmkli2@qq.com / fmkli@mail.fmkli.ga (不常看)<br>
+            
+                        bilibili：烤全鸽Fmkli（https://space.bilibili.com/543825809）<br>
+            
+                        Github：Fmkli<br>
+            
+                        （网站搭建的也有15个左右吧）<br>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
 
     <!-- 抽屉栏 -->
-    <div class="mdui-drawer mdui-color-white mdui-drawer-close" id="left-drawer">
+    <div class="mdui-drawer mdui-drawer-close" id="left-drawer">
         <ul class="mdui-list">
             <li class="mdui-subheader">你拉开了这个网站的抽屉！</li>
             <li class="mdui-subheader">我的网站</li>
@@ -330,28 +246,42 @@
                 <i class="mdui-list-item-icon mdui-icon material-icons">add_to_queue</i>
                 <div class="mdui-list-item-content">说说の后台</div>
             </li>
-            
-            
-            
-            
          </ul>
-
     </div>
 
+    <div>
+        <!-- 现代写法，推荐(不支持 IE) -->
+        <script>
+        fetch('https://v1.hitokoto.cn/?c=i')
+            .then(response => response.json())
+            .then(data => {
+                const from = document.getElementById('hitokoto_from')
+                const hitokoto = document.getElementById('hitokoto_text')
+                hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
+                hitokoto.innerText = data.hitokoto
+                from.innerText = '诗词：' + data.from
+            })
+            .catch(console.error)
+        </script>
+    </div>
+
+    <script>
+        function test(){
+            mdui.snackbar({
+                message: '欢迎光临！'
+            });
+        }
+    </script>
     <footer class="mdui-text-center">
         <p>&copy; 2022 Fmkli<br></p>
-         <p><a href="https://icp.gov.moe/?keyword=20221145" target="_blank" rel="nofollow" class="a-p">萌ICP备20221145号</a><br></p>
-        <p>感谢<a href="https://yfun.top">YFun</a>送的此页面！</p>
+        <p><a href="https://icp.gov.moe/?keyword=20221145" target="_blank" rel="nofollow" class="a-p">萌ICP备20221145号</a></p><br>
     </footer>
-
-    <script src="./mdui2/js/mdui.min.js"
-        integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
-        crossorigin="anonymous"></script>
-    <script src="home.js"></script>
-    <!--  -->
-    <div id="cc-myssl-id" style="position: fixed;right: 0;bottom: 0;width: 65px;height: 65px;z-index: 99;">
-        <a href="https://myssl.com/www.imfmkli.top?from=mysslid"><img src="https://static.myssl.com/res/images/myssl-id.png" alt="" style="width:100%;height:100%"></a>
-    </div>
+    <style type="text/css">
+		.a-p {
+			color:black;
+			text-decoration:none;
+		}
+	</style>
+<script src="https://cdn.w3cbus.com/library/mdui/1.0.2/js/mdui.min.js"></script>
 </body>
-
 </html>
