@@ -189,9 +189,9 @@
                 <div class="mdui-list-item-content">Fmkliの论坛</div>
             </li>
 
-            <li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://awa.imfmkli.top/'">
+            <li class="mdui-list-item mdui-ripple" mdui-dialog="{target: '#exampleDialog'}>
                 <i class="mdui-list-item-icon mdui-icon material-icons">wifi_tethering</i>
-                <div class="mdui-list-item-content">FK的即时通讯（手机访问）</div>
+                <div class="mdui-list-item-content">FK的即时通讯</div>
             </li>
             
             <li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://fkpan.herokuapp.com/'">
@@ -254,6 +254,15 @@
                 <div class="mdui-list-item-content">说说の后台</div>
             </li>
          </ul>
+    </div>
+    <!-- 注意 -->
+    <div class="mdui-dialog" id="exampleDialog">
+      <div class="mdui-dialog-title">本站只能手机访问！</div>
+      <div class="mdui-dialog-content">你确认吗？</div>
+      <div class="mdui-dialog-actions">
+        <button class="mdui-btn mdui-ripple" mdui-dialog-close>不行</button>
+        <button href="https://awa.imfmklit.top" class="mdui-btn mdui-ripple" mdui-dialog-confirm>确认！</button>
+      </div>
     </div>
 
     <div>
