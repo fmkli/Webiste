@@ -272,6 +272,21 @@
             mdui.snackbar({
                 message: '欢迎光临！'
             });
+	    mdui.dialog({
+                title: '新年快乐！',
+                content: '建站两周年啦！<br>感谢支持！',
+                buttons: [
+                {
+                    text: '取消'
+                },
+                {
+                    text: '确认',
+                    onClick: function () {
+                    mdui.alert('好耶！');
+                    }
+                }
+                ]
+            })
         }
     </script>
     <br>
