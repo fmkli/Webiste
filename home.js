@@ -31,7 +31,7 @@ document.onreadystatechange = function () {
         /* Posts */
         $.ajax({
             method: 'GET',
-            url: 'https://api.rss2json.com/v1/api.json?rss_url=https://blog.fmkli.ga/feed/',
+            url: 'https://api.rss2json.com/v1/api.json?rss_url=https://blog.imfmkli.top/feed/',
             // url: 'https://blog.fmkli.ga/search.json',
             success: function (data) {
                 var data = JSON.parse(data).items;
@@ -40,7 +40,7 @@ document.onreadystatechange = function () {
                 for (var i = 0; i <= 4; i++) {
                     var element = document.createElement('a');
                     element.href = data[i].link;
-                    // element.href = "https://blog.fmkli.ga" + data[i].url;
+                    // element.href = "https://blog.imfmkli.top" + data[i].url;
                     element.classList = "mdui-list-item mdui-ripple";
                     element.textContent = data[i].title;
                     element.target = "blank"
