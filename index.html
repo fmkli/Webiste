@@ -153,12 +153,13 @@
                 </div>
                 <!-- 卡片的内容 -->
                 <div class="mdui-card-content mdui-typo">
-		    <button class="mdui-btn mdui-color-theme-accent mdui-ripple" onclick="buttonClick();">加载留言系统</button>
+		    <center><button class="mdui-btn mdui-color-theme-accent mdui-ripple" onclick="buttonClick();" id="jiazai">加载留言系统</button></center>
 		    <!--留言-->
                     <div id="tcomment"></div>
                     <script src="https://cdn.jsdelivr.net/npm/twikoo@1.4.15/dist/twikoo.all.min.js"></script>
                     <script>
                         function buttonClick(){
+			    jiazai.style.display = "none";
                             twikoo.init({
                 	    envId: 'https://talk-dusky.vercel.app/',
                 	    el: '#tcomment',
