@@ -282,12 +282,6 @@
                 hitokoto.innerText = data.hitokoto
                 from.innerText = '诗词：' + data.from
             })
-        fetch('https://api.fxitw.cn/Api/UserInfo?format=json')
-            .then(response => response.json())
-            .then(data => {
-                const where = document.getElementById('location')
-                where.innerText = data.where
-            })
             .catch(console.error)
         </script>
     </div>
@@ -310,8 +304,7 @@
             <!-- 卡片的内容 -->
             <div class="mdui-card-content mdui-typo mdui-center">
                 <p><a href="https://icp.gov.moe/?keyword=20221145" target="_blank" rel="nofollow" class="a-p">萌ICP备20221145号</a><br>
-		    <span class="footer-icp"><img class="ipc-icon" src="https://union.estu.site/UCP.png" alt="" width="20" height="20" ><a class="icpgrass" href="https://union.estu.site/" target="_blank">草UCP-20220116-66</a></span>
-                    <p id="where"><a id="whereisme">:D 获取中...</a></p></center>
+		    <span class="footer-icp"><img class="ipc-icon" src="https://union.estu.site/UCP.png" alt="" width="20" height="20" ><a class="icpgrass" href="https://union.estu.site/" target="_blank">草UCP-20220116-66</a></span></p>
 		</p>
             </div>
         </div>
