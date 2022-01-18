@@ -294,32 +294,6 @@
         }
     </script>
 
-    <script>
-    fetch('https://api.fxitw.cn/Api/UserInfo',{
-        method:"post",
-        mode: 'cors',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body:JSON.stringify({
-            format : 'json',
-        })
-    }).then(
-        response => response.json()
-    ).then(
-        res => {
-            // 状态码 200 表示请求成功
-            if(res.data.code == 200){
-                console.log(res.data)
-            }else{
-                console.log(res.data)
-            }
-        }
-    ).catch(
-        console.error
-    )
-    </script>
-
 
     <br>
 
