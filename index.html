@@ -198,7 +198,7 @@
 
                 <!-- 卡片的内容 -->
                 <div class="mdui-card-content mdui-typo">
-	    		<center><button class="mdui-btn mdui-color-theme-accent mdui-ripple mdui-btn-raised" onclick="buttonClickss();" id="jiazaiss">加载说说</button></center>
+	    		<center><button class="mdui-btn mdui-color-theme-accent mdui-ripple mdui-btn-raised" onclick="buttonClickss();" href="javascript:loadScript('https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@1.2.0/talk_user.js','');" id="jiazaiss">加载说说</button></center>
 	    		<!-- 引用 HexoPlusPlus_Talk组件 -->
 	    		<!-- 创建HexoPlusPlus_Talk容器 -->
 	    		<div id="hpp_talk"></div>
@@ -406,10 +406,30 @@
     </style>
 
 
-<script src="./mdui/js/mdui.min.js"></script>
-<script src="./home.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/twikoo@1.4.15/dist/twikoo.all.min.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@1.2.0/talk_user.js"></script>
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@1.2.0/talk.css"> 
+    <script src="./mdui/js/mdui.min.js"></script>
+    <script src="./home.js"></script>
+    <script src="https://unpkg.com/twikoo@1.4.15/dist/twikoo.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@1.2.0/talk_user.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@1.2.0/talk.css"> 
+<script type="text/javascript">
+function loadScript(url,callback){ 
+   var script = document.createElement("script");
+   script.type = "text/javascript"; 
+   script.src = url;
+   if (script.readyState){//IE 
+      script.onreadystatechange = function(){ 
+         if (script.readyState ==  "loaded" || script.readyState == "complete"){ 
+            script.onreadystatechange = null;
+            eval(callback + '()');
+         } 
+      }; 
+   } else { //Others: Firefox, Safari, Chrome, and Opera 
+      script.onload = function(){ 
+         eval(callback + '()');
+      }; 
+   }
+   document.body.appendChild(script);
+}
+</script>
 </body>
 </html>
