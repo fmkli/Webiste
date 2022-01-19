@@ -189,7 +189,7 @@
 
         <div id="tab5">
             <br>
-            <!-- 关于卡片 -->
+            <!-- 说说卡片 -->
             <div class="mdui-card card">
 
                 <div class="mdui-card-primary">
@@ -198,33 +198,15 @@
 
                 <!-- 卡片的内容 -->
                 <div class="mdui-card-content mdui-typo">
-	    		<center><button class="mdui-btn mdui-color-theme-accent mdui-ripple mdui-btn-raised" onclick="buttonClickss();" href="javascript:loadScript('https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@1.2.0/talk_user.js','');" id="jiazaiss">加载说说</button></center>
-	    		<!-- 引用 HexoPlusPlus_Talk组件 -->
-	    		<!-- 创建HexoPlusPlus_Talk容器 -->
-	    		<div id="hpp_talk"></div>
-	    		<!-- 激活HexoPlusPlus_Talk -->
-	    		<script>
-				function buttonClickss(){
-			    	    jiazaiss.style.display = "none";
-	     	  	  	    new hpp_talk({
-	    		        	id:"hpp_talk",//容器id
-       	    		        	domain: "say.fmkli.workers.dev/",//您的HexoPlusPlus域名，如admin.cyfan.top
-	    		        	limit: 10,//单次获取的最多条数
-	   		        	start: 0,//从第几条开始
-	  		        	//themecss: "" //自定义说说主题，可选【仅1.1.0版本及以上使用】
-	         	   	    });
-				}
-	    		</script>
-	    		<p>嘿嘿嘿，HPP魔改亿下（<span class="heimu">不就是去掉其他的按钮嘛</span>），就成了有后台的说说啦！<br>
-	    		（大佬别打我）<br>
-	    		后台：<a href="https://say.fmkli.workers.dev/">https://say.fmkli.workers.dev/</a></p><br>
-	    		<h4>问：为什么看不到说说？答：请检查是否能访问<a href="//cdn.jsdelivr.net"> cdn.jsdelivr.net </a>不能访问则无法显示说说</h4>
+	    		<center><button class="mdui-btn mdui-color-theme-accent mdui-ripple mdui-btn-raised" href="https://blog.imfmkli.top/说说/" id="jiazaiss">加载说说（前往博客）</button><br>jsd拖慢网站速度，跳转去博客</center>
+
                 </div>
 
             </div>
         </div>
 
 	<div id="tab6">
+            <br>
 	    <!-- 近期文章 -->
     	    <div class="mdui-card card">
 
@@ -409,26 +391,6 @@
     <script src="./mdui/js/mdui.min.js"></script>
     <script src="./home.js"></script>
     <script src="https://unpkg.com/twikoo@1.4.15/dist/twikoo.all.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/HexoPlusPlus/HexoPlusPlus@1.2.0/talk.css"> 
-<script type="text/javascript">
-function loadScript(url,callback){ 
-   var script = document.createElement("script");
-   script.type = "text/javascript"; 
-   script.src = url;
-   if (script.readyState){//IE 
-      script.onreadystatechange = function(){ 
-         if (script.readyState ==  "loaded" || script.readyState == "complete"){ 
-            script.onreadystatechange = null;
-            eval(callback + '()');
-         } 
-      }; 
-   } else { //Others: Firefox, Safari, Chrome, and Opera 
-      script.onload = function(){ 
-         eval(callback + '()');
-      }; 
-   }
-   document.body.appendChild(script);
-}
-</script>
+
 </body>
 </html>
