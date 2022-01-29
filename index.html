@@ -24,7 +24,6 @@
         <a href="#tab3" class="mdui-ripple mdui-ripple-white">关于</a>
         <a href="#tab4" class="mdui-ripple mdui-ripple-white">留言</a>
         <a href="#tab5" class="mdui-ripple mdui-ripple-white">说说</a>
-        <a href="#tab6" class="mdui-ripple mdui-ripple-white">博客</a>
         </div>
     </div>
 	
@@ -164,6 +163,22 @@
                 </div>
 
             </div>
+	
+	    <br>	
+	
+            <!-- RRS -->
+            <div class="mdui-card card">
+
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">博客RRS</div>
+                </div>
+
+                <!-- 卡片的内容 -->
+                <div class="mdui-card-content mdui-typo">
+                Fmkli的博客的RRS：<a href="https://blog.imfmkli.top/feed">https://blog.imfmkli.top/feed</a><br>欢迎订阅
+                </div>
+
+            </div>
 
 	
         </div>
@@ -265,40 +280,6 @@
             </div>
         </div>
 
-	<div id="tab6">
-            <br>
-	    <!-- 近期文章 -->
-    	    <div class="mdui-card card">
-
-        	<div class="mdui-card-primary">
-            	    <div class="mdui-card-primary-title">近期文章</div>
-           	    <div class="mdui-card-primary-subtitle">最近在 Fmkli 上发布的 5 瞎乱写文章和状态</div>
-      	        </div>
-
-        	<!-- 卡片的内容 -->
-        	<div class="mdui-card-content" id="posts">
-                    <div id="posts-label" class="mdui-list"></div>
-                    <div id="post-spinner" class="mdui-spinner mdui-spinner-colorful mdui-center"></div>
-                </div>
-
-            </div>
-		
-	    <br>	
-            <!-- RRS -->
-            <div class="mdui-card card">
-
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">博客RRS</div>
-                </div>
-
-                <!-- 卡片的内容 -->
-                <div class="mdui-card-content mdui-typo">
-                Fmkli的博客的RRS：<a href="https://blog.imfmkli.top/feed">https://blog.imfmkli.top/feed</a><br>欢迎订阅
-                </div>
-
-            </div>
-	
-	</div>
 </div>
 
 
@@ -461,7 +442,7 @@
    		     if (String(snum).length == 1) {
    		         snum = "0" + snum;
    		     }
-   		     document.getElementById("timeDate").innerHTML = " | 本站已安全运行 " + dnum + " 天 ";
+   		     document.getElementById("timeDate").innerHTML = " 本站已安全运行 " + dnum + " 天 ";
     		    document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
  		   }
   		  setInterval("createtime()", 250);
