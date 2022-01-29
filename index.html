@@ -24,6 +24,7 @@
         <a href="#tab3" class="mdui-ripple mdui-ripple-white">关于</a>
         <a href="#tab4" class="mdui-ripple mdui-ripple-white">留言</a>
         <a href="#tab5" class="mdui-ripple mdui-ripple-white">说说</a>
+        <a href="#tab6" class="mdui-ripple mdui-ripple-white">博客</a>
         </div>
     </div>
 	
@@ -149,21 +150,6 @@
 
             </div>
 	
-	    <br>	
-	
-            <!-- RRS -->
-            <div class="mdui-card card">
-
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">博客RRS</div>
-                </div>
-
-                <!-- 卡片的内容 -->
-                <div class="mdui-card-content mdui-typo">
-                Fmkli的博客的RRS：<a href="https://blog.imfmkli.top/feed">https://blog.imfmkli.top/feed</a><br>欢迎订阅
-                </div>
-
-            </div>
 
 	
         </div>
@@ -260,6 +246,38 @@
                 <div class="mdui-card-content mdui-typo">
 	    		<center><a href="https://www.imfmkli.top/say.html"><button class="mdui-btn mdui-color-theme-accent mdui-ripple mdui-btn-raised" href="https://www.imfmkli.top/say.html" id="jiazaiss">加载说说（前往另一个页面）</button></a><br>jsd拖慢网站速度，跳转去另一个页面</center>
 
+                </div>
+
+            </div>
+        </div>
+
+        <div id="tab6">
+            <br>
+	    <!--博客卡片-->
+	    <div class="mdui-card card">
+	        <div class="mdui-card-primary">
+	        <div class="mdui-card-primary-title">近期文章</div>
+	        <div class="mdui-card-primary-subtitle">最近在 Fmkli's Blog 上发布的 5 篇文章和状态</div>
+	        </div>
+
+	        <div class="mdui-card-content" id="posts">
+  	            <div id="posts-label" class="mdui-list"></div>
+   	            <div id="post-spinner" class="mdui-spinner mdui-spinner-colorful mdui-center"></div>
+  	        </div>
+	    </div>
+
+	    <br>
+	
+            <!-- RRS -->
+            <div class="mdui-card card">
+
+                <div class="mdui-card-primary">
+                    <div class="mdui-card-primary-title">博客RRS</div>
+                </div>
+
+                <!-- 卡片的内容 -->
+                <div class="mdui-card-content mdui-typo">
+                Fmkli的博客的RRS：<a href="https://blog.imfmkli.top/feed">https://blog.imfmkli.top/feed</a><br>欢迎订阅
                 </div>
 
             </div>
@@ -459,6 +477,7 @@
 
 
     <script src="./mdui/js/mdui.min.js"></script>
+    <script src="./home.js"></script>
     <script>
 	function buttonClickww(){
 	    window.location.href='https://www.imfmkli.top/talk.html'
