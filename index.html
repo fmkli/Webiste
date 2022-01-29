@@ -57,21 +57,6 @@
                 </div>
             </div>
 	    
-            <br>
-            <!-- 提示 -->
-            <div class="mdui-card card">
-
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">提示</div>
-                </div>
-
-                <!-- 卡片的内容 -->
-                <div class="mdui-card-content mdui-typo">
-                    可以通过上面的Tab选择卡切换页面
-                </div>
-
-            </div>
-	    
 	    <br>
 	    
             <!-- 公告 -->
@@ -86,62 +71,62 @@
                 <h4>域名换新<a href="http://www.imfmkli.top/">imfmkli.top</a><br></h4>
                  <script type="text/javascript">
 
-  function countTime() {
+ 			 function countTime() {
 
-            //获取当前时间
+  			          //获取当前时间
 
-            var date = new Date();
+   			         var date = new Date();
 
-            var now = date.getTime();
+    			        var now = date.getTime();
 
-            //设置截止时间
+    			        //设置截止时间
 
-            var endDate = new Date("2022-2-1 0:0:0");
+     			       var endDate = new Date("2022-2-1 0:0:0");
 
-            var end = endDate.getTime();
+     			       var end = endDate.getTime();
 
-            //获取截止时间和当前时间的时间差
+       			     //获取截止时间和当前时间的时间差
 
-            var leftTime = end-now;
+       			     var leftTime = end-now;
 
-            //定义变量 d,h,m,s分别保存天数，小时，分钟，秒
+          			  //定义变量 d,h,m,s分别保存天数，小时，分钟，秒
 
-            var d,h,m,s;
+        			    var d,h,m,s;
 
-            //判断剩余天数，时，分，秒
+      			      //判断剩余天数，时，分，秒
 
-            if (leftTime>=0) {
+      			      if (leftTime>=0) {
 
-                d = Math.floor(leftTime/1000/60/60/24);
+        			        d = Math.floor(leftTime/1000/60/60/24);
 
-                h = Math.floor(leftTime/1000/60/60%24);
+             			   h = Math.floor(leftTime/1000/60/60%24);
 
-                m = Math.floor(leftTime/1000/60%60);
+             			   m = Math.floor(leftTime/1000/60%60);
 
-                s = Math.floor(leftTime/1000%60);                   
+             			   s = Math.floor(leftTime/1000%60);                   
+			
+          			  }
 
-            }
+         			   //将时间赋值到div中
 
-            //将时间赋值到div中
+          			  document.getElementById("day").innerHTML = d+"天";
 
-            document.getElementById("day").innerHTML = d+"天";
+         			   document.getElementById("hour").innerHTML = h+"时";
 
-            document.getElementById("hour").innerHTML = h+"时";
+        			    document.getElementById("minute").innerHTML = m+"分";
 
-            document.getElementById("minute").innerHTML = m+"分";
+      			      document.getElementById("second").innerHTML = s+"秒";
 
-            document.getElementById("second").innerHTML = s+"秒";
-
-            //递归每秒调用countTime方法，显示动态时间效果
-            setTimeout(countTime,1000);
-        }
- </script>
-  <div>还有
-         <span id="day"></span>
-         <span id="hour"></span>
-         <span id="minute"></span>
-         <span id="second"></span> 就过年啦，祝大家新年快乐！
-    </div>
+       			     //递归每秒调用countTime方法，显示动态时间效果
+        			    setTimeout(countTime,1000);
+     			   }
+		 </script>
+  		<div>还有
+       		  <span id="day"></span>
+       		  <span id="hour"></span>
+     		    <span id="minute"></span>
+     		    <span id="second"></span> 就过年啦，祝大家新年快乐！
+   		 </div>
                 <p></p>
                 </div>
             </div>
