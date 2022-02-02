@@ -439,69 +439,6 @@
 	    window.location.href='https://www.imfmkli.top/talk.html'
   	}
     </script>
-<script>
-	        // 鼠标左、右键标志，参考：https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent/MouseEvent
-        const MOUSE_LEFT_BUTTON = 0
-        const MOUSE_RIGHT_BUTTON = 2
-        
-        window.onload = (event) => {
-            console.log(event);
-            main();
-        }
-
-        function main() {
-            let menu = null;
-            
-            window.oncontextmenu = (event) => { // 禁用原始鼠标右键菜单
-                // console.log(event);
-                // event.preventDefault();
-                return false;
-            }
-
-            document.onmouseup = (event) => {
-                console.log(event);
-                // console.log(event.clientX, event.clientY);
-
-                if(event.button === MOUSE_RIGHT_BUTTON) { // 鼠标右键
-                    if(menu !== null) {
-                        document.body.removeChild(menu); // 移除菜单
-                    }
-                    
-                    menu = document.createElement("ul"); // 菜单
-                    menu.className = "context-menu";
-                    menu.style.top = event.clientY + "px";
-                    menu.style.left = event.clientX + "px";
-                    
-                    const item0 = document.createElement("li"); // 菜单子项 0
-                    item0.innerText = "个性化";
-                    item0.className = "context-menu-item";
-                    
-                    const item1 = document.createElement("li"); // 菜单子项 1
-                    item1.innerText = "显示设置";
-                    item1.className = "context-menu-item";
-                    
-                    menu.appendChild(item0); // 添加菜单子项
-                    menu.appendChild(item1);
-                    
-                    document.body.appendChild(menu); // 添加（展现）菜单
-                } else if(event.button === MOUSE_LEFT_BUTTON) { // 鼠标左键
-                    if(menu !== null) {
-                        document.body.removeChild(menu); // 移除菜单
-                        menu = null;
-                    }
-                    
-                    const target = event.target; // 获取被鼠标左键点击的目标
-                    if(target.className === "context-menu-item") {
-                        alert(target.innerText);
-                    }
-                }
-            }
-
-            document.onmousedown = (event) => {
-                // console.log(event);
-            }
-        };
-</script>
 
 </body>
 </html>
