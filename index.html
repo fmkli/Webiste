@@ -55,35 +55,6 @@
             </div>
 	    
 	    
-            <!-- 公告 -->
-            <div class="mdui-card card">
-
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">公告</div>
-                </div>
-
-                <!-- 卡片的内容 -->
-                <div class="mdui-card-content mdui-typo">
-                <h4>域名换新<a href="http://www.imfmkli.top/">imfmkli.top</a><br></h4>
-		</div>
-            </div>
-	    
-	    
-	    <!-- 诗词卡片 -->
-            <div class="mdui-card card">
-
-                <div class="mdui-card-primary">
-                    <div id="hitokoto_from" class="mdui-card-primary-title">诗词获取中！</div>
-                </div>
-
-                <!-- 卡片的内容 -->
-                <div class="mdui-card-content mdui-typo">
-                    <!-- 请注意，以下的示例包含超链接，您可能需要手动配置样式使其不变色。如果您嫌麻烦，可以移除。 -->
-                        <p id="hitokoto"><a href="#" id="hitokoto_text">:D 获取中...</a></p></center>
-                    <!-- 以下写法，选取一种即可 -->
-                </div>
-
-            </div>
 	
 
 	
@@ -116,27 +87,6 @@
                 </div>
 
             </div>
-	
-	
-	    <!--捐赠卡片-->
-	    <div class="mdui-container card">
-                <div class="mdui-panel" mdui-panel>
-                    <div class="mdui-panel-item">
-                        <div class="mdui-panel-item-header">捐赠我<div class="mdui-toolbar-spacer"></div><i class="mdui-icon material-icons">keyboard_arrow_down</i></div>
-        		<div class="mdui-panel-item-body">
-		    	    <center>
-                    	    	<h3>若是捐赠将万分感谢，捐赠名单也会给出
-                    	    	</3><br>
-		    	    	<h4><a href="https://afdian.net/@imfmkli">爱发电捐赠</a></h4>
-                    	    	<br><h3>捐赠名单（按捐赠顺序）</h3><br>
-		    	    	<ol>
-        		            <li>无</li>
-    		    	    	</ol>
-		            </center>
-        		</div>
-      		    </div>
-    		</div>
-  	    </div>
 
 
             
@@ -197,19 +147,6 @@
   	        </div>
 	    </div>
 	
-            <!-- RRS -->
-            <div class="mdui-card card">
-
-                <div class="mdui-card-primary">
-                    <div class="mdui-card-primary-title">博客RRS</div>
-                </div>
-
-                <!-- 卡片的内容 -->
-                <div class="mdui-card-content mdui-typo">
-                Fmkli的博客的RRS：<a href="https://blog.imfmkli.top/atom.xml">https://blog.imfmkli.top/atom.xml</a><br>欢迎订阅
-                </div>
-
-            </div>
         </div>
 
     </div>
@@ -321,22 +258,6 @@
          </ul>
     </div>
 
-
-    <div>
-        <!-- 现代写法，推荐(不支持 IE) -->
-        <script>
-        fetch('https://v1.hitokoto.cn/?c=i')
-            .then(response => response.json())
-            .then(data => {
-                const from = document.getElementById('hitokoto_from')
-                const hitokoto = document.getElementById('hitokoto_text')
-                hitokoto.href = 'https://hitokoto.cn/?uuid=' + data.uuid
-                hitokoto.innerText = data.hitokoto
-                from.innerText = '诗词：' + data.from
-            })
-            .catch(console.error)
-        </script>
-    </div>
 
     <script>
         function test(){
