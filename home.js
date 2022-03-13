@@ -58,13 +58,6 @@ document.onreadystatechange = function () {
 }
 
 
-// 赞赏栏
-var tab = new mdui.Tab('#support-tab');
-document.getElementById('support').addEventListener('open.mdui.dialog', function () {
-    tab.handleUpdate();
-});
-
-
 var support = new mdui.Dialog('#support');
 
 function donate() {
