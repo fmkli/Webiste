@@ -7,6 +7,9 @@ function getParam(reqParam) {
     return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
 }
 
+// 踩蛋
+console.log("就欢迎一下下你来到本孤寡1IP小站吧！嘿嘿嘿")
+
 // 改变顶部导航栏的颜色
 const getScrollPosition = (el = window) => ({
     x: el.pageXOffset !== undefined ? el.pageXOffset : el.scrollLeft,
