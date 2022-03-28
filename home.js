@@ -9,6 +9,7 @@ function getParam(reqParam) {
 
 // 踩蛋
 console.log("就欢迎一下下你来到本孤寡1IP小站吧！嘿嘿嘿")
+console.log("\n %c Fmkli的咕咕主页 %c By Fmkli\n\n","color: #fff; background: #21AAF8; padding:5px 0;","background: #21AAF8; padding:5px 0;");
 
 // 改变顶部导航栏的颜色
 const getScrollPosition = (el = window) => ({
