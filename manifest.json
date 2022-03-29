@@ -9,7 +9,7 @@
   "theme_color"       : "#ACE",
   "icons": [
     {
-      "src"           : "/fmkli.png",
+      "src"           : "/fmkli1.png",
       "sizes"         : "512x512",
       "type"          : "image/png"
     }
