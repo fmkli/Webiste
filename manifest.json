@@ -1,0 +1,17 @@
+{
+  "name"              : "鸽子Fmkli的主页",
+  "short_name"        : "鸽子主页",
+  "description"       : "鸽子Fmkli的主页",
+  "start_url"         : "/",
+  "display"           : "standalone",
+  "orientation"       : "any",
+  "background_color"  : "#ACE",
+  "theme_color"       : "#ACE",
+  "icons": [
+    {
+      "src"           : "/fmkli.png",
+      "sizes"         : "512x512",
+      "type"          : "image/png"
+    }
+  ]
+}
