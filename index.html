@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="keywords" content="Fmkli,个人网站"/>
     <meta name="description" content="Fmkli的小网站，欢迎访问！"/>
-    <link rel="manifest" href="/manifest.json">
     <meta name="viewport" content="width=device-width">
     <title>鸽子主页~</title>
     <link rel="stylesheet" href="./mdui/css/mdui.min.css"/>
@@ -253,21 +252,6 @@
             mdui.snackbar({
                 message: '欢迎光临！'
             });
-	    if ('serviceWorker' in navigator) {
-		window.addEventListener('load', function() {
-		    navigator.serviceWorker.register('/service-worker.js ', {
-			scope: '/'
-		    })
-                   .then(function(registration) {
-                        // 注册成功
-			console.log('ServiceWorker registration successful with scope: ', registration.scope)
-		    })
-		    .catch(function(err) {
-		    	// 注册失败:(
-		    	console.log('ServiceWorker registration failed: ', err)
-		    })
-		})
-	    }
         }
     </script>
 
