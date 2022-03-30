@@ -10,6 +10,11 @@
   "icons": [
     {
       "src"           : "/fmkli1.png",
+      "sizes"         : "350x350",
+      "type"          : "image/png"
+    },
+    {
+      "src"           : "/fmkli.png",
       "sizes"         : "512x512",
       "type"          : "image/png"
     }
