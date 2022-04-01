@@ -9,14 +9,23 @@
     <link rel="stylesheet" href="./mdui/css/mdui.min.css"/>
     <link rel="stylesheet" href="./home.css"/>
     <meta name="google-site-verification" content="PDfOR7Ln1L0DHk6oRWA7dx8WcM4f4XYBwW3LkK18v44" />
+    <style>
+	/* 方法一 */
+        .fanz {
+            transform: rotateY(180deg);   /* 水平镜像翻转 */
+        }
+        .fanz {
+            transform: rotateX(180deg);   /* 垂直镜像翻转 */
+        }
+    </style>
 </head>
-<body onload="test()" class="mdui-appbar-with-toolbar">
+<body onload="test()" class="mdui-appbar-with-toolbar"><div class="fanz">
     <marquee scrollamount="5" direction="left" style="background:white; color:black" onmouseout="this.start();" onmouseover="this.stop();">本站网址已经换成www.imfmkli.top</marquee>
     <div style="position: fixed; background:url('./1920.jpg'); width: 100% ; height: 100% ; left: 0px; top: 0px; z-index: -100; filter: blur(1px)"></div>
     <!-- 工具栏 -->
     <div class="mdui-appbar mdui-appbar-fixed mdui-shadow-0">
         <div class="mdui-toolbar mdui-color-white mdui-shadow-0">
-            <a href="#" class="mdui-btn mdui-ripple" onclick:"yrj();" mdui-drawer="{target: '#left-drawer',overlay: true }"><i class="mdui-icon material-icons">menu</i> 菜单</a>
+            <a href="#" class="mdui-btn mdui-ripple" onclick="yrj();" mdui-drawer="{target: '#left-drawer',overlay: true }"><i class="mdui-icon material-icons">menu</i> 菜单</a>
             <a href="https://www.imfmkli.top" class="mdui-typo-title">鸽子主页</a>
             <div class="mdui-toolbar-spacer"></div>
             <!-- 按钮 -->
@@ -318,5 +327,5 @@
 	    window.location.href='https://www.imfmkli.top/talk.html'
   	}
     </script>
-</body>
+</div></body>
 </html>
