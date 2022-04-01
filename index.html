@@ -16,7 +16,7 @@
     <!-- 工具栏 -->
     <div class="mdui-appbar mdui-appbar-fixed mdui-shadow-0">
         <div class="mdui-toolbar mdui-color-white mdui-shadow-0">
-            <a href="#" class="mdui-btn mdui-ripple" mdui-drawer="{target: '#left-drawer',overlay: true }"><i class="mdui-icon material-icons">menu</i> 菜单</a>
+            <a href="#" class="mdui-btn mdui-ripple" onclick:"yrj();" mdui-drawer="{target: '#left-drawer',overlay: true }"><i class="mdui-icon material-icons">menu</i> 菜单</a>
             <a href="https://www.imfmkli.top" class="mdui-typo-title">鸽子主页</a>
             <div class="mdui-toolbar-spacer"></div>
             <!-- 按钮 -->
@@ -251,6 +251,11 @@
         function test(){
             mdui.snackbar({
                 message: '欢迎光临！'
+            });
+        };
+	function yrj(){
+            mdui.snackbar({
+                message: '鱼仁杰快乐！'
             });
         }
     </script>
