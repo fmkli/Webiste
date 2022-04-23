@@ -170,10 +170,17 @@
 
 
     <script>
+	var reful=document.referrer;
         function test(){
-            mdui.snackbar({
-                message: '欢迎光临！'
-            });
+	    if (!reful){
+    	        mdui.snackbar({
+        	    message: '欢迎小可爱光临本站！'
+    	        });
+	    } else {
+    	        mdui.snackbar({
+        	    message: '欢迎来自'+reful+'的小可爱光临本站！'
+    	        });
+	    }
         }
     </script>
 
