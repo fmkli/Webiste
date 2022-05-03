@@ -9,7 +9,13 @@
   font-style: normal;
   font-display: block;
 }
-
+*{
+    font-family: "Good";
+}
+@font-face {
+    font-family: "Good";
+    src: url("src/1.ttf");
+}
 .gd-icon {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'Grass-Design-Icon' !important;
