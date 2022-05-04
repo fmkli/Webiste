@@ -85,6 +85,7 @@ hr {
   height: calc(100% - 40px);
   padding: 20px;
   transition: all 1s ease !important;
+  overflow: auto;
   display: none;
   z-index: 101;
 }
@@ -190,8 +191,8 @@ hr {
   display: inline-block;
 }
 .gd-article p,
-.gd-article div {
-  margin: 5px 0;
+.gd-article div img {
+  margin: 10px 0;
 }
 .gd-article h1,
 .gd-article h2,
@@ -222,7 +223,23 @@ hr {
   margin: 5px;
   display: inline-block;
   user-select: none;
+  outline: none;
   cursor: pointer;
+}
+.gd-input {
+  width: calc(100% - 20px);
+  height: 20px;
+  line-height: 20px;
+  padding: 10px;
+  margin: 5px 0px;
+  background-color: #f5f5f5;
+  border: none;
+  display: block;
+  outline: none;
+}
+.gd-input:hover,
+.gd-input:focus {
+  background-color: #fdfdfd;
 }
 .gd-post-center {
   text-align: center;
