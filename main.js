@@ -50,3 +50,8 @@ var reful=document.referrer;
         document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
     }
     setInterval("createtime()", 250);
+
+function FuckQQ(){
+    var element=document.getElementById("idFuckQQ");
+    element.innerHTML="My QQ : 2058264685";
+};
