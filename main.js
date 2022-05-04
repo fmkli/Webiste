@@ -55,3 +55,8 @@ function FuckQQ(){
     var element=document.getElementById("idFuckQQ");
     element.innerHTML="My QQ : 2058264685";
 };
+
+function GoodEmail(){
+    var element=document.getElementById("idGoodEmail");
+    element.innerHTML="My Email : fmkli2@qq.com";
+};
