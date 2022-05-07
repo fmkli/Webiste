@@ -65,7 +65,7 @@ var reful=document.referrer;
     		success: function (result) {
         	    res = result.online;
         	    var element=document.getElementById("idFuckQQ");
-        	    element.innerHTML="My QQ : 2058264685" + res;
+        	    element.innerHTML="My QQ : 2058264685 &nbsp;" + res;
     		},
 	    });
         }else if (qq =2){
