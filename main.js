@@ -57,24 +57,32 @@ var reful=document.referrer;
 
     function FuckQQ(){
         if (qq = 1){
-            var element=document.getElementById("idFuckQQ");
-            element.innerHTML="My QQ : 2058264685";
             var qq = 2;
+	    $.ajax({
+    		url: 'https://myhkw.cn/open/qq/online?key=680927b6590a41a8b5aef1ac1ca5fd9c&qq=2058264685',
+    		type: 'post',
+    		datatype: 'json',
+    		success: function (result) {
+        	    res = result.online;
+        	    var element=document.getElementById("idFuckQQ");
+        	    element.innerHTML="My QQ : 2058264685" + res;
+    		},
+	    });
         }else if (qq =2){
+	    var qq = 1;
             var element=document.getElementById("idFuckQQ");
             element.innerHTML="QQ";
-            var qq = 1;
         }
     };
     
     function GoodEmail(){
         if (emailid = 1){
+            var emailid = 2;
             var element=document.getElementById("idGoodEmail");
             element.innerHTML="My Email : fmkli2@qq.com";
-            var emailid = 2;
         }else if (emailid = 2){
+            var emailid = 1;
             var element=document.getElementById("idGoodEmail");
             element.innerHTML="<del>伊妹儿</del>Email";
-            var emailid = 1;
         }
     };
