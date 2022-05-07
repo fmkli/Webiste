@@ -86,13 +86,3 @@ var reful=document.referrer;
             element.innerHTML="<del>伊妹儿</del>Email";
         }
     };
-$.ajax({
-    url: 'https://myhkw.cn/open/ip?key=680927b6590a41a8b5aef1ac1ca5fd9c',
-    type: 'post',
-    datatype: 'json',
-    success: function (result) {
-        var element2 = document.getElementById("ip");
-        element2.innerHTML = '欢迎来自 &nbsp;' + result + '&nbsp; 的访客';
-	console.log('欢迎来自 ' + result + ' 的访客')
-    },
-});
