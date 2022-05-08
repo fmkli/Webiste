@@ -64,8 +64,13 @@ var reful=document.referrer;
     		datatype: 'json',
     		success: function (result) {
         	    res = result.online;
-        	    var element=document.getElementById("idFuckQQ");
-        	    element.innerHTML="My QQ : 2058264685 &nbsp;" + res;
+            		if (res == "电脑在线"){
+                	    var element=document.getElementById("test");
+                	    element.innerHTML="My QQ : 2058264685 &nbsp;QQ" + res + "&nbsp;来找我吧~";
+            		}else{
+                	    var element=document.getElementById("test");
+                	    element.innerHTML="My QQ : 2058264685 &nbsp;QQ" + res + "&nbsp;慢慢等我吧";
+            		}
     		},
 	    });
         }else if (qq =2){
