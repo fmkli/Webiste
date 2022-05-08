@@ -66,10 +66,10 @@ var reful=document.referrer;
         	    res = result.online;
             	    if (res == "电脑在线"){
                 	var element=document.getElementById("idFuckQQ");
-                	element.innerHTML="My QQ : 2058264685 &nbsp;QQ" + res + "&nbsp;来找我吧~";
+                	element.innerHTML="My QQ : 2058264685 &nbsp;QQ" + res + "<br>&nbsp;来找我吧~";
             	    }else{
                 	var element=document.getElementById("idFuckQQ");
-                	element.innerHTML="My QQ : 2058264685 &nbsp;QQ" + res + "&nbsp;慢慢等我吧";
+                	element.innerHTML="My QQ : 2058264685 &nbsp;QQ" + res + "<br>&nbsp;慢慢等我吧";
             	    }
     		},
 	    });
