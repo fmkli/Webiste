@@ -22,18 +22,21 @@ var reful=document.referrer;
                 content.innerHTML = '<p>'+str_+'</p>'
             }
         },100)
-	let str2 = '屑鸽子Fmkliの主页'
+    }
+    function start2(){
+        let str2 = '屑鸽子Fmkliの主页'
         let str_2 = ''
-        let i2 = 0
-        let content2 = document.getElementById('contentsss')
-        let time2 = setInterval(()=>{
+        let i = 0
+        let content = document.getElementById('contentsss')
+        let timer = setInterval(()=>{
             if(str_2.length<str2.length){
-                str_2 += str2[i2++]
-                content2.innerHTML = '<p>'+str_2+'</p>'                        //打印时加光标
+                str_2 += str2[i++]
+                content.innerHTML = '<p>'+str_2+'</p>'                        //打印时加光标
             }else{ 
-                clearInterval(timer2)
-                content2.innerHTML = '<p>'+str_2+'</p>'
+                clearInterval(timer)
+                content.innerHTML = '<p>'+str_2+'</p>'
             }
         },100)
     }
     start()
+    start2()
