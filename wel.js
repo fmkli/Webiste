@@ -9,7 +9,7 @@ var reful=document.referrer;
 	    };
     }
     function start(){
-        let str = '欢迎来到屑鸽子Fmkliの主页'
+        let str = '<h2>欢迎来到</h2><h1>屑鸽子Fmkliの主页</h1>'
         let str_ = ''
         let i = 0
         let content = document.getElementById('contentss')
