@@ -22,9 +22,7 @@ var reful=document.referrer;
                 content.innerHTML = '<p>'+str_+'</p>'
             }
         },100)
-    }
-    function start2(){
-        let str2 = '屑鸽子Fmkliの主页'
+	let str2 = '屑鸽子Fmkliの主页'
         let str_2 = ''
         let i = 0
         let content = document.getElementById('contentsss')
@@ -39,4 +37,3 @@ var reful=document.referrer;
         },100)
     }
     start()
-    start2()
