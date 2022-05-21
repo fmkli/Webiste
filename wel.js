@@ -24,11 +24,11 @@ var reful=document.referrer;
         },100)
 	let str2 = '屑鸽子Fmkliの主页'
         let str_2 = ''
-        let i = 0
+        let i2 = 0
         let content = document.getElementById('contentsss')
         let timer = setInterval(()=>{
             if(str_2.length<str2.length){
-                str_2 += str2[i++]
+                str_2 += str2[i2++]
                 content.innerHTML = '<p>'+str_2+'</p>'                        //打印时加光标
             }else{ 
                 clearInterval(timer)
