@@ -1,4 +1,4 @@
-langset("lang.js", "zh-cn");
+langset("langcon.js", "zh-cn");
 const lang = document.getElementById("lang");
 lang.addEventListener("change", function () {
     langload(lang.options[lang.selectedIndex].value);
