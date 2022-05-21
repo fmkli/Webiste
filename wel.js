@@ -25,14 +25,14 @@ var reful=document.referrer;
 	let str2 = '屑鸽子Fmkliの主页'
         let str_2 = ''
         let i2 = 0
-        let content = document.getElementById('contentsss')
-        let timer = setInterval(()=>{
+        let content2 = document.getElementById('contentsss')
+        let time2 = setInterval(()=>{
             if(str_2.length<str2.length){
                 str_2 += str2[i2++]
-                content.innerHTML = '<p>'+str_2+'</p>'                        //打印时加光标
+                content2.innerHTML = '<p>'+str_2+'</p>'                        //打印时加光标
             }else{ 
-                clearInterval(timer)
-                content.innerHTML = '<p>'+str_2+'</p>'
+                clearInterval(timer2)
+                content2.innerHTML = '<p>'+str_2+'</p>'
             }
         },100)
     }
