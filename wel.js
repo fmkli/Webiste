@@ -9,7 +9,7 @@ var reful=document.referrer;
 	    };
     }
     function start(){
-        let str = '欢迎来到'
+        let str = '<h2>欢迎来到</h2><h1>屑鸽子Fmkliの主页</h1>'
         let str_ = ''
         let i = 0
         let content = document.getElementById('contentss')
@@ -20,19 +20,6 @@ var reful=document.referrer;
             }else{ 
                 clearInterval(timer)
                 content.innerHTML = '<p>'+str_+'</p>'
-            }
-        },100)
-	let str2 = '屑鸽子Fmkliの主页'
-        let str2_ = ''
-        let i = 0
-        let content = document.getElementById('contentsss')
-        let timer = setInterval(()=>{
-            if(str_.length<str.length){
-                str2_ += str2[i++]
-                content.innerHTML = '<p>'+str2_+'</p>'                        //打印时加光标
-            }else{ 
-                clearInterval(timer)
-                content.innerHTML = '<p>'+str2_+'</p>'
             }
         },100)
     }
