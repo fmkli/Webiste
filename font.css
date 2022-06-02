@@ -9,6 +9,13 @@
   font-style: normal;
   font-display: block;
 }
+@font-face {
+  font-family: 'hmzt';
+  src:  url('./HarmonyOS_Sans_Black.ttf');
+}
+body{
+  font-family:"hmzt"
+}
 .gd-icon {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: 'Grass-Design-Icon' !important;
