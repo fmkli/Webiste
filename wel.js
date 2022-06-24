@@ -3,10 +3,6 @@ var reful=document.referrer;
         if (!reful){
             document.getElementById("welcome").innerHTML = "欢迎小可爱光临本站！";
 		    console.log("欢迎小可爱光临本站！");
-	    } else if (reful = "41119.xyz") {
-            document.getElementById('411119').innerHTML = "你来自我的另外一个域名（411119.xyz）！"
-        } else if (reful = "www.41119.xyz") {
-            document.getElementById('411119').innerHTML = "你来自我的另外一个域名（www.411119.xyz）！"
         } else {
             document.getElementById("welcome").innerHTML = "欢迎来自 "+reful+" 的小可爱光临本站！";
 	        console.log("欢迎来自 "+reful+" 的小可爱光临本站！");
