@@ -82,6 +82,13 @@
             </div>
             <div class="gd-box gd-suit gd-rc gd-shadow-20 gd-shadow-h-5">
                 <div class="gd-article">
+                    <h3>听首C418的纯音乐？</h3>
+                    <iframe name="myf"></iframe>
+                    <button onclick="music();" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5">换一首</button>
+                </div>
+            </div>
+            <div class="gd-box gd-suit gd-rc gd-shadow-20 gd-shadow-h-5">
+                <div class="gd-article">
                     <p>Copyright &copy; 2022 Fmkli. All rights reserved.</p>
                     <a class="lianjie" rel="noopener" class="icpgrass" href="https://union.estu.site/" target="_blank">草GUC-20220166</a>
                     <br><a class="lianjie" href="https://icp.gov.moe/?keyword=20221145" rel="noopener" target="_blank" rel="nofollow" class="a-p">萌ICP备20221145号</a>
@@ -89,12 +96,6 @@
                     <br>Friend Links：<a class="lianjie" href="https://dwp.xn--vl1a.tech/">DzxiumWebPages</a>--<a class="lianjie" href="https://boblive.vercel.app/">BOB实况</a>
                     <br><p>本站虽丑，但又不是不能用</p>
                     <br><p>Theme by Grass Design.</p>
-                </div>
-            </div>
-            <div class="gd-box gd-suit gd-rc gd-shadow-20 gd-shadow-h-5">
-                <div class="gd-article">
-                    <h3>听首C418的纯音乐？</h3>
-                    <iframe name="myf"></iframe>
                 </div>
             </div>
             <div class="gd-box gd-suit gd-rc gd-shadow-20 gd-shadow-h-5">
@@ -110,9 +111,23 @@
 <!-- <script src="./langmain.js"></script> <script src="./langcon.js"></scrip> -->
         <script src="./wel.js"></script>
         <script>
+            var music = 1 
             onload = function(){
-                window.myf.location.href = '//music.163.com/outchain/player?type=0&id=867465661&auto=1&height=430';
+                if (music == 1){
+                    window.myf.location.href = '//music.163.com/outchain/player?type=2&id=4010201&auto=1&height=66';
+                } else if (music == 2){
+                    window.myf.location.href = '//music.163.com/outchain/player?type=2&id=4010239&auto=1&height=66';
+                }
             }
+            function music(){
+                if (music == 1){
+                    music = 2
+                    window.myf.location.href = '//music.163.com/outchain/player?type=2&id=4010201&auto=1&height=66';
+                } else if (music == 2){
+                    music = 1
+                    window.myf.location.href = '//music.163.com/outchain/player?type=2&id=4010239&auto=1&height=66';
+                }
+  		    }
         </script>
     </body>
 </html>
