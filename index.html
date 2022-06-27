@@ -114,14 +114,17 @@
         <script>
             var music = 2 
             onload = function(){
+                document.getElementById("thanks").innerHTML = ""
                 window.myf.location.href = '//music.163.com/outchain/player?type=2&id=4010201&auto=1&height=66';
             }
             function musicc418(){
                 if (music == 1){
                     music = 2
+                    document.getElementById("thanks").innerHTML = ""
                     window.myf.location.href = '//music.163.com/outchain/player?type=2&id=4010201&auto=0&height=66';
                 } else if (music == 2){
                     music = 3
+                    document.getElementById("thanks").innerHTML = ""
                     window.myf.location.href = '//music.163.com/outchain/player?type=2&id=4010239&auto=0&height=66';
                 } else if (music == 3){
                     music = 1
