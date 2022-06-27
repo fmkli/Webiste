@@ -84,6 +84,7 @@
                 <div class="gd-article">
                     <h3>听首C418的纯音乐？</h3>
                     <iframe name="myf"></iframe>
+                    <br/><div class="thanks" id="thanks"></div>
                     <button onclick="musicc418();" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5">换一首</button>
                 </div>
             </div>
@@ -124,6 +125,7 @@
                     window.myf.location.href = '//music.163.com/outchain/player?type=2&id=4010239&auto=0&height=66';
                 } else if (music == 3){
                     music = 1
+                    document.getElementById("thanks").innerHTML = "本音乐来自此视频<a href="//www.bilibili.com/video/BV1QL4y1N7fg">https://www.bilibili.com/video/BV1QL4y1N7fg</a>"
                     window.myf.location.href = '//music.163.com/outchain/player?type=2&id=1957256466&auto=0&height=66';
                 }
   		    }
