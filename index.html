@@ -10,11 +10,15 @@
         <script src="./jquery.min.js"></script>
     </head>
     <body style="background-color:rgb(247,249,250)" onload="test();">
+        <!--[if IE]>
+        <![endif]-->
+
         <!-- 网站顶栏 -->
         <div class="gd-menu gd-shadow gd-color-white-fill">
             <i class="gd-icon" id="menu">&#xe900;</i>
             <a href="#"><h1>鸽の主页</h1></a>
         </div>
+
         <!-- 网站折叠栏 -->
         <div class="gd-drawer gd-shadow-20 gd-color-white-fill" id="drawer">
             <t>
@@ -38,12 +42,14 @@
             <a href="javascript:GoodEmail();" class="lianjie"><li class="gd-rc-1 gd-h" id="idGoodEmail"><del>伊妹儿</del>Email</li></a>
             <a href="javascript:FuckQQ();"><li class="gd-rc-1 gd-h" id="idFuckQQ">QQ</li></a>            
         </div>
+
         <!-- 网站内容 -->
         <div class="gd-main-1">
             <div class="gd-box gd-box-pad-100-top gd-suit gd-rc gd-shadow-20 gd-shadow-h-5">
                 <h2><div id="contentss"></div></h2>
                 <h1><div id="contentsss"></div></h1>
             </div>
+            <!-- 个人信息 -->
             <div class="gd-box gd-suit gd-rc gd-shadow-20 gd-shadow-h-5 gd-post-center">
                 <h2>屑鸽子Fmkli</h2>
                 <img src="https://www.imfmkli.top/fmkli.png" width="100" height="100" alt="Fmkli的照片">
@@ -68,26 +74,35 @@
                       </article>
                 </div>
                 <hr>
+
+                <!-- 留言板 -->
                 <div class="gd-article">
                     <h3>留言</h3>
                     <p>发布留言时，请遵守法律法规，禁止发布违法违规及政治相关内容；<br>请友好评论，保持对他人的尊重；<br>严禁发布广告；</p>
                     <a href="https://www.imfmkli.top/talk2.html" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5">加载留言系统</a>
                 </div>
                 <hr>
+
+                <!-- 说说 -->
                 <div class="gd-article">
                     <h3>说说</h3>
                     <p>由于jsd拖慢网站速度，说说跳转去另一个页面</p>
                     <a href="https://www.imfmkli.top/say.html" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5">加载说说</a>
                 </div>
             </div>
+
+            <!-- 音乐版块 -->
             <div class="gd-box gd-suit gd-rc gd-shadow-20 gd-shadow-h-5">
                 <div class="gd-article">
                     <h3>听首C418的纯音乐？</h3>
+                    <!-- 感谢网易云音乐提供支持 -->
                     <iframe name="myf"></iframe>
                     <br/><div class="thanks" id="thanks"></div>
                     <button onclick="musicc418();" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5">换一首</button>
                 </div>
             </div>
+
+            <!-- 末尾 -->
             <div class="gd-box gd-suit gd-rc gd-shadow-20 gd-shadow-h-5">
                 <div class="gd-article">
                     <p>Copyright &copy; 2022 Fmkli. All rights reserved.</p>
@@ -99,18 +114,24 @@
                     <br><p>Theme by Grass Design.</p>
                 </div>
             </div>
+
+            <!-- 柠檬的广告，我要谢谢柠檬~ -->
             <div class="gd-box gd-suit gd-rc gd-shadow-20 gd-shadow-h-5">
                 <div class="gd-article">
-                    <a href="https://blog.wz-software.top"><img class="gd-rc gd-shadow-20 gd-shadow-h-5 gd-box-margin-20" src="./nman.png" width="100%" height="100%" alt="大爱柠檬（广告）"></a>
+                    <a href="image.png"><img class="gd-rc gd-shadow-20 gd-shadow-h-5 gd-box-margin-20" src="./nman.png" width="100%" height="100%" alt="大爱柠檬（广告）"></a>
                 </div>
             </div>
             
         </div>
+
         <!-- 网页遮盖 -->
         <div class="gd-overlay" id="overlay"></div>
+
+        <!-- 一堆引入和js -->
         <script src="./main.js"></script>
-<!-- <script src="./langmain.js"></script> <script src="./langcon.js"></scrip> -->
+        <!-- <script src="./langmain.js"></script> <script src="./langcon.js"></scrip> -->
         <script src="./wel.js"></script>
+        <!-- 网站计时 -->
         <script>
             var music = 2 
             onload = function(){
