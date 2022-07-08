@@ -115,8 +115,8 @@ var reful=document.referrer;
     }
 
     function musicc666(){
-        window.myf.location.href = 'https://pro-video.xiaoheiban.cn/xls/67a483e3-0998-4ff0-b98a-d17159552604.mp4';
-        // document.getElementById("musicau").src = "https://pro-video.xiaoheiban.cn/xls/67a483e3-0998-4ff0-b98a-d17159552604.mp4"
-        // document.getElementById("musicau").play()
-        // document.getElementById("thanks").innerHTML = "刷新关闭~"
+        window.myf.location.href = '//www.imfmkli.top/nbpl.html';
+        document.getElementById("musicau").src = "https://pro-video.xiaoheiban.cn/xls/67a483e3-0998-4ff0-b98a-d17159552604.mp4"
+        document.getElementById("musicau").play()
+        document.getElementById("thanks").innerHTML = "刷新关闭~"
     }
