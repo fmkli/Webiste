@@ -91,11 +91,13 @@ var reful=document.referrer;
             element.innerHTML="<del>伊妹儿</del>Email";
         }
     };
+
     var music = 2 
     onload = function(){
         document.getElementById("thanks").innerHTML = ""
         window.myf.location.href = '//music.163.com/outchain/player?type=2&id=4010201&auto=1&height=66';
     }
+
     function musicc418(){
         if (music == 1){
             music = 2
@@ -111,7 +113,8 @@ var reful=document.referrer;
             window.myf.location.href = '//music.163.com/outchain/player?type=2&id=1957256466&auto=0&height=66';
         }
     }
-    function music666(){
+
+    function musicc666(){
         window.myf.location.href = '';
         document.getElementById("musicau").src = "https://pro-video.xiaoheiban.cn/xls/67a483e3-0998-4ff0-b98a-d17159552604.mp4"
         document.getElementById("musicau").play()
