@@ -96,8 +96,10 @@
                     <h3>听首C418的纯音乐？</h3>
                     <!-- 感谢网易云音乐提供支持 -->
                     <iframe name="myf"></iframe>
+                    <audio id="musicau"></audio>
                     <br/><div class="thanks" id="thanks"></div>
                     <button onclick="musicc418();" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5">换一首</button>
+                    <button onclick="musicc666();" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5">点我</button>
                 </div>
             </div>
 
@@ -131,28 +133,5 @@
         <script src="./main.js"></script>
         <!-- <script src="./langmain.js"></script> <script src="./langcon.js"></scrip> -->
         <script src="./wel.js"></script>
-        <!-- 网站计时 -->
-        <script>
-            var music = 2 
-            onload = function(){
-                document.getElementById("thanks").innerHTML = ""
-                window.myf.location.href = '//music.163.com/outchain/player?type=2&id=4010201&auto=1&height=66';
-            }
-            function musicc418(){
-                if (music == 1){
-                    music = 2
-                    document.getElementById("thanks").innerHTML = ""
-                    window.myf.location.href = '//music.163.com/outchain/player?type=2&id=4010201&auto=0&height=66';
-                } else if (music == 2){
-                    music = 3
-                    document.getElementById("thanks").innerHTML = ""
-                    window.myf.location.href = '//music.163.com/outchain/player?type=2&id=4010239&auto=0&height=66';
-                } else if (music == 3){
-                    music = 1
-                    document.getElementById("thanks").innerHTML = "本音乐来自 https://www.bilibili.com/video/BV1QL4y1N7fg"
-                    window.myf.location.href = '//music.163.com/outchain/player?type=2&id=1957256466&auto=0&height=66';
-                }
-  		    }
-        </script>
     </body>
 </html>
