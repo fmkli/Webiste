@@ -54,7 +54,7 @@ $.ajax({
             a2333.testContent = data[i].title;
             div2333.classList = "posts2333";
             div2333.appendChild(a2333);
-            list2333.append(div2333);
+            list2333.appendChild(div2333);
         }
         $("#posts-stop").remove();
     }
