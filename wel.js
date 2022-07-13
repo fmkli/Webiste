@@ -63,3 +63,32 @@ $.ajax({
 // 统计统计
 !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JgapU3Sla12DMquS",ck:"JgapU3Sla12DMquS"});
 console.log('统计开启~')
+
+function gettip(){
+    var aa233 = Math.random() + ""
+    var rand2333 = aa233.charAt(5)
+    wenben = new Array
+    wenben[0] = 'Tip：%$^#^*&@$^gjdsfjsdrha5ru5$%^&@$%^VTC%#R^&*^'
+    wenben[1] = '本站虽丑，但又不是不能用'
+    wenben[2] = 'Tip： 话说你要不要写作业？'
+    wenben[3] = 'Tip：这是一个Tip'
+    wenben[4] = 'Tip：锄禾日当午，汗滴禾下土（大声滴唱！）'
+    wenben[5] = 'Tip：下次看到这条tip是啥时候？'
+    wenben[6] = 'Tip：“欢迎大家来找茬（”'
+    wenben[7] = 'Tip: Phigros棒棒（'
+    wenben[8] = 'Tip：帮忙推荐推荐本站嘛~'
+    wenben[9] = 'Music：被骗了哈哈哈（不是）'
+    wenben[10] = 'Tip：Fmkli是不是要再给网站弄点啥？'
+    wenben[11] = 'Tip：你知道吗。人死了，就不会饿'
+    wenben[12] = 'Tip：能力越大，能力就越大'
+    wenben[13] = 'Tip：我曾在极度愤怒的情况下极度愤怒!'
+    wenben[14] = 'Tip：把肥牛切成厚厚的薄片'
+    wenben[15] = 'Tip：要知道台上一分钟，台下60秒'
+    wenben[16] = 'Tip：你知道吗 十四岁花季少女两年前竟是十二岁!'
+    wenben[17] = 'Tip：Fmkli的博客，就是Fmkli的博客'
+    wenben[18] = 'Tip：我睡着之前还是醒的'
+    wenben[19] = 'Tip：你看那边！你看！'
+    wenben[20] = 'Tip：？'
+    var jieguo = wenben[rand2333]
+    document.getElementById("tipss").innerText = jieguo
+}
