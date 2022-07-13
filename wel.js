@@ -53,7 +53,7 @@ $.ajax({
             var testContent2333 = data[i].title;
             var div2333 = document.createElement('div')
             div2333.classList = "posts2333";
-            div2333.innerHTML = "<a href=" + links + "&#8216>" + testContent2333 + "</a>"
+            div2333.innerHTML = "<a href=" + links + ">" + testContent2333 + "</a>"
             list2333.appendChild(div2333);
         }
         $("#posts-stop").remove();
