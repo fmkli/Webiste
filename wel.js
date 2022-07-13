@@ -49,11 +49,11 @@ $.ajax({
         var list2333 = document.getElementById("posts-list");
         for (var i = 0; i <= 2; i++){
             var a2333 = document.createElement('a');
-            var div2333 = document.createElement('div');
             a2333.href = data[i].link;
             a2333.testContent = data[i].title;
+            var div2333 = document.createElement('div')
             div2333.classList = "posts2333";
-            div2333.appendChild(a2333);
+            div2333.innerHTML = a2333
             list2333.appendChild(div2333);
         }
         $("#posts-stop").remove();

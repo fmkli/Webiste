@@ -2,8 +2,9 @@
     position: relative;
     width: calc(100% - 30px);
     height: auto;
+    margin: 3px 0;
     padding: 10px;
     background-color: #fdfdfd;
-    border: 2px solid red;
+    border: 2px solid rgb(99, 99, 99);
     border-radius: 3px;
 }
