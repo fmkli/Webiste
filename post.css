@@ -8,3 +8,13 @@
     border: 2px solid rgb(99, 99, 99);
     border-radius: 3px;
 }
+.posts2333:hover{
+    position: relative;
+    width: calc(100% - 30px);
+    height: auto;
+    margin: 3px 0;
+    padding: 10px;
+    background-color: #fdfdfdc0;
+    border: 2px solid rgb(151, 151, 151);
+    border-radius: 3px;
+}
