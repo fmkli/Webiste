@@ -1,0 +1,9 @@
+.posts2333{
+    position: relative;
+    width: calc(100% - 30px);
+    height: auto;
+    padding: 10px;
+    background-color: #fdfdfd;
+    border: 2px solid red;
+    border-radius: 3px;
+}

@@ -39,6 +39,26 @@ var reful=document.referrer;
     start()
     start2()
 
+
+$.ajax({
+    method: 'GET',
+    url: 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fblog.imfmkli.top%2Fatom.xml',
+    success: function(data){
+        var data = JSON.parse(data).items;
+        var list2333 = document.getElementById("posts-list");
+        for (var i = 0; i <= 2; i++){
+            var a2333 = document.createElement('a');
+            var div2333 = document.createElement('div');
+            a2333.href = data[i].link;
+            a2333.testContent = data[i].title;
+            div2333.classList = "posts2333";
+            div2333.appendChild(a2333);
+            list2333.append(div2333);
+        }
+        $("#posts-stop").remove();
+    }
+});
+
 // 统计统计
 !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JgapU3Sla12DMquS",ck:"JgapU3Sla12DMquS"});
 console.log('统计开启~')
