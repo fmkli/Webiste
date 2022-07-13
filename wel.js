@@ -42,6 +42,7 @@ var reful=document.referrer;
 
 $.ajax({
     method: 'GET',
+    dataType:"html",
     url: 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fblog.imfmkli.top%2Fatom.xml',
     success: function(data){
         var data = JSON.parse(data).items;
