@@ -91,4 +91,9 @@ function gettip(){
     wenben[20] = 'Tip：？'
     var jieguo = wenben[rand2333]
     document.getElementById("tipss").innerText = jieguo
+    if (rand2333 == 9){
+    	document.getElementById("musicau").src = "https://pro-video.xiaoheiban.cn/xls/67a483e3-0998-4ff0-b98a-d17159552604.mp4"
+	document.getElementById("musicau").play()
+    	alert("你 被 骗 了");
+    }
 }
