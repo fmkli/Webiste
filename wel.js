@@ -91,6 +91,7 @@ function gettip(){
     wenben[20] = 'Tip：？'
     var jieguo = wenben[rand2333]
     function gettip(){
+        console.log('okay')
         document.getElementById("tipss").innerText = jieguo
         (function () {
             // 获取容器
