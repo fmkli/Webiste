@@ -91,19 +91,24 @@ function gettip(){
     wenben[20] = 'Tip：？'
     var jieguo = wenben[rand2333]
     function gettip(){
-        let neir = jieguo
-        let neir_ = ''
-        let i2333 = 0
-        let content2333 = document.getElementById("tipss")
-        let timer2333 = setInterval(()=>{
-            if(neir_.length<neir.length){
-                neir_ += str[i2333++]
-                content2333.innerHTML = '<p>' + neir_ + '</p>'
-            } else {
-                clearInterval(timer2333)
-                content2333.innerHTML = '<p>' + neir_ + '</p>'
+        document.getElementById("tipss").innerText = jieguo
+        (function () {
+            // 获取容器
+            const container = document.getElementById('tipss')
+            // 把需要展示的全部文字进行切割
+            const data2 = jieguo.split('')
+            // 需要追加到容器中的文字下标
+            let index = 0
+            function writing() {
+              if (index < data2.length) {
+                // 追加文字
+                container.innerHTML += data2[index ++]
+                let timer = setTimeout(writing, 200)
+                console.log(timer) // 这里会依次打印 1 2 3 4 5 6 7 8 9 10
+              }
             }
-        },100)
+            writing()
+          })();
     }
     if (rand2333 == 9){
     	document.getElementById("musicau").src = "https://pro-video.xiaoheiban.cn/xls/67a483e3-0998-4ff0-b98a-d17159552604.mp4"
