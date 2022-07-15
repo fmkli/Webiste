@@ -93,11 +93,11 @@ function gettip(){
     function gettip(){
         let neir = jieguo
         let neir_ = ''
-        let i = 0
+        let i2333 = 0
         let content2333 = document.getElementById("tipss")
         let timer2333 = setInterval(()=>{
             if(neir_.length<neir.length){
-                neir_ += str[i++]
+                neir_ += str[i2333++]
                 content2333.innerHTML = '<p>' + neir_ + '</p>'
             } else {
                 clearInterval(timer2333)
