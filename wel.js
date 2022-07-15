@@ -89,26 +89,8 @@ function gettip(){
     wenben[18] = 'Tip：我睡着之前还是醒的'
     wenben[19] = 'Tip：你看那边！你看！'
     wenben[20] = 'Tip：？'
-    var jieguo2333 = wenben[rand2333]
-    console.log('okay')
+    jieguo2333 = wenben[rand2333]
     document.getElementById("tipss").innerText = jieguo2333
-    (function () {
-        // 获取容器
-        const container = document.getElementById('tipss')
-        // 把需要展示的全部文字进行切割
-        const data2 = jieguo.split('')
-        // 需要追加到容器中的文字下标
-        let index = 0
-        function writing() {
-          if (index < data2.length) {
-            // 追加文字
-            container.innerHTML += data2[index ++]
-            let timer = setTimeout(writing, 200)
-            console.log(timer) // 这里会依次打印 1 2 3 4 5 6 7 8 9 10
-          }
-        }
-        writing()
-    })();
     if (rand2333 == 9){
     	document.getElementById("musicau").src = "https://pro-video.xiaoheiban.cn/xls/67a483e3-0998-4ff0-b98a-d17159552604.mp4"
 	document.getElementById("musicau").play()
