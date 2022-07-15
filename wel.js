@@ -89,9 +89,9 @@ function gettip(){
     wenben[18] = 'Tip：我睡着之前还是醒的'
     wenben[19] = 'Tip：你看那边！你看！'
     wenben[20] = 'Tip：？'
-    var jieguo = wenben[rand2333]
+    var jieguo2333 = wenben[rand2333]
     console.log('okay')
-    document.getElementById("tipss").innerText = jieguo
+    document.getElementById("tipss").innerText = jieguo2333
     (function () {
         // 获取容器
         const container = document.getElementById('tipss')
