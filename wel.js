@@ -68,7 +68,7 @@ function gettip(){
     var aa233 = Math.random() + ""
     var rand2333 = aa233.charAt(5)
     wenben = new Array
-    wenben[0] = 'Tip：%$^#^*&@$^gjdsfjsdrha5ru5$%^&@$%^VTC%#R^&*^'
+    wenben[0] = 'Tip：$%^&@$%^VTC%#R^&*^'
     wenben[1] = '本站虽丑，但又不是不能用'
     wenben[2] = 'Tip： 话说你要不要写作业？'
     wenben[3] = 'Tip：这是一个Tip'
