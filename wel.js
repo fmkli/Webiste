@@ -90,7 +90,19 @@ function gettip(){
     wenben[19] = 'Tip：你看那边！你看！'
     wenben[20] = 'Tip：？'
     var jieguo = wenben[rand2333]
-    document.getElementById("tipss").innerText = jieguo
+    let neir = jieguo
+    let neir_ = ''
+    let i = 0
+    let content2333 = document.getElementById("tipss")
+    let timer2333 = setInterval(()=>{
+        if(neir_.length<neir.length){
+            neir_ += str[i++]
+            content2333.innerHTML = '<p>' + neir_ + '</p>'
+        } else {
+            clearInterval(timer2333)
+            content2333.innerHTML = '<p>' + neir_ + '</p>'
+        }
+    },100)
     if (rand2333 == 9){
     	document.getElementById("musicau").src = "https://pro-video.xiaoheiban.cn/xls/67a483e3-0998-4ff0-b98a-d17159552604.mp4"
 	document.getElementById("musicau").play()
