@@ -69,7 +69,7 @@ var reful=document.referrer;
                 	element.innerHTML="My QQ : 2058264685 &nbsp;QQ" + res + "<br>&nbsp;来找我吧~";
             	    }else{
                 	var element=document.getElementById("idFuckQQ");
-                	element.innerHTML="My QQ : 2058264685 &nbsp;QQ" + res + "<br>&nbsp;慢慢等我吧";
+                	element.innerHTML="My QQ : 2058264685 &nbsp;QQ" + res + "<br>&nbsp;";
             	    }
     		},
 	    });
@@ -91,32 +91,6 @@ var reful=document.referrer;
             element.innerHTML="<del>伊妹儿</del>Email";
         }
     };
-
-    var music = 2 
-    onload = function(){
-        document.getElementById("thanks").innerHTML = ""
-        window.myf.location.href = '//music.163.com/outchain/player?type=2&id=4010201&auto=1&height=66';
-    }
-
-    function musicc418(){
-        if (music == 1){
-            music = 2
-            document.getElementById("thanks").innerHTML = ""
-            window.myf.location.href = '//music.163.com/outchain/player?type=2&id=4010201&auto=0&height=66';
-        } else if (music == 2){
-            music = 3
-            document.getElementById("thanks").innerHTML = ""
-            window.myf.location.href = '//music.163.com/outchain/player?type=2&id=4010239&auto=0&height=66';
-        } else if (music == 3){
-            music = 4
-            document.getElementById("thanks").innerHTML = "本音乐来自 https://www.bilibili.com/video/BV1QL4y1N7fg"
-            window.myf.location.href = '//music.163.com/outchain/player?type=2&id=1957256466&auto=0&height=66';
-	} else if (music == 4){
-            music = 1
-            document.getElementById("thanks").innerHTML = ""
-            window.myf.location.href = '//www.imfmkli.top/player.html';
-        }
-    }
 
 $.ajax({
     method: 'GET',
