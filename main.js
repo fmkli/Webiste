@@ -114,7 +114,7 @@ var reful=document.referrer;
 	} else if (music == 4){
             music = 1
             document.getElementById("thanks").innerHTML = ""
-            window.myf.location.href = 'https://www.imfmkli.top/player.html';
+            window.myf.location.href = '//www.imfmkli.top/player.html';
         }
     }
 
