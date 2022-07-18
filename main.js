@@ -114,7 +114,7 @@ var reful=document.referrer;
 	} else if (music == 4){
             music = 1
             document.getElementById("thanks").innerHTML = ""
-            window.myf.location.href = '//music.163.com/outchain/player?type=2&id=1957256466&auto=0&height=66';
+            window.myf.location.href = 'https://www.imfmkli.top/player.html';
         }
     }
 
