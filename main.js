@@ -115,10 +115,17 @@ var reful=document.referrer;
     }
 
     function musicc666(){
-        window.myf.location.href = '//www.imfmkli.top/nbpl.html';
-        document.getElementById("musicau").src = "https://pro-video.xiaoheiban.cn/xls/67a483e3-0998-4ff0-b98a-d17159552604.mp4"
-        document.getElementById("musicau").play()
-        document.getElementById("thanks").innerHTML = "刷新关闭~"
+        if (rand2333 == 0){
+            window.myf.location.href = '//www.imfmkli.top/nbjl.html';
+            document.getElementById("musicau").src = "./114514.mp4"
+            document.getElementById("musicau").play()
+            document.getElementById("thanks").innerHTML = "刷新关闭~"
+        } else {
+            window.myf.location.href = '//www.imfmkli.top/nbpl.html';
+            document.getElementById("musicau").src = "http://music.163.com/song/media/outer/url?id=5221167.mp3"
+            document.getElementById("musicau").play()
+            document.getElementById("thanks").innerHTML = "刷新关闭~"
+        }
     }
 
 $.ajax({
@@ -149,7 +156,7 @@ function gettip(){
     var aa233 = Math.random() + ""
     var rand2333 = aa233.charAt(5)
     wenben = new Array
-    wenben[0] = 'Tip：$%^&@$%^VTC%#R^&*^'
+    wenben[0] = 'Tip：哼啊啊啊啊啊啊啊啊'
     wenben[1] = '本站虽丑，但又不是不能用'
     wenben[2] = 'Tip： 话说你要不要写作业？'
     wenben[3] = 'Tip：这是一个Tip'
@@ -173,7 +180,7 @@ function gettip(){
     jieguo2333 = wenben[rand2333]
     document.getElementById("tipss").innerText = jieguo2333
     if (rand2333 == 9){
-    	document.getElementById("musicau").src = "https://pro-video.xiaoheiban.cn/xls/67a483e3-0998-4ff0-b98a-d17159552604.mp4"
+    	document.getElementById("musicau").src = "http://music.163.com/song/media/outer/url?id=5221167.mp3"
 	document.getElementById("musicau").play()
     	alert("你 被 骗 了");
     }

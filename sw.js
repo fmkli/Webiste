@@ -1,6 +1,5 @@
 const staticDevCoffee = '鸽子主页 | Fmkli的鸽子窝';
 const assets = [
-    '/',
     '/index.html',
     '/style.css',
     '/markdown.css',
