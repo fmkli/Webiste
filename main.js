@@ -113,29 +113,6 @@ var reful=document.referrer;
             window.myf.location.href = '//music.163.com/outchain/player?type=2&id=1957256466&auto=0&height=66';
         }
     }
-    var caidan1 = 0
-    var aa233 = Math.random() + ""
-    var rand2333 = aa233.charAt(5)
-    function musicc666(){
-        if (rand2333 == 0){
-	    if (caidan1 == 1){
-            	window.myf.location.href = '//www.imfmkli.top/nbjl.html';
-            	document.getElementById("musicau").src = "/video/114514.mp4"
-            	document.getElementById("musicau").play()
-            	document.getElementById("thanks").innerHTML = "刷新关闭~"
-	    } else {
-		window.myf.location.href = '//www.imfmkli.top/nbpl.html';
-            	document.getElementById("musicau").src = "http://music.163.com/song/media/outer/url?id=5221167.mp3"
-            	document.getElementById("musicau").play()
-            	document.getElementById("thanks").innerHTML = "刷新关闭~"
-	    }
-        } else {
-            window.myf.location.href = '//www.imfmkli.top/nbpl.html';
-            document.getElementById("musicau").src = "http://music.163.com/song/media/outer/url?id=5221167.mp3"
-            document.getElementById("musicau").play()
-            document.getElementById("thanks").innerHTML = "刷新关闭~"
-        }
-    }
 
 $.ajax({
     method: 'GET',
@@ -164,7 +141,6 @@ console.log('统计开启~')
 function gettip(){
     var aa233 = Math.random() + ""
     var rand2333 = aa233.charAt(5)
-    caidan1 = 1
     wenben = new Array
     wenben[0] = 'Tip：哼啊啊啊啊啊啊啊啊'
     wenben[1] = '本站虽丑，但又不是不能用'
@@ -189,11 +165,6 @@ function gettip(){
     wenben[20] = 'Tip：？'
     jieguo2333 = wenben[rand2333]
     document.getElementById("tipss").innerText = jieguo2333
-    if (rand2333 == 9){
-    	document.getElementById("musicau").src = "http://music.163.com/song/media/outer/url?id=5221167.mp3"
-	document.getElementById("musicau").play()
-    	alert("你 被 骗 了");
-    }
 }
 
 if ('serviceWorker' in navigator) {
