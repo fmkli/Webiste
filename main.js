@@ -108,8 +108,13 @@ var reful=document.referrer;
             document.getElementById("thanks").innerHTML = ""
             window.myf.location.href = '//music.163.com/outchain/player?type=2&id=4010239&auto=0&height=66';
         } else if (music == 3){
-            music = 1
+            music = 4
             document.getElementById("thanks").innerHTML = "本音乐来自 https://www.bilibili.com/video/BV1QL4y1N7fg"
+            window.myf.location.href = '//music.163.com/outchain/player?type=2&id=1957256466&auto=0&height=66';
+        }
+	} else if (music == 4){
+            music = 1
+            document.getElementById("thanks").innerHTML = ""
             window.myf.location.href = '//music.163.com/outchain/player?type=2&id=1957256466&auto=0&height=66';
         }
     }
