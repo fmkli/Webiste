@@ -17,10 +17,9 @@ document.onreadystatechange = completeLoading;
 //加载状态为complete时移除loading效果
 function completeLoading() {
     if (document.readyState == "complete") {
-        var loadingMask = document.getElementById('loadingDiv');
         var tishitext2 = document.getElementById('tishitext');
         tishitext2.innerText = '加载完成拉~，嘿嘿嘿'
-        setTimeout(() => loadingMask.parentNode.removeChild(loadingMask), 1000);
+        setTimeout(() => loadingMask.parentNode.removeChild(tishitext2), 1000);
         
     }
 }
