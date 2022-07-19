@@ -30,7 +30,7 @@
 }
 .postlist2{
     width: calc(100% - 50px);
-	height: calc(100% - 300px);
+	height: auto;
 	margin: 100px auto;
 	background-color: #fefefe;
 	border-radius: 10px;
