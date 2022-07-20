@@ -36,8 +36,17 @@
 	border-radius: 10px;
 	box-shadow: 0 0 5px 5px darkgray;
     padding: 20px;
+    animation: fadein .1s;
 }
 .listheader{
     position: fixed;
     left: calc(100% - 75px);
+}
+@keyframes fadein {
+    0% {
+        transform: translate(0,100%);
+    }
+    100% {
+        transform: none;
+    }
 }
