@@ -124,6 +124,9 @@ function closelist(){
     document.getElementById('card').style = "display:none;"
     console.log('ok2')
 }
+function openpost(link3){
+    document.getElementById('posts').innerHTML = '<iframe width="auto" height="auto" src="' + link3 + '"></iframe>'
+}
 
 function gettip(){
     var aa233 = Math.random() + ""
