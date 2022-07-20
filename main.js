@@ -125,6 +125,7 @@ function closelist(){
     console.log('ok2')
 }
 function openpost(link3){
+    conlog.log('ok3')
     document.getElementById('posts').innerHTML = '<iframe width="auto" height="auto" src="' + link3 + '"></iframe>'
 }
 
