@@ -39,5 +39,5 @@
 }
 .listheader{
     position: fixed;
-    left: calc(100% - 70px);
+    left: calc(100% - 75px);
 }
