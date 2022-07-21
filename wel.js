@@ -39,3 +39,4 @@ var reful=document.referrer;
     start()
     start2()
 
+console.log("\n 速速V我50！https://dun.mianbaoduo.com/@fmkli \n","color: #fadfa3; background: #030307; padding:5px 0;")
