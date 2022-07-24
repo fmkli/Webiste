@@ -111,6 +111,7 @@ $.ajax({
             div2333.innerHTML = '<a href="javascript: openpost' + i + '();" id="postlink'+ i +'">' + testContent2333 + "</a>";
             list2333.appendChild(div2333);
             a + 1;
+            conlog = a;
         }
         $("#posts-stop").remove();
     }
