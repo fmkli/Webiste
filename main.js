@@ -155,20 +155,6 @@ function openpost4(){
     document.getElementById('postshow').style = ''
     document.getElementById('closebutton').innerHTML = '<a href="' + dizhi[4] + '" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5">浏览器打开查看</a>'
 }
-const wenzhang = document.getElementsByClassName('wenzhang')[0];
-const zhezhaoceng = document.getElementsByClassName('zhezhaoceng')[0];
-
-zhezhaoceng.addEventListener('click', event => {
-    if('wenzhang' !== event.target.zhezhaoceng) {
-      console.log(`success`);
-    }
-    if(wenzhang !== event.target) {
-      console.log('success');
-    }
-    if(event.target.contains(wenzhang) && event.target !== wenzhang) {
-      console.log('success');
-    }
-})
 //自己/参考写的一团乱麻的文章获取.End
 
 // 统计统计
