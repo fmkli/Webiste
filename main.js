@@ -127,6 +127,11 @@ function openlist(){
     console.log('ok')
 }
 
+function closelist(){
+    document.getElementById('card').style = "display: none;"
+    console.log('ok')
+}
+
 function openpost0(){
     document.getElementById('postshow').src = dizhi[0]
     document.getElementById('postshow').style = ''
