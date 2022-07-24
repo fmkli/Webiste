@@ -92,6 +92,7 @@ var reful=document.referrer;
         }
     };
 
+//自己写的一团乱麻的文章获取
 $.ajax({
     method: 'GET',
     dataType:"html",
@@ -118,9 +119,6 @@ $.ajax({
     }
 });
 
-// 统计统计
-!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JgapU3Sla12DMquS",ck:"JgapU3Sla12DMquS"});
-console.log('统计开启~')
 
 function openlist(){
     document.getElementById('card').style = ""
@@ -135,27 +133,33 @@ function closelist(){
 function openpost0(){
     document.getElementById('postshow').src = dizhi[0]
     document.getElementById('postshow').style = ''
+    document.getElementById('closebutton').innerHTML = '<a href="' + dizhi[0] + '" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5"></a>'
 }
 function openpost1(){
     document.getElementById('postshow').src = dizhi[1]
     document.getElementById('postshow').style = ''
+    document.getElementById('closebutton').innerHTML = '<a href="' + dizhi[1] + '" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5"></a>'
 }
 function openpost2(){
     document.getElementById('postshow').src = dizhi[2]
     document.getElementById('postshow').style = ''
+    document.getElementById('closebutton').innerHTML = '<a href="' + dizhi[2] + '" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5"></a>'
 }
 function openpost3(){
     document.getElementById('postshow').src = dizhi[3]
     document.getElementById('postshow').style = ''
+    document.getElementById('closebutton').innerHTML = '<a href="' + dizhi[3] + '" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5"></a>'
 }
 function openpost4(){
     document.getElementById('postshow').src = dizhi[4]
     document.getElementById('postshow').style = ''
+    document.getElementById('closebutton').innerHTML = '<a href="' + dizhi[4] + '" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5"></a>'
 }
+//自己写的一团乱麻的文章获取.End
 
-$("button").click(function(){
-    $("p").slideToggle();
-});
+// 统计统计
+!function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JgapU3Sla12DMquS",ck:"JgapU3Sla12DMquS"});
+console.log('统计开启~')
 
 function gettip(){
     var aa233 = Math.random() + ""
