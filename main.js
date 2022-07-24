@@ -101,15 +101,11 @@ $.ajax({
         var list2333 = document.getElementById("posts-list");
         for (var i = 0; i <= 4; i++){
             var links = data[i].link;
-            wangzhi = new Array;
-            wangzhi[i] = data[i].link;
-            console.log = wangzhi[i];
             var testContent2333 = data[i].title;
             var div2333 = document.createElement('div')
             div2333.classList = "posts2333";
             div2333.id = "postid" + i;
-            div2333.click = "javascript: openpost" + i + "();"
-            //div2333.innerHTML = '<a href="' + links + '">' + testContent2333 + "</a>";
+            div2333.innerHTML = '<a href="' + links + '" id="postlink'+ i +'">' + testContent2333 + "</a>";
             list2333.appendChild(div2333);
         }
         $("#posts-stop").remove();
@@ -127,10 +123,8 @@ function openlist(){
     document.getElementById('card').style = ""
     console.log('ok')
 }
-function closelist(){
-    document.getElementById('card').style = "display:none;"
-    console.log('ok2')
-}
+
+$
 
 function gettip(){
     var aa233 = Math.random() + ""
