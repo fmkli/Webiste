@@ -101,16 +101,24 @@ $.ajax({
         var list2333 = document.getElementById("posts-list");
         for (var i = 0; i <= 4; i++){
             var links = data[i].link;
+            wangzhi = new Array;
+            wangzhi[i] = data[i].link;
+            console.log = wangzhi[i];
             var testContent2333 = data[i].title;
             var div2333 = document.createElement('div')
             div2333.classList = "posts2333";
-            div2333.id = "postid" + i
-            div2333.innerHTML = '<a href="' + links + '">' + testContent2333 + "</a>"
+            div2333.id = "postid" + i;
+            div2333.click = "javascript: openpost" + i + "();"
+            //div2333.innerHTML = '<a href="' + links + '">' + testContent2333 + "</a>";
             list2333.appendChild(div2333);
         }
         $("#posts-stop").remove();
     }
 });
+function openpost0(){
+    document.getElementById('postshow').src = ""
+    document.getElementById('postshow').style = ""
+}
 // 统计统计
 !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JgapU3Sla12DMquS",ck:"JgapU3Sla12DMquS"});
 console.log('统计开启~')
