@@ -97,9 +97,14 @@ $.ajax({
     dataType:"html",
     url: 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fblog.imfmkli.top%2Fatom.xml',
     success: function(data){
-        data = JSON.parse(data).items;
+        var data = JSON.parse(data).items;
         var list2333 = document.getElementById("posts-list");
         dizhi = new Array;
+        dizhi[0] = data[0].link;
+        dizhi[1] = data[1].link;
+        dizhi[2] = data[2].link;
+        dizhi[3] = data[3].link;
+        dizhi[4] = data[4].link;
         for (var i = 0; i <= 4; i++){
             var links = data[i].link;
             var testContent2333 = data[i].title;
@@ -123,23 +128,23 @@ function openlist(){
 }
 
 function openpost0(){
-    document.getElementById('postshow').src = data[0].link
+    document.getElementById('postshow').src = dizhi[0]
     document.getElementById('postshow').style = ''
 }
 function openpost1(){
-    document.getElementById('postshow').src = data[1].link
+    document.getElementById('postshow').src = dizhi[1]
     document.getElementById('postshow').style = ''
 }
 function openpost2(){
-    document.getElementById('postshow').src = data[2].link
+    document.getElementById('postshow').src = dizhi[2]
     document.getElementById('postshow').style = ''
 }
 function openpost3(){
-    document.getElementById('postshow').src = data[3].link
+    document.getElementById('postshow').src = dizhi[3]
     document.getElementById('postshow').style = ''
 }
 function openpost4(){
-    document.getElementById('postshow').src = data[4].link
+    document.getElementById('postshow').src = dizhi[4]
     document.getElementById('postshow').style = ''
 }
 
