@@ -126,6 +126,8 @@ function openlist(){
 }
 
 function closelist(){
+    document.getElementById('closebutton').innerHTML = ''
+    document.getElementById('postshow').style = 'display:none;'
     document.getElementById('card').style = "display: none;"
     console.log('ok')
 }
