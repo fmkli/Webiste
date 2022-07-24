@@ -99,19 +99,15 @@ $.ajax({
     success: function(data){
         var data = JSON.parse(data).items;
         var list2333 = document.getElementById("posts-list");
-        a = 0;
+        dizhi = new Array;
         for (var i = 0; i <= 4; i++){
             var links = data[i].link;
             var testContent2333 = data[i].title;
             var div2333 = document.createElement('div')
             div2333.classList = "posts2333";
-            dizhi = new Array;
-            dizhi[a] = data[i].link;
             div2333.id = "postid" + i;
             div2333.innerHTML = '<a href="javascript: openpost' + i + '();" id="postlink'+ i +'">' + testContent2333 + "</a>";
             list2333.appendChild(div2333);
-            a + 1;
-            conlog = a;
         }
         $("#posts-stop").remove();
     }
@@ -127,23 +123,23 @@ function openlist(){
 }
 
 function openpost0(){
-    document.getElementById('postshow').src = dizhi[0]
+    document.getElementById('postshow').src = data[0].link
     document.getElementById('postshow').style = ''
 }
 function openpost1(){
-    document.getElementById('postshow').src = dizhi[1]
+    document.getElementById('postshow').src = data[1].link
     document.getElementById('postshow').style = ''
 }
 function openpost2(){
-    document.getElementById('postshow').src = dizhi[2]
+    document.getElementById('postshow').src = data[2].link
     document.getElementById('postshow').style = ''
 }
 function openpost3(){
-    document.getElementById('postshow').src = dizhi[3]
+    document.getElementById('postshow').src = data[3].link
     document.getElementById('postshow').style = ''
 }
 function openpost4(){
-    document.getElementById('postshow').src = dizhi[4]
+    document.getElementById('postshow').src = data[4].link
     document.getElementById('postshow').style = ''
 }
 
