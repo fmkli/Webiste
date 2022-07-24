@@ -155,6 +155,8 @@ function openpost4(){
     document.getElementById('postshow').style = ''
     document.getElementById('closebutton').innerHTML = '<a href="' + dizhi[4] + '" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5">浏览器打开查看</a>'
 }
+const wenzhang = document.getElementsByClassName('wenzhang')[0];
+const zhezhaoceng = document.getElementsByClassName('zhezhaoceng')[0];
 
 zhezhaoceng.addEventListener('click', event => {
     if('wenzhang' !== event.target.zhezhaoceng) {
