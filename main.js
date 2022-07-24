@@ -104,6 +104,8 @@ $.ajax({
             var testContent2333 = data[i].title;
             var div2333 = document.createElement('div')
             div2333.classList = "posts2333";
+            dizhi = new Array;
+            dizhi[i] = data[i].link;
             div2333.id = "postid" + i;
             div2333.innerHTML = '<a href="javascript: openpost' + i + '();" id="postlink'+ i +'">' + testContent2333 + "</a>";
             list2333.appendChild(div2333);
@@ -119,6 +121,27 @@ console.log('统计开启~')
 function openlist(){
     document.getElementById('card').style = ""
     console.log('ok')
+}
+
+function openpost0(){
+    document.getElementById('postshow').src = dizhi[0]
+    document.getElementById('postshow').style = ''
+}
+function openpost1(){
+    document.getElementById('postshow').src = dizhi[1]
+    document.getElementById('postshow').style = ''
+}
+function openpost2(){
+    document.getElementById('postshow').src = dizhi[2]
+    document.getElementById('postshow').style = ''
+}
+function openpost3(){
+    document.getElementById('postshow').src = dizhi[3]
+    document.getElementById('postshow').style = ''
+}
+function openpost4(){
+    document.getElementById('postshow').src = dizhi[4]
+    document.getElementById('postshow').style = ''
 }
 
 $("button").click(function(){
