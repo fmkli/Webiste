@@ -133,27 +133,27 @@ function closelist(){
 function openpost0(){
     document.getElementById('postshow').src = dizhi[0]
     document.getElementById('postshow').style = ''
-    document.getElementById('closebutton').innerHTML = '<a href="' + dizhi[0] + '" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5"></a>'
+    document.getElementById('closebutton').innerHTML = '<a href="' + dizhi[0] + '" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5">浏览器打开查看</a>'
 }
 function openpost1(){
     document.getElementById('postshow').src = dizhi[1]
     document.getElementById('postshow').style = ''
-    document.getElementById('closebutton').innerHTML = '<a href="' + dizhi[1] + '" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5"></a>'
+    document.getElementById('closebutton').innerHTML = '<a href="' + dizhi[1] + '" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5">浏览器打开查看</a>'
 }
 function openpost2(){
     document.getElementById('postshow').src = dizhi[2]
     document.getElementById('postshow').style = ''
-    document.getElementById('closebutton').innerHTML = '<a href="' + dizhi[2] + '" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5"></a>'
+    document.getElementById('closebutton').innerHTML = '<a href="' + dizhi[2] + '" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5">浏览器打开查看</a>'
 }
 function openpost3(){
     document.getElementById('postshow').src = dizhi[3]
     document.getElementById('postshow').style = ''
-    document.getElementById('closebutton').innerHTML = '<a href="' + dizhi[3] + '" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5"></a>'
+    document.getElementById('closebutton').innerHTML = '<a href="' + dizhi[3] + '" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5">浏览器打开查看</a>'
 }
 function openpost4(){
     document.getElementById('postshow').src = dizhi[4]
     document.getElementById('postshow').style = ''
-    document.getElementById('closebutton').innerHTML = '<a href="' + dizhi[4] + '" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5"></a>'
+    document.getElementById('closebutton').innerHTML = '<a href="' + dizhi[4] + '" class="gd-button gd-h gd-rc gd-shadow gd-shadow-h-5">浏览器打开查看</a>'
 }
 //自己写的一团乱麻的文章获取.End
 
