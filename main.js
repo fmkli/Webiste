@@ -106,6 +106,7 @@ $.ajax({
             div2333.classList = "posts2333";
             dizhi = new Array;
             dizhi[i] = data[i].link;
+            console.log = dizhi[i];
             div2333.id = "postid" + i;
             div2333.innerHTML = '<a href="javascript: openpost' + i + '();" id="postlink'+ i +'">' + testContent2333 + "</a>";
             list2333.appendChild(div2333);
