@@ -97,7 +97,7 @@ $.ajax({
     dataType:"html",
     url: 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fblog.imfmkli.top%2Fatom.xml',
     success: function(data){
-        var data = JSON.parse(data).items;
+        data = JSON.parse(data).items;
         var list2333 = document.getElementById("posts-list");
         dizhi = new Array;
         for (var i = 0; i <= 4; i++){
