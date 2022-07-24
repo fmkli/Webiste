@@ -99,16 +99,18 @@ $.ajax({
     success: function(data){
         var data = JSON.parse(data).items;
         var list2333 = document.getElementById("posts-list");
+        a = 0;
         for (var i = 0; i <= 4; i++){
             var links = data[i].link;
             var testContent2333 = data[i].title;
             var div2333 = document.createElement('div')
             div2333.classList = "posts2333";
             dizhi = new Array;
-            dizhi[i] = data[i].link;
+            dizhi[a] = data[i].link;
             div2333.id = "postid" + i;
             div2333.innerHTML = '<a href="javascript: openpost' + i + '();" id="postlink'+ i +'">' + testContent2333 + "</a>";
             list2333.appendChild(div2333);
+            a + 1;
         }
         $("#posts-stop").remove();
     }
