@@ -39,4 +39,4 @@ var reful=document.referrer;
     start()
     start2()
 
-console.log("\n %c 鸽子主页 v1.10.1 %c 速速V我50 https://dun.mianbaoduo.com/@fmkli \n","color: #fadfa3; background: #030307; padding:5px 0;","background: #fadfa3; padding:5px 0;")
+console.log("\n %c 鸽子主页 v1.10.1 %c 速速V我50 https://www.vwo50.com/donate/xGRuJ \n","color: #fadfa3; background: #030307; padding:5px 0;","background: #fadfa3; padding:5px 0;")
