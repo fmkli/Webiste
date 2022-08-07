@@ -1,0 +1,123 @@
+body{
+    overflow:hidden;
+    background-image: url(https://api.dujin.org/bing/1920.php);
+    overflow-y: scroll;
+    overflow-x:hidden;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column; 
+    
+}
+.header2333{
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+}
+hr{
+    color: #888888;
+}
+a{
+    color: rgb(0, 133, 133);
+}
+a:hover{
+    border-color: rgb(0, 133, 133);
+}
+.center{
+    text-align: center;
+}
+.shuanglan{
+    position: absolute;
+    top: 20%;
+    left: 6%;
+}
+.left{
+    float: left;
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 2px #888888;
+    width: 500px;
+}
+.left:hover{
+    box-shadow: 6px 6px 4px #888888;
+}
+.right:hover{
+    box-shadow: 6px 6px 4px #888888;
+}
+.headimg{
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+.lianjie{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(233, 233, 233);
+    display: inline-block;
+    text-align: center;
+}
+.lianjie:hover{
+    width: 90px;
+    height: 90px;
+    background-color: rgb(216, 216, 216);
+    display: inline-block;
+    text-align: center;
+}
+@media all and (min-width:1290px){
+    .right{
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        height: auto;
+        box-shadow: 5px 5px 2px #888888;
+        width: 520px;
+        position: absolute;
+        left: 105%;
+        top: 0%;
+    }
+}
+@media all and (max-width:1290px) and (min-width:1079px){
+    .right{
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        height: auto;
+        box-shadow: 5px 5px 2px #888888;
+        width: 310px;
+        position: absolute;
+        left: 105%;
+        top: 0%;
+    }
+}
+@media all and (max-width:1079px) and (min-width:800px){
+    .right{
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        height: auto;
+        box-shadow: 5px 5px 2px #888888;
+        width: 100%;
+        top: 105%;
+        position: absolute;
+        left: 0%;
+    }
+}
+@media all and (max-width:800px){
+    .urlimg{
+        display: none;
+    }
+    .left{
+        width: 350px;
+    }
+    .right{
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        height: auto;
+        box-shadow: 5px 5px 2px #888888;
+        width: 100%;
+        top: 105%;
+        position: absolute;
+        left: 0%;
+    }
+}
