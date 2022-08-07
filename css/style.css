@@ -28,7 +28,7 @@ a:hover{
 .shuanglan{
     position: absolute;
     top: 20%;
-    left: 6%;
+    left: 8%;
 }
 .left{
     float: left;
@@ -96,7 +96,7 @@ a:hover{
         padding: 10px;
         height: auto;
         box-shadow: 5px 5px 2px #888888;
-        width: 100%;
+        width: 500px;
         top: 105%;
         position: absolute;
         left: 0%;
@@ -107,7 +107,10 @@ a:hover{
         display: none;
     }
     .left{
-        width: 350px;
+        width: 338px;
+    }
+    .shuanglan{
+        left: 2%;
     }
     .right{
         background-color: white;
@@ -115,7 +118,7 @@ a:hover{
         padding: 10px;
         height: auto;
         box-shadow: 5px 5px 2px #888888;
-        width: 100%;
+        width: 338px;
         top: 105%;
         position: absolute;
         left: 0%;
