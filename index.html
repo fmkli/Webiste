@@ -15,10 +15,27 @@
         <!-- Jquery引入 -->
         <script src="./jquery.min.js"></script>
 
+        <!-- PWA -->
+        <link rel="manifest" href="manifest.json" />
+        <!-- 玩玩PWA -->
+        <!-- ios support -->
+        <link rel="apple-touch-icon" href="images/icons/128.png" />
+        <link rel="apple-touch-icon" href="images/icons/144.png" />
+        <link rel="apple-touch-icon" href="images/icons/192.png" />
+        <link rel="apple-touch-icon" href="images/icons/256.png" />
+        <link rel="apple-touch-icon" href="images/icons/512.png" />
+        <meta name="apple-mobile-web-app-status-bar" content="#fdfdfd" />
+        <meta name="theme-color" content="#c1e4e3" />
+        <!-- 玩玩PWA.End-->
+
+        <!-- 播放器css -->
+        <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
     </head>
     <body>
+        <!-- 网站 主要内容-->
         <div class="background">
             <div class="shuanglan">
+                <!-- 盒子1 -->
                 <div class="left">
                     <img class="headimg" src="./image/username.png">
                     <br><img class="headimg urlimg" src="./image/url.png">
@@ -57,6 +74,8 @@
                         <br>
                     </div>
                 </div>
+                <!-- 盒子1.End-->
+                <!-- 盒子2 -->
                 <div class="right">
                     <h3>About</h3>
                     <ul>
@@ -102,10 +121,29 @@
                         <br>本站已经开启了<a target="_blank" title="51la网站统计" href="https://v6.51.la/land/JgapU3Sla12DMquS">统计（使用51.la）</a>啦~
                     </div>
                 </div>
+                <!-- 盒子2.End -->
             </div>
 
         </div>
-        <br><br><br>
+
+        <!-- APlayer -->
+        <meting-js
+            id="7547597075"
+            lrc-type="0"
+            server="netease"
+            order="list"
+            type="playlist"
+            fixed="true"
+            mini="true"
+            list-olded="true"
+            autoplay="false"
+            mutex="true"
+        ></meting-js>
+
+        <!-- JS引入 -->
         <script src="./js/index.js"></script>
+        <!-- APlayer引入（ -->
+        <script src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+        <script src="https://unpkg.com/meting@2.0.1/dist/Meting.min.js"></script>
     </body>
 </html>
