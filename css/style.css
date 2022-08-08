@@ -75,6 +75,9 @@ a:hover{
         left: 105%;
         top: 0%;
     }
+    .oncard2{
+        display: none;
+    }
 }
 @media all and (max-width:1290px) and (min-width:1079px){
     .right{
@@ -88,6 +91,9 @@ a:hover{
         left: 105%;
         top: 0%;
     }
+    .oncard2{
+        display: none;
+    }
 }
 @media all and (max-width:1079px) and (min-width:800px){
     .right{
@@ -100,6 +106,9 @@ a:hover{
         top: 105%;
         position: absolute;
         left: 0%;
+    }
+    .oncard1{
+        display: none;
     }
 }
 @media all and (max-width:800px){
@@ -122,5 +131,8 @@ a:hover{
         top: 105%;
         position: absolute;
         left: 0%;
+    }
+    .oncard1{
+        display: none;
     }
 }
