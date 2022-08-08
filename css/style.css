@@ -110,6 +110,9 @@ a:hover{
     .oncard1{
         display: none;
     }
+    .aplayer{
+        display: none;
+    }
 }
 @media all and (max-width:759px) and (min-width:550px){
     .urlimg{
@@ -135,6 +138,9 @@ a:hover{
     .oncard1{
         display: none;
     }
+    .aplayer{
+        display: none;
+    }
 }
 @media all and (max-width:550px){
     .urlimg{
@@ -158,6 +164,9 @@ a:hover{
         left: 0%;
     }
     .oncard1{
+        display: none;
+    }
+    .aplayer{
         display: none;
     }
 }
