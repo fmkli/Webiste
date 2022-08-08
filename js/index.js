@@ -22,6 +22,8 @@ function createtime() {
     }
     document.getElementById("timeDate").innerHTML = " 本站已安全运行 " + dnum + " 天 ";
     document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
+    document.getElementById("timeDate2").innerHTML = " 本站已安全运行 " + dnum + " 天 ";
+    document.getElementById("times2").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
 }
 setInterval("createtime()", 250);
 createtime();
