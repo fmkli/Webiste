@@ -7,7 +7,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="菜菜鸽子的主页，来吧来吧~"/>
         <title>鸽子主页</title>
+        
+        <!-- CSS引入 -->
         <link rel="stylesheet" type="text/css" href="./css/style.css">
+        <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
 
         <!-- 拒绝IE浏览器访问！ -->
         <script src="./ie.js"></script>
@@ -70,6 +73,18 @@
                         <br>由于我太菜了，只能做成这样了（伤心
                         <br>
                     </div>
+                    <hr>
+                    <!-- APlayer -->
+                    <meting-js
+                        id="7547597075"
+                        lrc-type="0"
+                        server="netease"
+                        order="list"
+                        type="playlist"
+                        list-olded="true"
+                        autoplay="false"
+                        mutex="true"
+                    ></meting-js>
                 </div>
                 <!-- 盒子1.End-->
                 <!-- 盒子2 -->
@@ -126,5 +141,9 @@
 
         <!-- JS引入 -->
         <script src="./js/index.js"></script>
+
+        <!-- APlayer引入（ -->
+        <script src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
+        <script src="https://unpkg.com/meting@2.0.1/dist/Meting.min.js"></script>
     </body>
 </html>
