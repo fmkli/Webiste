@@ -95,7 +95,7 @@ a:hover{
         display: none;
     }
 }
-@media all and (max-width:1079px) and (min-width:800px){
+@media all and (max-width:1079px) and (min-width:759px){
     .right{
         background-color: white;
         border-radius: 10px;
@@ -111,7 +111,32 @@ a:hover{
         display: none;
     }
 }
-@media all and (max-width:800px){
+@media all and (max-width:759px) and (min-width:550px){
+    .urlimg{
+        display: none;
+    }
+    .left{
+        width: 480px;
+    }
+    .shuanglan{
+        left: 2%;
+    }
+    .right{
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+        height: auto;
+        box-shadow: 5px 5px 2px #888888;
+        width: 480px;
+        top: 105%;
+        position: absolute;
+        left: 0%;
+    }
+    .oncard1{
+        display: none;
+    }
+}
+@media all and (max-width:550px){
     .urlimg{
         display: none;
     }
