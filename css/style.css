@@ -176,15 +176,18 @@ a:hover{
         left: 2%;
     }
     .right{
-        background-color: white;
-        border-radius: 10px;
         padding: 10px;
         height: auto;
-        box-shadow: 5px 5px 2px #888888;
         width: 338px;
         top: 105%;
         position: absolute;
         left: 0%;
+        background: rgba( 255, 255, 255, 0.25 );
+        box-shadow: 0 8px 32px 0  #888888;
+        backdrop-filter: blur( 4px );
+        -webkit-backdrop-filter: blur( 4px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
     .oncard1{
         display: none;
