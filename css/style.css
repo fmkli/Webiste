@@ -1,6 +1,6 @@
 body{
     overflow:hidden;
-    background-image: url(../image/places.jpg);
+    background-color: rgba(117, 255, 255, 0.692);
     overflow-y: scroll;
     overflow-x:hidden;
     min-height: 100%;
