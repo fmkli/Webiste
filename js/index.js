@@ -84,7 +84,7 @@ $.ajax({
 document.getElementById('posts-list').style = 'display: none;'
 function openlist(){
     if (open123 == 1){
-        document.getElementById('openlist2').innerText = '可以点我回去哒~'
+        document.getElementById('openlist2').innerText = '可以点我回去哒~ ━(*｀∀´*)ノ亻! '
         open123 = 2
         document.getElementById('nopost').style = 'display: none;'
         document.getElementById('posts-list').style = ''
