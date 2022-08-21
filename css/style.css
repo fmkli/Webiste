@@ -1,30 +1,29 @@
 body{
     overflow:hidden;
-    background-color: rgba(183, 255, 255, 0.74);
+    background-image: url(../image/place.jpg);
     overflow-y: scroll;
     overflow-x:hidden;
     min-height: 100%;
     display: flex;
     flex-direction: column; 
-    
+    color: rgb(26, 26, 26);
 }
 .header2333{
     text-align: center;
     padding: 10px;
-    background: rgba( 255, 255, 255, 0.25 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 3px solid rgba( 255, 255, 255, 0.18 );
 }
 hr{
     color: #888888;
 }
 a{
-    color: rgb(0, 133, 133);
+    color: rgb(20, 20, 20);
 }
 a:hover{
-    border-color: rgb(0, 133, 133);
+    border-color: rgb(22, 22, 22)
 }
 .center{
     text-align: center;
@@ -200,14 +199,4 @@ a:hover{
     text-align: center;
     top: 30%;
     position: relative;
-}
-.dailong{
-    position: fixed;
-    top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	overflow: auto;
-	background-color: rgb(110, 238, 255);
-   	z-index: 9990;  
 }
