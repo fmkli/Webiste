@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>留言板</title>
+        <link rel="stylesheet" href="./mdui/css/mdui.min.css"/>
+        <meta name="google-site-verification" content="PDfOR7Ln1L0DHk6oRWA7dx8WcM4f4XYBwW3LkK18v44" />
+        <script src='//unpkg.com/@waline/client@v2/dist/waline.js'></script>
+        <link href='//unpkg.com/@waline/client@v2/dist/waline.css' rel='stylesheet' />
+    </head>
+    <body>
+        <button type="button" onclick="openlyb();">切换留言系统</button>
+        <div class="mdui-card card">
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">留言板</div>
+            </div>
+            <!-- 卡片的内容 -->
+            <div class="mdui-card-content mdui-typo" id="lybcon">
+                <div id="lyb1" style="">
+                    留言板一号
+    
+                    <div id="waline"></div>
+                    <script>
+                        Waline.init({
+                        el: '#waline',
+                        serverURL: 'https://waline.imfmkli.top/',
+                        requiredMeta: ['nick', 'mail']
+                        });
+                    </script>
+                </div>
+                <div id="lyb2" style="display: none;">
+                    留言板二号
+                    <script src="https://giscus.app/client.js"
+                        data-repo="fmkli/fmkli"
+                        data-repo-id="MDEwOlJlcG9zaXRvcnkyOTA0NTkxNTQ="
+                        data-category="随便说说"
+                        data-category-id="DIC_kwDOEVAOEs4CAXnX"
+                        data-mapping="pathname"
+                        data-strict="0"
+                        data-reactions-enabled="1"
+                        data-emit-metadata="0"
+                        data-input-position="top"
+                        data-theme="preferred_color_scheme"
+                        data-lang="zh-CN"
+                        data-loading="lazy"
+                        crossorigin="anonymous"
+                        async>
+                </script>
+                </div>
+            </div>
+        </div>
+        <script>
+            lyb = 0
+            function openlyb(){
+                if (lyb == 0){
+                    document.getElementById('lyb2').style = ''
+                    document.getElementById('lyb1').style = 'display: none;'
+                    lyb = 1
+                }
+                if (lyb == 1){
+                    document.getElementById('lyb1').style = ''
+                    document.getElementById('lyb2').style = 'display: none;'
+                    lyb = 0
+                }
+            }
+        </script>
+    </body>
+</html>
