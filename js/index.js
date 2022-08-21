@@ -58,3 +58,42 @@ createtime();
 !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JgapU3Sla12DMquS",ck:"JgapU3Sla12DMquS"});
 console.log('统计开启~')
 
+open123 = 1
+
+$.ajax({
+    method: 'GET',
+    dataType:"html",
+    url: 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fblog.imfmkli.top%2Fatom.xml',
+    success: function(data){
+        var data = JSON.parse(data).items;
+        var list2333 = document.getElementById("posts-list");
+        document.getElementById("posts-list").innerHTML = ''
+        document.getElementById("posts-list").innerHTML = '<h2>Blogの文章</h2>'
+        for (var i = 0; i <= 4; i++){
+            var links = data[i].link;
+            var testContent2333 = data[i].title;
+            var div2333 = document.createElement('div')
+            div2333.classList = "posts2333";
+            div2333.id = "postid" + i;
+            div2333.innerHTML = '<a href="' + links + '" id="postlink'+ i +'">' + testContent2333 + "</a>";
+            list2333.appendChild(div2333);
+        }
+        $("#posts-stop").remove();
+    }
+});
+document.getElementById('posts-list').style = 'display: none;'
+function openlist(){
+    if (open123 == 1){
+        document.getElementById('openlist2').innerText = '可以点我回去哒~'
+        open123 = 2
+        document.getElementById('nopost').style = 'display: none;'
+        document.getElementById('posts-list').style = ''
+    } else if (open123 == 2) {
+        document.getElementById('posts-list').style = 'display: none;'
+        document.getElementById('nopost').style = ''
+        open123 = 1
+        document.getElementById('openlist2').innerText = '点我加载！'
+    }
+
+}
+

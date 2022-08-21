@@ -33,6 +33,15 @@ a:hover{
     top: 14%;
     left: 8%;
 }
+.openlist{
+    width: calc(100% - 70px);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    background-color: white;
+}
+.openlist:hover{
+    background-color: rgba(255, 255, 255, 0.884);
+}
 .left{
     float: left;
     padding: 10px;
@@ -48,7 +57,7 @@ a:hover{
     box-shadow: 0 5px 27px 0 #888888;
 }
 .right:hover{
-    box-shadow: 0 5px 27px 0 #888888;
+    box-shadow: 0 5px 27px 0 #888888; 
 }
 .headimg{
     width: auto;
@@ -199,4 +208,25 @@ a:hover{
     text-align: center;
     top: 30%;
     position: relative;
+}
+.posts2333{
+    position: relative;
+    width: calc(100% - 30px);
+    height: auto;
+    margin: 3px 0;
+    padding: 10px;
+    background-color: #fdfdfd;
+    border: 2px solid rgb(99, 99, 99);
+    border-radius: 20px
+    
+}
+.posts2333:hover{
+    position: relative;
+    width: calc(100% - 30px);
+    height: auto;
+    margin: 3px 0;
+    padding: 10px;
+    background-color: #fdfdfdc0;
+    border: 2px solid rgb(151, 151, 151);
+    border-radius: 20px;
 }
