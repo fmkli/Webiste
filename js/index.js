@@ -103,11 +103,13 @@ function openlist(){
 function openlist3(){
     if (open1234 == 1){
         document.getElementById('wenzhangrukou').style = 'display: none;'
+        document.getElementById('nolianjie').style = 'display: none;'
         document.getElementById('openlist4').innerText = '可以点我回去哒~ ━(*｀∀´*)ノ亻! '
         open1234 = 2
         document.getElementById('lianjie24').style = ''
     } else if (open1234 == 2) {
         document.getElementById('wenzhangrukou').style = ''
+        document.getElementById('nolianjie').style = ''
         document.getElementById('lianjie24').style = 'display: none;'
         open1234 = 1
         document.getElementById('openlist4').innerText = '点我加载！'
