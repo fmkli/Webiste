@@ -59,6 +59,7 @@ createtime();
 console.log('统计开启~')
 
 open123 = 1
+open1234 = 1
 
 $.ajax({
     method: 'GET',
@@ -84,11 +85,13 @@ $.ajax({
 document.getElementById('posts-list').style = 'display: none;'
 function openlist(){
     if (open123 == 1){
+        document.getElementById('lianjierukou').style = 'display: none;'
         document.getElementById('openlist2').innerText = '可以点我回去哒~ ━(*｀∀´*)ノ亻! '
         open123 = 2
         document.getElementById('nopost').style = 'display: none;'
         document.getElementById('posts-list').style = ''
     } else if (open123 == 2) {
+        document.getElementById('lianjierukou').style = ''
         document.getElementById('posts-list').style = 'display: none;'
         document.getElementById('nopost').style = ''
         open123 = 1
@@ -96,4 +99,20 @@ function openlist(){
     }
 
 }
+
+function openlist3(){
+    if (open1234 == 1){
+        document.getElementById('wenzhangrukou').style = 'display: none;'
+        document.getElementById('openlist4').innerText = '可以点我回去哒~ ━(*｀∀´*)ノ亻! '
+        open1234 = 2
+        document.getElementById('lianjie24').style = ''
+    } else if (open1234 == 2) {
+        document.getElementById('wenzhangrukou').style = ''
+        document.getElementById('lianjie24').style = 'display: none;'
+        open1234 = 1
+        document.getElementById('openlist4').innerText = '点我加载！'
+    }
+
+}
+
 
