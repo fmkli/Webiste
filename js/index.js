@@ -116,5 +116,15 @@ function openlist3(){
     }
 
 }
-
-
+openright2 = 0
+function openright(){
+    if (openright2 == 0){
+        document.getElementById('rightcard').style = ''
+        document.getElementById('caidananniu').innerText = 'No More'
+        openright2 = 1
+    } else if (openright2 == 1){
+        document.getElementById('rightcard').style = 'display: none;'
+        document.getElementById('caidananniu').innerText = 'More'
+        openright2 = 0
+    }
+}
