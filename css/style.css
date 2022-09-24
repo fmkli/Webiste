@@ -6,7 +6,6 @@ body{
     display: flex;
     flex-direction: column; 
     color: rgb(26, 26, 26);
-    overflow: hidden;
 }
 .header2333{
     text-align: center;
