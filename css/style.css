@@ -7,6 +7,7 @@ body{
     display: flex;
     flex-direction: column; 
     color: rgb(26, 26, 26);
+    overflow: hidden;
 }
 .header2333{
     text-align: center;
@@ -43,9 +44,9 @@ a:hover{
     background-color: rgba(255, 255, 255, 0.884);
 }
 .left{
+    width: 550px;
     float: left;
     padding: 10px;
-    width: 500px;
     background: rgba( 255, 255, 255, 0.25 );
     box-shadow: 0 8px 32px 0 #888888;
     backdrop-filter: blur( 4px );
@@ -82,6 +83,7 @@ a:hover{
     display: inline-block;
     text-align: center;
 }
+
 @media all and (min-width:1290px){
     .right{
         padding: 10px;
@@ -98,7 +100,7 @@ a:hover{
         border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
     .upupzuiup-text{
-        width: 90%;
+        width: 80%;
         height: 75px;
         float: left;
     }
@@ -112,12 +114,17 @@ a:hover{
         height: 75px;
         float: left;
     }
+    .qitaanniu{
+        width: 10%;
+        height: 75px;
+        float: left;
+    }
 }
 @media all and (max-width:1290px) and (min-width:1079px){
     .right{
         padding: 10px;
         height: auto;
-        width: 310px;
+        width: 350px;
         position: absolute;
         left: 105%;
         top: 0%;
@@ -129,7 +136,7 @@ a:hover{
         border: 1px solid rgba( 255, 255, 255, 0.18 );
     }
     .upupzuiup-text{
-        width: 90%;
+        width: 80%;
         height: 75px;
         float: left;
     }
@@ -143,12 +150,17 @@ a:hover{
         height: 75px;
         float: left;
     }
+    .qitaanniu{
+        width: 10%;
+        height: 75px;
+        float: left;
+    }
 }
 @media all and (max-width:1079px) and (min-width:759px){
     .right{
         padding: 10px;
         height: auto;
-        width: 500px;
+        width: 550px;
         top: 105%;
         position: absolute;
         left: 0%;
@@ -163,7 +175,7 @@ a:hover{
         display: none;
     }
     .upupzuiup-text{
-        width: 90%;
+        width: 80%;
         height: 75px;
         float: left;
     }
@@ -174,6 +186,11 @@ a:hover{
     }
     .upupzuiup{
         width: 100%;
+        height: 75px;
+        float: left;
+    }
+    .qitaanniu{
+        width: 10%;
         height: 75px;
         float: left;
     }
@@ -206,11 +223,16 @@ a:hover{
         display: none;
     }
     .upupzuiup-text{
-        width: 90%;
+        width: 80%;
         height: 75px;
         float: left;
     }
     .caidananniu{
+        width: 10%;
+        height: 75px;
+        float: left;
+    }
+    .qitaanniu{
         width: 10%;
         height: 75px;
         float: left;
@@ -226,7 +248,7 @@ a:hover{
         display: none;
     }
     .left{
-        width: 100%;
+        width: calc(100% - 50px);
     }
     .shuanglan{
         left: 2%;
@@ -234,7 +256,7 @@ a:hover{
     .right{
         padding: 10px;
         height: auto;
-        width: 100%;
+        width: calc(100% - 50px);
         top: 105%;
         position: absolute;
         left: 0%;
@@ -249,7 +271,7 @@ a:hover{
         display: none;
     }
     .upupzuiup-text{
-        width: 90%;
+        width: 80%;
         height: calc(10vh);
         float: left;
     }
@@ -263,10 +285,15 @@ a:hover{
         height: calc(10vh - 1px);
         float: left;
     }
+    .qitaanniu{
+        width: 10%;
+        height: calc(10vh - 1px);
+        float: left;
+    }
 }
 @media all and (max-height:695px){
     .upupzuiup-text{
-        width: 90%;
+        width: 80%;
         height: calc(10vh);
         float: left;
     }
@@ -276,6 +303,11 @@ a:hover{
         float: left;
     }
     .caidananniu{
+        width: 10%;
+        height: calc(10vh - 1px);
+        float: left;
+    }
+    .qitaanniu{
         width: 10%;
         height: calc(10vh - 1px);
         float: left;
@@ -299,6 +331,15 @@ a:hover{
     border-radius: 10px;
 }
 .caidananniu{
+    background-color: rgba(147, 242, 255, 0.596);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size:18px;
+}
+.qitaanniu{
     background-color: rgba(147, 242, 255, 0.596);
     border-radius: 10px;
     text-align: center;

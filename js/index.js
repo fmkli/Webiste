@@ -125,3 +125,6 @@ function openright(){
         openright2 = 0
     }
 }
+function openqita(){
+    
+}
