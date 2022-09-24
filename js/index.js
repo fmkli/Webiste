@@ -22,8 +22,6 @@ function createtime() {
     }
     document.getElementById("timeDate").innerHTML = " 于2020年08月26日成功申请js.org域名以来，本站已经挣扎度过了 " + dnum + " 天 ";
     document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
-    document.getElementById("timeDate2").innerHTML = " 于2020年08月26日成功申请js.org域名以来，本站已经挣扎度过了 " + dnum + " 天 ";
-    document.getElementById("times2").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
     // 倒计时截止时间
 	var EndTime = new Date('2023/08/26 12:00:00');
 	// 现在的事件
@@ -47,7 +45,6 @@ function createtime() {
     }
     
     document.getElementById("lasttime").innerHTML = "距离网站三周年庆还有" + day + "天 " + hour + "小时 " + minutes2 + "分钟 " + seconds2 + "秒" 
-    document.getElementById("lasttime2").innerHTML = "距离网站三周年庆还有" + day + "天 " + hour + "小时 " + minutes2 + "分钟 " + seconds2 + "秒" 
 
     
 }
