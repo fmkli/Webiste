@@ -117,9 +117,11 @@ openright2 = 0
 function openright(){
     if (openright2 == 0){
         document.getElementById('rightcard').style = ''
+	document.getElementById('leftcard').style = 'display: none;'
         document.getElementById('caidananniu').innerText = 'No 更多'
         openright2 = 1
     } else if (openright2 == 1){
+	document.getElementById('leftcard').style = ''
         document.getElementById('rightcard').style = 'display: none;'
         document.getElementById('caidananniu').innerText = '更多'
         openright2 = 0
