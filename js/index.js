@@ -128,5 +128,5 @@ function openright(){
     }
 }
 function openqita(){
-    
+    alert('无')
 }

@@ -1,4 +1,5 @@
 body{
+    overflow:hidden;
     background-image: url(../image/place.jpg);
     overflow-y: scroll;
     overflow-x:hidden;
@@ -6,6 +7,7 @@ body{
     display: flex;
     flex-direction: column; 
     color: rgb(26, 26, 26);
+    overflow: hidden;
 }
 .header2333{
     text-align: center;
@@ -347,6 +349,24 @@ a:hover{
     font-size:18px;
 }
 .caidananniu:hover{
+    background-color: rgba(147, 242, 255, 0.438);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size:18px;
+}
+.qitaanniu:active{
+    background-color: rgba(147, 242, 255, 0.377);
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size:18px;
+}
+.qitaanniu:hover{
     background-color: rgba(147, 242, 255, 0.438);
     border-radius: 10px;
     text-align: center;
