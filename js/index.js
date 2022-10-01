@@ -88,6 +88,7 @@ function openlist(){
         open123 = 2
         document.getElementById('nopost').style = 'display: none;'
         document.getElementById('posts-list').style = ''
+        openright2 = 0
     } else if (open123 == 2) {
         document.getElementById('music1').style = 'display: none;'
         document.getElementById('lianjierukou').style = ''
@@ -95,6 +96,7 @@ function openlist(){
         document.getElementById('nopost').style = ''
         open123 = 1
         document.getElementById('openlist2').innerText = '点我加载！'
+        openright2 = 0
     }
 
 }
@@ -106,6 +108,7 @@ function openlist3(){
         document.getElementById('nolianjie').style = 'display: none;'
         document.getElementById('openlist4').innerText = '可以点我回去哒~ ━(*｀∀´*)ノ亻! '
         open1234 = 2
+        openright2 = 0
         document.getElementById('lianjie24').style = ''
     } else if (open1234 == 2) {
         document.getElementById('music1').style = 'display: none;'
@@ -114,6 +117,7 @@ function openlist3(){
         document.getElementById('lianjie24').style = 'display: none;'
         open1234 = 1
         document.getElementById('openlist4').innerText = '点我加载！'
+        openright2 = 0
     }
 
 }
@@ -125,11 +129,13 @@ function openright(){
 	    document.getElementById('leftcard').style = 'display: none;'
         document.getElementById('caidananniu').innerText = 'No 更多'
         openright2 = 1
+        openright2 = 0
     } else if (openright2 == 1){
         document.getElementById('music1').style = 'display: none;'
 	    document.getElementById('leftcard').style = ''
         document.getElementById('rightcard').style = 'display: none;'
         document.getElementById('caidananniu').innerText = '更多'
+        openright2 = 0
         openright2 = 0
     }
 }
