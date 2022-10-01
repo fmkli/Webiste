@@ -246,8 +246,14 @@ a:hover{
         float: left;
     }
 }
-@media all and (min-width:1066px){
+@media all and (max-width:1066px){
     .qitaanniu{
+        display: none;
+    }
+    .qitaanniu:hover{
+        display: none;
+    }
+    .qitaanniu:active{
         display: none;
     }
 }
