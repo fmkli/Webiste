@@ -142,7 +142,7 @@ function openqita(){
         document.getElementById('rightcard').style = 'display: none;'
         document.getElementById('leftcard').style = ''
         document.getElementById('music1').style = 'display: none;'
-        openqita2 = 1
+        openqita2 = 0
     }
 
 }
