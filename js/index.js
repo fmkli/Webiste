@@ -82,12 +82,14 @@ $.ajax({
 document.getElementById('posts-list').style = 'display: none;'
 function openlist(){
     if (open123 == 1){
+        document.getElementById('music1').style = 'display: none;'
         document.getElementById('lianjierukou').style = 'display: none;'
         document.getElementById('openlist2').innerText = '可以点我回去哒~ ━(*｀∀´*)ノ亻! '
         open123 = 2
         document.getElementById('nopost').style = 'display: none;'
         document.getElementById('posts-list').style = ''
     } else if (open123 == 2) {
+        document.getElementById('music1').style = 'display: none;'
         document.getElementById('lianjierukou').style = ''
         document.getElementById('posts-list').style = 'display: none;'
         document.getElementById('nopost').style = ''
@@ -99,12 +101,14 @@ function openlist(){
 
 function openlist3(){
     if (open1234 == 1){
+        document.getElementById('music1').style = 'display: none;'
         document.getElementById('wenzhangrukou').style = 'display: none;'
         document.getElementById('nolianjie').style = 'display: none;'
         document.getElementById('openlist4').innerText = '可以点我回去哒~ ━(*｀∀´*)ノ亻! '
         open1234 = 2
         document.getElementById('lianjie24').style = ''
     } else if (open1234 == 2) {
+        document.getElementById('music1').style = 'display: none;'
         document.getElementById('wenzhangrukou').style = ''
         document.getElementById('nolianjie').style = ''
         document.getElementById('lianjie24').style = 'display: none;'
@@ -116,12 +120,14 @@ function openlist3(){
 openright2 = 0
 function openright(){
     if (openright2 == 0){
+        document.getElementById('music1').style = 'display: none;'
         document.getElementById('rightcard').style = ''
 	    document.getElementById('leftcard').style = 'display: none;'
         document.getElementById('caidananniu').innerText = 'No 更多'
         openright2 = 1
     } else if (openright2 == 1){
-	document.getElementById('leftcard').style = ''
+        document.getElementById('music1').style = 'display: none;'
+	    document.getElementById('leftcard').style = ''
         document.getElementById('rightcard').style = 'display: none;'
         document.getElementById('caidananniu').innerText = '更多'
         openright2 = 0
