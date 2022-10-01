@@ -254,7 +254,7 @@ a:hover{
     .right{
         padding: 10px;
         height: auto;
-        width: calc(100% + 50px);
+        width: 100%;
         top: 105%;
         position: absolute;
         left: 0%;

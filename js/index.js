@@ -129,13 +129,11 @@ function openright(){
 	    document.getElementById('leftcard').style = 'display: none;'
         document.getElementById('caidananniu').innerText = 'No 更多'
         openright2 = 1
-        openright2 = 0
     } else if (openright2 == 1){
         document.getElementById('music1').style = 'display: none;'
 	    document.getElementById('leftcard').style = ''
         document.getElementById('rightcard').style = 'display: none;'
         document.getElementById('caidananniu').innerText = '更多'
-        openright2 = 0
         openright2 = 0
     }
 }
