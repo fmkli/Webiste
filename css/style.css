@@ -246,7 +246,7 @@ a:hover{
         float: left;
     }
 }
-@media all and (max-width:1066px){
+@media all and (min-width:1066px){
     .qitaanniu{
         display: none;
     }
