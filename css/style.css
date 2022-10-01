@@ -246,6 +246,11 @@ a:hover{
         float: left;
     }
 }
+@media all and (max-width:1066){
+    .qitaanniu{
+        display: none;
+    }
+}
 @media all and (max-width:550px){
     .urlimg{
         display: none;
