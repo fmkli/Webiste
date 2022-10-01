@@ -50,6 +50,7 @@
 
         <!-- 网站 主要内容-->
         <div class="background">
+
             <div class="upupzuiup">
                 <div class="caidananniu" id="caidananniu" onclick="openright();">
                     更多
@@ -58,10 +59,26 @@
                     鸽子主页
                 </div>
                 <div class="qitaanniu" id="caidananniu" onclick="openqita();">
-                    其他
+                    音乐
                 </div>
             </div>
+
             <div class="shuanglan">
+                <!-- APlayer -->
+                <div class="music1" id="music1" style="display: none;">
+                    <meting-js
+                        id="7547597075"
+                        lrc-type="0"
+                        server="netease"
+                        order="list"
+                        type="playlist"
+                        list-olded="true"
+                        autoplay="false"
+                        mutex="true"
+                        list-folded="true"
+                    ></meting-js>
+                </div>
+
                 <!-- 盒子1 -->
                 <div class="left" id="leftcard">
 
@@ -100,19 +117,6 @@
                         <br>攻击网站的司马
                     </div>
 
-                    <hr class="oncard1">
-                    <!-- APlayer -->
-                    <meting-js
-                        id="7547597075"
-                        lrc-type="0"
-                        server="netease"
-                        order="list"
-                        type="playlist"
-                        list-olded="true"
-                        autoplay="false"
-                        mutex="true"
-                        list-folded="true"
-                    ></meting-js>
                 </div>
                 <!-- 盒子1.End-->
 

@@ -117,7 +117,7 @@ openright2 = 0
 function openright(){
     if (openright2 == 0){
         document.getElementById('rightcard').style = ''
-	document.getElementById('leftcard').style = 'display: none;'
+	    document.getElementById('leftcard').style = 'display: none;'
         document.getElementById('caidananniu').innerText = 'No 更多'
         openright2 = 1
     } else if (openright2 == 1){
@@ -127,6 +127,20 @@ function openright(){
         openright2 = 0
     }
 }
+openqita2 = 0
 function openqita(){
-    alert('无')
+    if (openqita2 == 0){
+        openright2 = 0
+        document.getElementById('rightcard').style = 'display: none;'
+        document.getElementById('leftcard').style = 'display: none;'
+        document.getElementById('music1').style = ''
+        openqita2 = 1
+    } else if (openqita2 == 1) {
+        openright2 = 0
+        document.getElementById('rightcard').style = 'display: none;'
+        document.getElementById('leftcard').style = ''
+        document.getElementById('music1').style = 'display: none;'
+        openqita2 = 1
+    }
+
 }
