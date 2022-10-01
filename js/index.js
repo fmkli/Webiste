@@ -131,12 +131,14 @@ openqita2 = 0
 function openqita(){
     if (openqita2 == 0){
         openright2 = 0
+        document.getElementById('caidananniu').innerText = '更多'
         document.getElementById('rightcard').style = 'display: none;'
         document.getElementById('leftcard').style = 'display: none;'
         document.getElementById('music1').style = ''
         openqita2 = 1
     } else if (openqita2 == 1) {
         openright2 = 0
+        document.getElementById('caidananniu').innerText = '更多'
         document.getElementById('rightcard').style = 'display: none;'
         document.getElementById('leftcard').style = ''
         document.getElementById('music1').style = 'display: none;'
