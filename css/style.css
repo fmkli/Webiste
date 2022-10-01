@@ -32,6 +32,11 @@ a:hover{
     top: 14%;
     left: 8%;
 }
+.meting{
+    position: absolute;
+    top: 14%;
+    left: 8%;
+}
 .openlist{
     width: calc(100% - 70px);
     border: 1px solid rgb(255, 255, 255);
