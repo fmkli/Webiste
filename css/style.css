@@ -91,7 +91,7 @@ a:hover{
     .right{
         padding: 10px;
         height: auto;
-        width: 520px;
+        width: 550px;
         position: absolute;
         left: 105%;
         top: 0%;
@@ -127,7 +127,7 @@ a:hover{
     .right{
         padding: 10px;
         height: auto;
-        width: 350px;
+        width: 550px;
         position: absolute;
         left: 105%;
         top: 0%;
@@ -165,8 +165,6 @@ a:hover{
         height: auto;
         width: 550px;
         top: 105%;
-        position: absolute;
-        left: 0%;
         background: rgba( 255, 255, 255, 0.25 );
         box-shadow: 0 8px 32px 0  #888888;
         backdrop-filter: blur( 4px );
@@ -213,8 +211,6 @@ a:hover{
         height: auto;
         width: 480px;
         top: 105%;
-        position: absolute;
-        left: 0%;
         background: rgba( 255, 255, 255, 0.25 );
         box-shadow: 0 8px 32px 0  #888888;
         backdrop-filter: blur( 4px );
@@ -271,8 +267,6 @@ a:hover{
         padding: 10px;
         height: auto;
         top: 105%;
-        position: absolute;
-        left: 0%;
         background: rgba( 255, 255, 255, 0.25 );
         box-shadow: 0 8px 32px 0  #888888;
         backdrop-filter: blur( 4px );
