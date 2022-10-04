@@ -235,6 +235,7 @@ a:hover{
 .upupzuiup-text{
     text-align: center;
     position: relative;
+    top: 50%;
     font-size: 25px;
 }
 .caidananniu:hover{
