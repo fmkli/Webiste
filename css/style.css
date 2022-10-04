@@ -232,3 +232,10 @@ a:hover{
     text-decoration: none;
     border-radius: 5px;
 }
+.upupzuiup-text{
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    font-size:25px;
+}
