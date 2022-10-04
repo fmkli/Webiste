@@ -187,7 +187,7 @@ a:hover{
         display: none;
     }
 }
-@media all and (max-height:1435px){
+@media all and (min-height:1435px){
     .headlistxuan{
         height: 25px;
     }
