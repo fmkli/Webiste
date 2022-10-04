@@ -234,10 +234,9 @@ a:hover{
 }
 .upupzuiup-text{
     text-align: center;
-    display: flex;
-    justify-content:center;
-    align-items:center;
-    font-size:25px;
+    display: inline;
+    top: 50%;
+    font-size: 25px;
 }
 .caidananniu:hover{
     color: rgb(3, 3, 3);
