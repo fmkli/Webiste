@@ -187,6 +187,11 @@ a:hover{
         display: none;
     }
 }
+@media all and (min-width:1435px){
+    .headlistxuan{
+        height: 25px;
+    }
+}
 .noscript{
     text-align: center;
     top: 30%;
