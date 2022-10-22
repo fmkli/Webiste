@@ -1,0 +1,9 @@
+.center{
+    text-align: center;
+}
+.info-container{
+    overflow-y: scroll;
+}
+.links-container{
+    overflow-y: scroll;
+}
