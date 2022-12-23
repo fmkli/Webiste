@@ -155,6 +155,8 @@
 <script src="static/js/qita.js"></script>
 <script>
     (function () {
+        var feedType = "xml";
+        var feedPath = "https://blog.imfmkli.top/atom.xml";
         var bgArr = [{
             "url": "https://www.imfmkli.top/image/place.jpg",
             "thumb": "https://www.imfmkli.top/image/place.jpg"
@@ -169,6 +171,7 @@
             }
         ];
 
+        Init(feedType, feedPath, bgArr, senArr);
     })();
 </script>
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
