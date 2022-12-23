@@ -21,7 +21,7 @@ function Init(feedType, feedPath, bgArr, senArr) {
         "timeout": 0,
         success: function(data){ 
             shuoshuoxianshi = document.getElementById('shuoshuo')
-            shuoshuoxianshi.innerHTML = '<h3>' + data.items[0].title + '</h3>'
+            shuoshuoxianshi.innerHTML = '<h3>' + data.items.title + '</h3>'
           }
      };
      
