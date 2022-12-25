@@ -51,17 +51,21 @@
                       ispeak
                         .init({
                           el: '#ispeak',
-                          api: 'https://waline.imfmkli.top/',
+                          api: 'https://kkapi.imfmkli.top/',
                           author: '62fb537eea70bbc9782bcf6d',
                           pageSize: 10,
                           loading_img: 'https://www.imfmkli.top/pigen.png',
+                          initCommentName: 'waline',
+                          initCommentOptions: {
+                            serverURLs: 'https://waline.imfmkli.top'
+                          }
                         })
                         .then(function () {
                           console.log('ispeak 加载完成')
                           document.getElementById('tip').style.display = 'none'
                         })
                     } else {
-                      document.getElementById('tip').innerHTML = 'ipseak依赖加载失败！'
+                      document.getElementById('tip').innerHTML = 'ispeak依赖加载失败！'
                     }
                   </script>
 
