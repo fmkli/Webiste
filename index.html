@@ -10,6 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" href="static/css/loading.css">
     <link rel="stylesheet" href="static/css/qita.css">
+    <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
     <script src="jquery.min.js"></script>
 </head>
 <body class="locked">
@@ -30,6 +31,17 @@
             <p class="avatar-name">鸽子Fmkli</p>
             <p class="dokidoki-text"></p>
         </div>
+        <meting-js
+            id="7547597075"
+            lrc-type="0"
+            server="netease"
+            order="list"
+            type="playlist"
+            list-olded="true"
+            autoplay="false"
+            mutex="true"
+            list-folded="true"
+        ></meting-js>
     </div>
     <div class="background-layer fixed-layer"></div>
     <div class="background-filter fixed-layer"></div>
@@ -153,6 +165,8 @@
 <script src="https://fastly.jsdelivr.net/gh/ClassicOldSong/typinyin.js@master/typinyin.min.js"></script>
 <script src="static/js/main.js"></script>
 <script src="static/js/qita.js"></script>
+<script src="https://unpkg.com/meting@2.0.1/dist/Meting.min.js"></script>
+<script src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
 <script>
     (function () {
         var feedType = "xml";
