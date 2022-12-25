@@ -22,25 +22,16 @@
                   />
                   <link
                     rel="stylesheet"
-                    href="https://unpkg.com/ispeak@4.2.0/style.css"
+                    href="https://cdn.jsdelivr.net/npm/ispeak@4.4.0/style.css"
                   />
-                    <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
-                    <link
-                      rel="stylesheet"
-                      href="https://unpkg.com/@waline/client@v2/dist/waline.css"
-                    />
-                        
-                  <style>
-                    #article-container .D-avatar {
-                      margin: 0 10px 0 0;
-                    }
-                    .D-footer {
-                      display: none;
-                    }
-                  </style>
+                  
                   <script src="https://cdn.staticfile.org/highlight.js/10.6.0/highlight.min.js"></script>
                   <script src="https://cdn.staticfile.org/marked/2.0.0/marked.min.js"></script>
-                  <script src="https://unpkg.com/ispeak@4.2.0/ispeak.umd.js"></script>
+                  <script src="https://cdn.jsdelivr.net/npm/ispeak@4.4.0/ispeak.umd.js"></script>
+                  <!-- CSS -->
+                  <link href="https://unpkg.com/artalk@2.3.4/dist/Artalk.css" rel="stylesheet" />
+                  <!-- JS -->
+                  <script src="https://unpkg.com/artalk@2.3.4/dist/Artalk.js"></script>
                   <script>
                     var head = document.getElementsByTagName('head')[0]
                     var meta = document.createElement('meta')
@@ -55,9 +46,10 @@
                           author: '62fb537eea70bbc9782bcf6d',
                           pageSize: 10,
                           loading_img: 'https://www.imfmkli.top/pigen.png',
-                          initCommentName: 'waline',
-                          initCommentOptions: {
-                            serverURLs: 'https://waline.imfmkli.top'
+                          comment: function (speak) {
+                            // 4.4.0 之后在此回调函数中初始化评论
+                            const { _id, title, content } = speak
+                            const contentSub = content.substring(0, 30)
                           }
                         })
                         .then(function () {
@@ -68,6 +60,6 @@
                       document.getElementById('tip').innerHTML = 'ispeak依赖加载失败！'
                     }
                   </script>
-
+                  
                 </div>
 	    </div>
