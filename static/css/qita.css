@@ -11,5 +11,7 @@
     width: 299px;
     white-space:normal;
     word-break:break-all;
+}
+.article-container{
     overflow-y: scroll;
 }
