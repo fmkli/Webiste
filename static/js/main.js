@@ -47,7 +47,7 @@ function Init(feedPath, bgArr, senArr) {
         }
     }
     function articleOutput(){
-        document.getElementById('shuoshuo2').innerHTML = '<p><h3>Title: ' + title + '</h3><h5>发布于: ' + time2 + '</h5><p>Content: ' + content2 + '</p></p>';
+        document.getElementById('shuoshuo2').innerHTML = '<p><h3>No.1</h3><h3>Title: ' + title + '</h3><h5>发布于: ' + time2 + '</h5><p>Content: ' + content2 + '</p></p><hr><p><h3>No.2</h3><h3>Title: ' + title2 + '</h3><h5>发布于: ' + time3 + '</h5><p>Content: ' + content3 + '</p></p>';
         console.log('done3')
     }
     console.log('loaddone');
@@ -61,8 +61,14 @@ function Init(feedPath, bgArr, senArr) {
         title = json.data.items[0].title;
         content2 = json.data.items[0].content;
         time2 = json.data.items[0].updatedAt;
+        title2 = json.data.items[1].title;
+        content3 = json.data.items[1].content;
+        time3 = json.data.items[1].updatedAt;
         if (title == ""){
             title = "无题"
+        }
+        if (title2 == ""){
+            title2 = "无题"
         }
         //t += `<li><a href="${link}" target="_blank">${title} <span class="meta">/ ${time}</span></a></li>`;
         //$('.archive-list').html(t);
