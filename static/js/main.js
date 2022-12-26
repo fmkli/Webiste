@@ -46,7 +46,7 @@ function Init(feedPath, bgArr, senArr) {
         }
     }
     function articleOutput(data){
-        $(".article-content").html(`<p class="article-item"><p class="article-title">${title}</p><span class="article-time">${time}</span></p><br><p>${content2}</p>`);
+        $(".article-content").html(`<p class="article-item"><p class="article-title">${title}</p></p><br><p>${content2}</p>`);
     }
     console.log('loaddone');
     t = ``;
@@ -58,7 +58,6 @@ function Init(feedPath, bgArr, senArr) {
         console.log('done');
         title = json.data.items[0].title;
         content2 = json.data.items[0].content;
-        time = new Date(json.data.items[0].updatedAt).Format("yyyy-MM-dd");
         //t += `<li><a href="${link}" target="_blank">${title} <span class="meta">/ ${time}</span></a></li>`;
         //$('.archive-list').html(t);
         }
