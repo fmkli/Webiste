@@ -53,7 +53,7 @@ body.locked, .content-container, .self-wrapper, .article-title {
     transform-origin: center center;
 }
 
-.article-content.empty {
+.article-content {
     color: #ccc;
     height: 100%;
     display: flex;
