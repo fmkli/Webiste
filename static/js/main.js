@@ -46,7 +46,7 @@ function Init(feedPath, bgArr, senArr) {
         }
     }
     function articleOutput(){
-        document.getElementById('shuoshuo2').innerHTML = '<p><h3>Title: ' + title + '</h3><h5><p>Content: ' + content2 + '</p></p>';
+        document.getElementById('shuoshuo2').innerHTML = '<p><h3>Title: ' + title + '</h3><h5>发布于: ' + time2 + '</h5><p>Content: ' + content2 + '</p></p>';
         console.log('done3')
     }
     console.log('loaddone');
