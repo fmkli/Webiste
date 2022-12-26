@@ -8,6 +8,7 @@
     overflow-y: scroll;
 }
 .shuoshuo2{
+    width: 299px;
     white-space:normal;
     word-break:break-all;
     overflow:hidden;
