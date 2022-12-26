@@ -60,7 +60,8 @@ function Init(feedPath, bgArr, senArr) {
         content2 = json.data.items[0].content;
         //t += `<li><a href="${link}" target="_blank">${title} <span class="meta">/ ${time}</span></a></li>`;
         //$('.archive-list').html(t);
-        }
+        },
+        articleOutput()
     })
     var sBg = bgArr[Math.floor(Math.random() * bgArr.length)];
     qSlt(".background-layer").style.backgroundImage = "url(" + sBg.thumb + ")";
