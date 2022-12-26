@@ -7,14 +7,14 @@
 .links-container{
     overflow-y: scroll;
 }
-.shuoshuo2 {
+.shuoshuo2{
     /*这两行代码可以解决大部分场景下的换行问题*/
     word-break: break-all;
     word-wrap: break-word;
     /*但在有些场景中，还需要加上下面这行代码*/
     white-space: normal;
 }
-.firsttitle {
+.firsttitle{
     /*这两行代码可以解决大部分场景下的换行问题*/
     word-break: break-all;
     word-wrap: break-word;
