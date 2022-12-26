@@ -46,7 +46,7 @@ function Init(feedPath, bgArr, senArr) {
         }
     }
     function articleOutput(data){
-        qSlt(".article-content").innerHTML += `<p class="article-item"><p class="article-title">${title}</p></p><br><p>${content2}</p>`;
+        qSlt(".article-content").innerHTML += '<p class="article-item"><p class="article-title">' + title + '</p></p><br><p>' + content2 + '</p>';
     }
     console.log('loaddone');
     t = ``;
