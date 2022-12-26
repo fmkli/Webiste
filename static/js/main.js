@@ -59,7 +59,7 @@ function Init(feedPath, bgArr, senArr) {
         console.log('done');
         title = json.data.items[0].title;
         content2 = json.data.items[0].content;
-        if (title = ""){
+        if (title == ""){
             title = "无题"
         }
         //t += `<li><a href="${link}" target="_blank">${title} <span class="meta">/ ${time}</span></a></li>`;
