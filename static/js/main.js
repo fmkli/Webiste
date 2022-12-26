@@ -47,6 +47,7 @@ function Init(feedPath, bgArr, senArr) {
     }
     function articleOutput(){
         document.getElementById('shuoshuo').innerHTML = '<p class="article-item"><p class="article-title">' + title + '</p></p><br><p>' + content2 + '</p>';
+        console.log('done3')
     }
     console.log('loaddone');
     document.getElementById('article-loading').innerHTML = ''
