@@ -8,7 +8,7 @@
     overflow-y: scroll;
 }
 .shuoshuo2{
-    width: 299;
+    width: 299px;
     /*这两行代码可以解决大部分场景下的换行问题*/
     word-break: break-all;
     word-wrap: break-word;
