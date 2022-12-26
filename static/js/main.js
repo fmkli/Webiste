@@ -13,7 +13,7 @@ NodeList.prototype.forEach = NodeList.prototype.forEach || function (callback) {
     }
 };
 
-function Init(feedType, feedPath, bgArr, senArr) {
+function Init(feedPath, bgArr, senArr) {
 
     function qSlt(selector) {
         return document.querySelector(selector);
@@ -82,6 +82,7 @@ function Init(feedType, feedPath, bgArr, senArr) {
         }, 1000);
     })();
     var doki = new Typinyin();
+    set = senArr
     randomSet(senArr);
     doki.setOptions({
         sentences: senArr,
