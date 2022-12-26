@@ -46,7 +46,7 @@ function Init(feedPath, bgArr, senArr) {
         }
     }
     function articleOutput(){
-        document.getElementById('shuoshuo').innerHTML = '<p class="article-item"><p class="article-title">' + title + '</p></p><br><p>' + content2 + '</p>';
+        document.getElementById('shuoshuo').innerHTML = '<p class="article-item"><p class="article-title">' + title + '</p></p><br><p class="article-title">' + content2 + '</p>';
         console.log('done3')
     }
     console.log('loaddone');
@@ -59,6 +59,9 @@ function Init(feedPath, bgArr, senArr) {
         console.log('done');
         title = json.data.items[0].title;
         content2 = json.data.items[0].content;
+        if (title = ""){
+            title = "无题"
+        }
         //t += `<li><a href="${link}" target="_blank">${title} <span class="meta">/ ${time}</span></a></li>`;
         //$('.archive-list').html(t);
         articleOutput();
