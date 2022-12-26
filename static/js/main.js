@@ -45,7 +45,7 @@ function Init(feedPath, bgArr, senArr) {
             set[i] = p;
         }
     }
-    function articleOutput(data){
+    function articleOutput(){
         document.getElementById('shuoshuo').innerHTML = '<p class="article-item"><p class="article-title">' + title + '</p></p><br><p>' + content2 + '</p>';
     }
     console.log('loaddone');
@@ -60,9 +60,9 @@ function Init(feedPath, bgArr, senArr) {
         content2 = json.data.items[0].content;
         //t += `<li><a href="${link}" target="_blank">${title} <span class="meta">/ ${time}</span></a></li>`;
         //$('.archive-list').html(t);
+        articleOutput();
         },
-        articleOutput()
-    })
+    });
     var sBg = bgArr[Math.floor(Math.random() * bgArr.length)];
     qSlt(".background-layer").style.backgroundImage = "url(" + sBg.thumb + ")";
     var bgLoader = new Image();
