@@ -46,10 +46,10 @@ function Init(feedPath, bgArr, senArr) {
         }
     }
     function articleOutput(data){
-        document.getElementById('shuoshuo').innerHTML += '<p class="article-item"><p class="article-title">' + title + '</p></p><br><p>' + content2 + '</p>';
+        document.getElementById('shuoshuo').innerHTML = '<p class="article-item"><p class="article-title">' + title + '</p></p><br><p>' + content2 + '</p>';
     }
     console.log('loaddone');
-    t = ``;
+    document.getElementById('article-loading').innerHTML = ''
     $.ajax({
         type: "GET",
         url: feedPath,
