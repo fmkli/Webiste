@@ -5,6 +5,7 @@
  *
  * Please DO NOT remove this copyright message, as the basic respect for original author.
  *
+ * （Fmkli二次修改）
  */
 
 NodeList.prototype.forEach = NodeList.prototype.forEach || function (callback) {
