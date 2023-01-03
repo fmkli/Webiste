@@ -62,37 +62,15 @@ qian = [
     "还行の中签",
     "不太行の下签",
     "不行の下下签",
-    "114514"
+    "Never Gonna Give You UP ~"
 ]
 // ????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
 function chouqian(){
-    if (num4 < 3){
-        num3 =  Math.floor(Math.random()*7);
+        num3 =  Math.ceil(Math.random()*6);  
         document.getElementById('chouqian').innerHTML = '<a href="javascript:chouqian();" id="chouqian">' + qian[num3] + '（这签不太行？点我再来！）</a>'
         num4 = num4 + 1
-    } else if (num4 = 3){
-        num3 =  Math.floor(Math.random()*7);
-        document.getElementById('chouqian').innerHTML = '<a href="javascript:chouqian();" id="chouqian">' + qian[num3] + '（这签这么不太行？重来这么多次？）</a>'
-        num4 = num4 + 1
-    } else if (num4 = 4){
-        document.getElementById('chouqian').innerHTML = '<a href="javascript:chouqian();" id="chouqian">（还点我？[○･｀Д´･ ○]）</a>'
-        num4 = num4 + 1
-    } else if (num4 = 5){
-        document.getElementById('chouqian').innerHTML = '<a href="javascript:chouqian();" id="chouqian">（别点啦！！签子不好求！）</a>'
-        num4 = num4 + 1
-    } else if (num4 = 6){
-        document.getElementById('chouqian').innerHTML = '<a href="javascript:chouqian();" id="chouqian">（我要使用超级无敌绝招了！）</a>'
-        num4 = num4 + 1
-    } else if (num4 = 7){
-        document.getElementById('chouqian').innerHTML = '<a href="javascript:chouqian();" id="chouqian">（' + num4 - 2 + '）</a>'
-        num4 = num4 + 1
-    } else if (num4 = 7){
-        document.getElementById('chouqian').innerHTML = '<a href="javascript:chouqian();" id="chouqian">（不倒计时了，直接开冲吧！）</a>'
-        num4 = num4 + 1
-    }
-    else if (num4 = 7){
-        window.location.href="https://www.bilibili.com/video/BV1GJ411x7h7"
-        num4 = 0
-    }
-    
+        if(num3 = 6){
+            window.location.href="https://www.bilibili.com/video/BV1GJ411x7h7"
+        }
+
 }
