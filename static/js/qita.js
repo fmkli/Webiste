@@ -67,6 +67,6 @@ function chouqian(){
         "114514"
     ]
     num3 =  Math.floor(Math.random()*7);
-    document.getElementById('chouqian').innerHTML = '<a href="javascript:chouqian();" id="chouqian">' + qian[num] + '（这签不太行？点我再来！）</a>'
+    document.getElementById('chouqian').innerHTML = '<a href="javascript:chouqian();" id="chouqian">' + qian[num3] + '（这签不太行？点我再来！）</a>'
     num4 = num4 + 1
 }
