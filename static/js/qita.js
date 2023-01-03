@@ -70,3 +70,5 @@ function chouqian(){
         num4 = num4 + 1
 
 }
+
+console.log('彩蛋：抽钱请输入 “chouqian();” ')
