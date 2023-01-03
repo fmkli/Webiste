@@ -5,7 +5,7 @@
  *
  * Please DO NOT remove this copyright message, as the basic respect for original author.
  *
- * （Fmkli二次修改）
+ * （Fmkli二次修改，将解析xml改为解析json）
  */
 
 NodeList.prototype.forEach = NodeList.prototype.forEach || function (callback) {
