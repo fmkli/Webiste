@@ -56,17 +56,43 @@ createtime();
 // 统计统计
 !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JgapU3Sla12DMquS",ck:"JgapU3Sla12DMquS"});
 console.log('统计开启~')
-
+qian = [
+    "超棒の上上签",
+    "棒の上签",
+    "还行の中签",
+    "不太行の下签",
+    "不行の下下签",
+    "114514"
+]
+// ????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
 function chouqian(){
-    qian = [
-        "超棒の上上签",
-        "棒の上签",
-        "还行の中签",
-        "不太行の下签",
-        "不行の下下签",
-        "114514"
-    ]
-    num3 =  Math.floor(Math.random()*7);
-    document.getElementById('chouqian').innerHTML = '<a href="javascript:chouqian();" id="chouqian">' + qian[num3] + '（这签不太行？点我再来！）</a>'
-    num4 = num4 + 1
+    if (num4 < 3){
+        num3 =  Math.floor(Math.random()*7);
+        document.getElementById('chouqian').innerHTML = '<a href="javascript:chouqian();" id="chouqian">' + qian[num3] + '（这签不太行？点我再来！）</a>'
+        num4 = num4 + 1
+    } else if (num4 = 3){
+        num3 =  Math.floor(Math.random()*7);
+        document.getElementById('chouqian').innerHTML = '<a href="javascript:chouqian();" id="chouqian">' + qian[num3] + '（这签这么不太行？重来这么多次？）</a>'
+        num4 = num4 + 1
+    } else if (num4 = 4){
+        document.getElementById('chouqian').innerHTML = '<a href="javascript:chouqian();" id="chouqian">（还点我？[○･｀Д´･ ○]）</a>'
+        num4 = num4 + 1
+    } else if (num4 = 5){
+        document.getElementById('chouqian').innerHTML = '<a href="javascript:chouqian();" id="chouqian">（别点啦！！签子不好求！）</a>'
+        num4 = num4 + 1
+    } else if (num4 = 6){
+        document.getElementById('chouqian').innerHTML = '<a href="javascript:chouqian();" id="chouqian">（我要使用超级无敌绝招了！）</a>'
+        num4 = num4 + 1
+    } else if (num4 = 7){
+        document.getElementById('chouqian').innerHTML = '<a href="javascript:chouqian();" id="chouqian">（' + num4 - 2 + '）</a>'
+        num4 = num4 + 1
+    } else if (num4 = 7){
+        document.getElementById('chouqian').innerHTML = '<a href="javascript:chouqian();" id="chouqian">（不倒计时了，直接开冲吧！）</a>'
+        num4 = num4 + 1
+    }
+    else if (num4 = 7){
+        window.location.href="https://www.bilibili.com/video/BV1GJ411x7h7"
+        num4 = 0
+    }
+    
 }
