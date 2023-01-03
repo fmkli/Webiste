@@ -70,7 +70,8 @@ function chouqian(){
         document.getElementById('chouqian').innerHTML = '<a href="javascript:chouqian();" id="chouqian">' + qian[num3] + '（这签不太行？点我再来！）</a>'
         num4 = num4 + 1
         if(num3 = 6){
-            window.location.href="https://www.bilibili.com/video/BV1GJ411x7h7"
+            console.log('你被骗了')
+            //window.location.href="https://www.bilibili.com/video/BV1GJ411x7h7"
         }
 
 }
