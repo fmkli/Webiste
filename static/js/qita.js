@@ -71,4 +71,4 @@ function chouqian(){
 
 }
 
-console.log('彩蛋：抽钱请输入 “chouqian();” ')
+console.log('彩蛋：请在控制台输入 “chouqian();” ')
