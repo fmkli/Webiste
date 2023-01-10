@@ -3,11 +3,11 @@
 }
 .info-container{
     overflow-y: scroll;
-    scrollbar-width: 10px;
+    scrollbar-width: none;
 }
 .links-container{
     overflow-y: scroll;
-    scrollbar-width: 10px;
+    scrollbar-width: none;
 }
 .shuoshuo2{
     width: 299px;
@@ -17,5 +17,5 @@
 .article-container{
     overflow-y: scroll;
     overflow-x: hidden;
-    scrollbar-width: 10px;
+    scrollbar-width: none;
 }
