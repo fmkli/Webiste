@@ -1,5 +1,9 @@
 .center{
     text-align: center;
+    
+}
+.element::-webkit-scrollbar {
+    width: 0 !important 
 }
 .info-container{
     overflow-y: scroll;
