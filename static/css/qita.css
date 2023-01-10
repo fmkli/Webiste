@@ -2,10 +2,10 @@
     text-align: center;
 }
 .info-container{
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 .links-container{
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 .shuoshuo2{
     width: 299px;
@@ -13,6 +13,6 @@
     word-break:break-all;
 }
 .article-container{
-    overflow-y: auto;
+    overflow-y: scroll;
     overflow-x: hidden;
 }
