@@ -2,7 +2,13 @@
     text-align: center;
     
 }
-.element::-webkit-scrollbar {
+.info-container::-webkit-scrollbar {
+    width: 0 !important 
+}
+.links-container::-webkit-scrollbar {
+    width: 0 !important 
+}
+.article-container::-webkit-scrollbar {
     width: 0 !important 
 }
 .info-container{
