@@ -382,7 +382,7 @@ body.locked, .content-container, .self-wrapper, .article-title {
 
 @keyframes spinner-fill {
     0% {
-        stroke: #FB7299;
+        stroke: #2cd3f1;
         stroke-width: 8;
         transform: scale(1);
         stroke-dasharray: 351;
