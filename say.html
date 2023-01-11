@@ -11,7 +11,7 @@
                 <div class="mdui-card-primary">
                     <div class="mdui-card-primary-title">说说</div>
                 </div>
-		<h1>其实呢，说说评论摆烂了，加载速度较慢</h1>
+		            <h1>其实呢，说说评论摆烂了，加载速度较慢</h1>
                 <!-- 卡片的内容 -->
                 <div class="mdui-card-content mdui-typo">
                   <div id="tip" style="text-align:center;">ispeak加载中</div>
@@ -50,16 +50,15 @@
                           author: '62fb537eea70bbc9782bcf6d',
                           pageSize: 10,
                           loading_img: 'https://www.imfmkli.top/pigen.png',
+                          speakPage: "/say.html",  //这里是说说的页面路径，对应于 github app 中填写的 speak 页面路径（用双引号括起来，我不知道为啥单引号不行）
+                          githubClientId: 'Iv1.ebd0d6c52bd5e051',  //github app 的 Client ID
+
                           comment: function (speak) {
                             // 4.4.0 之后在此回调函数中初始化评论
                             const { _id, title, content } = speak
                             const contentSub = content.substring(0, 30)
 
-                            const waline = init({
-                              el: '.ispeak-comment',
-                              serverURL: 'https://waline.imfmkli.top',
-                              requiredMeta: ['nick', 'mail'],
-                            });
+
                           }
                         })
                         .then(function () {
