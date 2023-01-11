@@ -80,12 +80,15 @@ function Init(feedPath, bgArr, senArr) {
         }
         if (content2 == "该内容需登录后查看"){
             content2 = "请前往[说说页面](https://www.imfmkli.top/talk2.html)登录查看"
+            title = "登录可查看"
         }
         if (content3 == "该内容需登录后查看"){
             content3 = "请前往[说说页面](https://www.imfmkli.top/talk2.html)登录查看"
+            title2 = "登录可查看"
         }
         if (content4 == "该内容需登录后查看"){
             content4 = "请前往[说说页面](https://www.imfmkli.top/talk2.html)登录查看"
+            title3 = "登录可查看"
         }
         //t += `<li><a href="${link}" target="_blank">${title} <span class="meta">/ ${time}</span></a></li>`;
         //$('.archive-list').html(t);
