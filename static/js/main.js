@@ -48,7 +48,7 @@ function Init(feedPath, bgArr, senArr) {
     }
     function articleOutput(){
         document.getElementById('article-loading').style.display = 'none'
-        document.getElementById('shuoshuo2').innerHTML = '<p><h3>No.1</h3><h3>Title: ' + title + '</h3><h5>发布于: ' + time2 + '<br>标签：' + biaoqian + '</h5><p>Content: ' + marked.parse(content2) + '</p></p><hr style="width: 130px;"><p><h3>No.2</h3><h3>Title: ' + title2 + '</h3><h5>发布于: ' + time3 + '<br>标签：' + biaoqian2 + '</h5><p>Content: ' + marked.parse(content3) + '</p></p><hr style="width: 130px;"><p><h3>No.3</h3><h3>Title: ' + title3 + '</h3><h5>发布于: ' + time4 + '<br>标签：' + biaoqian3 + '</h5><p>Content: ' + marked.parse(content4) + '</p></p>';
+        document.getElementById('shuoshuo2').innerHTML = '<p><h3>No.1</h3><h3>Title: ' + title + '</h3><h5>发布于: ' + time2 + '<br>标签：' + biaoqian + '</h5><p>Content: ' + marked.parse(content2) + '</p></p><hr style="width: 130px;"><p><h3>No.2</h3><h3>Title: ' + title2 + '</h3><h5>发布于: ' + time3 + '<br>标签：' + biaoqian2 + '</h5><p>Content: ' + marked.parse(content3) + '</p></p><hr style="width: 130px;"><p><h3>No.3</h3><h3>Title: ' + title3 + '</h3><h5>发布于: ' + time4 + '<br>标签：' + biaoqian3 + '</h5><p>Content: ' + marked.parse(content4) + '</p></p><hr style="width: 130px;"><p><h3>No.4</h3><h3>Title: ' + title4 + '</h3><h5>发布于: ' + time5 + '<br>标签：' + biaoqian4 + '</h5><p>Content: ' + marked.parse(content5) + '</p></p>';
         console.log('done3')
     }
     console.log('loaddone');
@@ -73,6 +73,11 @@ function Init(feedPath, bgArr, senArr) {
         time4 = json.data.items[2].updatedAt;
         biaoqian3 = json.data.items[2].tag.name;
 
+        title4 = json.data.items[3].title;
+        content5 = json.data.items[3].content;
+        time5 = json.data.items[3].updatedAt;
+        biaoqian4 = json.data.items[3].tag.name;
+
         if (title == ""){
             title = "无题"
         }
@@ -81,6 +86,9 @@ function Init(feedPath, bgArr, senArr) {
         }
         if (title3 == ""){
             title3 = "无题"
+        }
+        if (title4 == ""){
+            title4 = "无题"
         }
         if (content2 == "该内容需登录后查看"){
             content2 = "请前往[说说页面](https://www.imfmkli.top/talk2.html)登录查看"
@@ -93,6 +101,10 @@ function Init(feedPath, bgArr, senArr) {
         if (content4 == "该内容需登录后查看"){
             content4 = "请前往[说说页面](https://www.imfmkli.top/talk2.html)登录查看"
             title3 = "登录可查看"
+        }
+        if (content5 == "该内容需登录后查看"){
+            content5 = "请前往[说说页面](https://www.imfmkli.top/talk2.html)登录查看"
+            title4 = "登录可查看"
         }
         //t += `<li><a href="${link}" target="_blank">${title} <span class="meta">/ ${time}</span></a></li>`;
         //$('.archive-list').html(t);
