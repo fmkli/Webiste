@@ -48,7 +48,7 @@ function Init(feedPath, bgArr, senArr) {
     }
     function articleOutput(){
         document.getElementById('article-loading').style.display = 'none'
-        document.getElementById('shuoshuo2').innerHTML = '<p><h3>No.1</h3><h3>Title: ' + title + '</h3><h5>发布于: ' + time2 + '</h5><p>Content: ' + marked.parse(content2) + '</p></p><hr style="width: 130px;"><p><h3>No.2</h3><h3>Title: ' + title2 + '</h3><h5>发布于: ' + time3 + '</h5><p>Content: ' + marked.parse(content3) + '</p></p><hr style="width: 130px;"><p><h3>No.3</h3><h3>Title: ' + title3 + '</h3><h5>发布于: ' + time4 + '</h5><p>Content: ' + marked.parse(content4) + '</p></p>';
+        document.getElementById('shuoshuo2').innerHTML = '<p><h3>No.1</h3><h3>Title: ' + title + '</h3><h5>发布于: ' + time2 + '<br>标签：' + biaoqian + '</h5><p>Content: ' + marked.parse(content2) + '</p></p><hr style="width: 130px;"><p><h3>No.2</h3><h3>Title: ' + title2 + '</h3><h5>发布于: ' + time3 + '<br>标签：' + biaoqian2 + '</h5><p>Content: ' + marked.parse(content3) + '</p></p><hr style="width: 130px;"><p><h3>No.3</h3><h3>Title: ' + title3 + '</h3><h5>发布于: ' + time4 + '<br>标签：' + biaoqian3 + '</h5><p>Content: ' + marked.parse(content4) + '</p></p>';
         console.log('done3')
     }
     console.log('loaddone');
@@ -61,14 +61,18 @@ function Init(feedPath, bgArr, senArr) {
         title = json.data.items[0].title;
         content2 = json.data.items[0].content;
         time2 = json.data.items[0].updatedAt;
+        biaoqian = json.data.items[0].tag.name;
 
         title2 = json.data.items[1].title;
         content3 = json.data.items[1].content;
         time3 = json.data.items[1].updatedAt;
+        biaoqian2 = json.data.items[1].tag.name;
 
         title3 = json.data.items[2].title;
         content4 = json.data.items[2].content;
         time4 = json.data.items[2].updatedAt;
+        biaoqian3 = json.data.items[2].tag.name;
+
         if (title == ""){
             title = "无题"
         }
