@@ -264,9 +264,15 @@ body.locked, .content-container, .self-wrapper, .article-title {
     border-radius: 5px;
     box-sizing: border-box;
     text-decoration-line: none;
+    background: white;
+	border: 0px white;
 }
 
 .link-item:hover {
+    background: rgba(0, 0, 0, .05);
+}
+
+.link-item-button:hover {
     background: rgba(0, 0, 0, .05);
 }
 
