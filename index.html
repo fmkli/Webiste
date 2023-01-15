@@ -11,10 +11,12 @@
     <link rel="stylesheet" href="static/css/loading.css">
     <link rel="stylesheet" href="static/css/qita.css">
     <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
+    <link rel="stylesheet" href="./mdui/css/mdui.min.css">
     <script src="jquery.min.js"></script>
     <script src="https://unpkg.com/meting@2.0.1/dist/Meting.min.js"></script>
     <script src="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.js"></script>
     <script src="https://unpkg.com/marked@4.2.5/marked.min.js"></script>
+
 </head>
 <body class="locked">
     <div class="self-avatar flex-center">
@@ -42,8 +44,12 @@
         <div class="content-container">
             <div class="self-wrapper">
                 <div class="self-content links-container flex-center text-center">
-                    <a href="https://blog.imfmkli.top/" class="link-item">
+                    <a href="#" class="link-item" mdui-dialog="{target: '#morecard'}">
                         <div class="link-icon"><i class="fa fa-book"></i></div>
+                        <div>关于Fmkli</div>
+                    </a>
+                    <a href="https://blog.imfmkli.top/" class="link-item">
+                        <div class="link-icon"><i class="fa-address-book"></i></div>
                         <div>博客</div>
                     </a>
                     <a href="https://blog2.imfmkli.top/" class="link-item">
@@ -163,6 +169,39 @@
         mutex="true"
         list-folded="true"
     ></meting-js>
+
+    <!-- MoreCard-->
+    <div class="mdui-dialog" id="morecard" style="text-align: center;overflow-y: scroll;">
+        <div class="mdui-card-content mdui-typo">
+            <div class="mdui-container" style="text-align: center;">
+                <div class="mdui-row">
+                    <div class="mdui-col-sm-11 mdui-col-md-11">
+                        <div class="mdui-card">
+                            <div class="mdui-card-header">
+                                <img class="mdui-card-header-avatar" src="https://www.imfmkli.top/pigen.png"/>
+                                <div class="mdui-card-header-title">Fmkli</div>
+                                    <div class="mdui-card-header-subtitle">鸽子咕咕咕</div>
+                                </div>
+                                <div class="mdui-card-media">
+                                    <img src="https://www.imfmkli.top/images/place.jpg"/>
+                                </div>
+                                <div class="mdui-card-primary">
+                                    <div class="mdui-card-primary-title">Fmkli</div>
+                                        <div class="mdui-card-primary-subtitle">鸽子咕咕咕</div>
+                                    </div>
+                                    <div class="mdui-card-content">
+                                        一只鸽子<br>开学后无法活跃
+                                    </div>
+                                    <div class="mdui-card-actions">
+                                        <button class="mdui-btn mdui-ripple"><a href="https://www.imfmkli.top/">鸽子主页</a></button>
+                                        <button class="mdui-btn mdui-ripple"><a href="https://blog.imfmkli.top/">鸽子博客</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 </body>
 
 
@@ -173,6 +212,8 @@
 <script src="https://fastly.jsdelivr.net/gh/ClassicOldSong/typinyin.js@master/typinyin.min.js"></script>
 <script src="static/js/main.js"></script>
 <script src="static/js/qita.js"></script>
+<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+<script src="./mdui/js/mdui.min.js"></script>
 <script>
     (function () {
         var feedPath = "https://kkapi.imfmkli.top/api/ispeak?author=62fb537eea70bbc9782bcf6d&page=1&pageSize=10";
@@ -212,7 +253,6 @@
         Init(feedPath, bgArr, senArr);
     })();
 </script>
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 <style>
 
 </style>
