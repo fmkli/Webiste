@@ -23,7 +23,7 @@ body.locked, .content-container, .self-wrapper, .article-title {
     overflow: hidden;
 }
 
-.link-item, .switcher-btn, .self-wrapper, .btn-icon .fa, .btn-text, .btn-select-indicator, .article-loading, .article-content, .article-title {
+.link-item, .link-item-button, .switcher-btn, .self-wrapper, .btn-icon .fa, .btn-text, .btn-select-indicator, .article-loading, .article-content, .article-title {
     transition: .2s;
 }
 
