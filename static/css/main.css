@@ -274,6 +274,7 @@ body.locked, .content-container, .self-wrapper, .article-title {
 
 .link-item-button:hover {
     background: rgba(0, 0, 0, .05);
+    cursor: pointer;
 }
 
 .loaded .article-content {
