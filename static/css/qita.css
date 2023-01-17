@@ -40,11 +40,11 @@
     box-sizing: border-box;
     text-decoration-line: none;
     background: white;
-	border: 0px white;
+	border: 0px rgba(255, 255, 255, 0.829);
 }
 
 .link-item-button:hover {
-    background: rgba(0, 0, 0, .05);
+    background: rgba(0, 0, 0, 0.11);
     cursor: pointer;
 }
 
