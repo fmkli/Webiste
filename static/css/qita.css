@@ -34,12 +34,12 @@
 .link-item-button {
     float: left;
     width: 100%;
-    color: #333;
+    color: rgb(0, 0, 0);
     padding: 10px 0;
     border-radius: 5px;
     box-sizing: border-box;
     text-decoration-line: none;
-    background: white;
+    background: rgb(214, 214, 214);
 	border: 0px rgba(236, 235, 235, 0.829);
 }
 
