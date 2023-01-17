@@ -29,3 +29,25 @@
     overflow-x: hidden;
     scrollbar-width: none;
 }
+
+/* Form main.css */
+.link-item-button {
+    float: left;
+    width: 33.3%;
+    color: #333;
+    padding: 10px 0;
+    border-radius: 5px;
+    box-sizing: border-box;
+    text-decoration-line: none;
+    background: white;
+	border: 0px white;
+}
+
+.link-item-button:hover {
+    background: rgba(0, 0, 0, .05);
+    cursor: pointer;
+}
+
+.link-item-button{
+    transition: .2s;
+}
