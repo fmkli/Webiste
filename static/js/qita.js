@@ -61,6 +61,7 @@ console.log('统计开启~')
 
 if (num5 = num6){
     document.getElementById('caidanla').style = ""
+    document.getElementById('caidanlahr').style = ""
 }
 
 qian = [
