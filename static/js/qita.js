@@ -1,5 +1,7 @@
 num4 = 0
 num3 = 0
+num5 = Math.floor(Math.random()*50);
+num6 = Math.floor(Math.random()*50);
 var now = new Date();
 		
 function createtime() {
@@ -56,6 +58,11 @@ createtime();
 // 统计统计
 !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JgapU3Sla12DMquS",ck:"JgapU3Sla12DMquS"});
 console.log('统计开启~')
+
+if (num5 = num6){
+    document.getElementById('caidanla').style = ""
+}
+
 qian = [
     "超棒の上上签",
     "棒の上签",
@@ -65,10 +72,19 @@ qian = [
 ]
 // ????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
 function chouqian(){
+    if (num4 < 3){
         num3 =  Math.floor(Math.random()*5);
-        console.log( qian[num3] + '（这签不太行？点我再来！）</a>')
+        document.getElementById('qianza').innerText = qian[num3] + '（这签不太行？点我再来！）'
         num4 = num4 + 1
-
+    } else if (num4 == 4) {
+        num3 =  Math.floor(Math.random()*5);
+        document.getElementById('qianza').innerText = qian[num3] + '（这么多次觉得不太行？哈）'
+        num4 = num4 + 1
+    } else if (num4 == 5) {
+        document.getElementById('qianza').innerText = '不给了不给了（刷新再来）'
+    }else if (num4 == 5) {
+		window.location.href="https://www.imfmkli.top/video/114514.mp4";
+        num4 = 0
+    }
 }
 
-console.log('彩蛋：请在控制台输入 “chouqian();” ')
