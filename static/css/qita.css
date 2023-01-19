@@ -16,7 +16,7 @@
     scrollbar-width: none;
 }
 .links-container{
-    overflow-y: scroll;
+    overflow-y: auto;
     scrollbar-width: none;
 }
 .shuoshuo2{
