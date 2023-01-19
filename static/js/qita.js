@@ -2,6 +2,21 @@ num4 = 0
 num3 = 0
 num5 = Math.floor(Math.random()*50);
 num6 = Math.floor(Math.random()*50);
+
+// Use form https://www.cnblogs.com/sirdong/p/11542153.html
+var date = {
+    isDuringDate: function (beginDateStr, endDateStr) {
+        var curDate = new Date(),
+            beginDate = new Date(beginDateStr),
+            endDate = new Date(endDateStr);
+        if (curDate >= beginDate && curDate <= endDate) {
+            return true;
+        }
+        return false;
+    }
+}
+// end
+
 var now = new Date();
 		
 function createtime() {
@@ -88,5 +103,14 @@ function chouqian(){
 		window.location.href="https://www.imfmkli.top/video/114514.mp4";
         num4 = 0
     }
+}
+
+console.log(date.isDuringDate('2018/09/17', '2030/09/17'))
+
+if (date.isDuringDate('2023/01/1', '2023/02/01')){
+    mdui.snackbar({
+        message: 'Happy New Year！',
+        position: 'top'
+      });
 }
 
