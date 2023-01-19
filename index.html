@@ -96,19 +96,13 @@
 
                 </div>
                 <div class="self-content article-container">
-                    <h2 style="text-align: center;" id="firsttitle">最近的说说</h2><hr>
-                    <div id="shuoshuo2" class="shuoshuo2" style="text-align: center;"></div>
-                    <div class="article-content"></div>
-                    <div id="article-loading" class="article-loading flex-center">
-                        <svg style="visibility: hidden" class="loading-indicator" width="128" height="128">
-                            <g class="circle-rotating">
-                                <g class="circle-step">
-                                    <circle cx="64" cy="64" r="56" class="circle-line"></circle>
-                                </g>
-                            </g>
-                        </svg>
-                        <span class="text-center">Loading...</span>
-                    </div>
+                    <button class="link-item-button" mdui-dialog="{target: '#morecard2'}">
+                        <div>最近の说说</div>
+                    </button>
+                    <hr>
+                    <button class="link-item-button" mdui-dialog="{target: '#morecard3'}">
+                        <div>最近の文章</div>
+                    </button>
                 </div>
                 <div class="self-content">
                     <div class="info-container center">
@@ -144,7 +138,7 @@
                 </div>
                 <div class="switcher-btn text-center" id="switcher-btn-2">
                     <div class="btn-icon"><i class="fa fa-heart-o"></i></div>
-                    <div class="btn-text">说说</div>
+                    <div class="btn-text">More</div>
                 </div>
                 <div class="switcher-btn text-center" id="switcher-btn-3">
                     <div class="btn-icon"><i class="fa fa-info-circle"></i></div>
@@ -170,7 +164,7 @@
         list-folded="true"
     ></meting-js>
 
-    <!-- MoreCard-->
+    <!-- MoreCard No.1-->
     <div class="mdui-dialog" id="morecard" style="overflow-y: scroll;">
         <div class="mdui-card-content mdui-typo">
             <div class="mdui-container">
@@ -201,17 +195,67 @@
                         </div>
                     </div>
                     <hr>
+                <!--可输入其他内容-->
+                <h4>Fmkli开学后无法活跃，Why？<br>可能因为</h4>
+                <ul>
+                    <li>Fmkli被Homework打败了</li>
+                    <li>Fmkli被学校禁锢了（住宿）</li>
+                    <li>懒啦！</li>
+                    <li><h3>Error 404!</h3></li>
+                </ul>
+                <!--End-->
+        </div>
+    </div>
+
+    <!-- MoreCard No.2-->
+    <div class="mdui-dialog" id="morecard2" style="overflow-y: scroll;">
+        <div class="mdui-card-content mdui-typo" style="text-align: center;">
+            <div class="mdui-container">
+                <div class="mdui-row">
                     <!--可输入其他内容-->
-                    <h4>Fmkli开学后无法活跃，Why？<br>可能因为</h4>
-                    <ul>
-                      <li>Fmkli被Homework打败了</li>
-                      <li>Fmkli被学校禁锢了（住宿）</li>
-                      <li>懒啦！</li>
-                      <li><h3>Error 404!</h3></li>
-                    </ul>
+                    <h2 style="text-align: center;" id="firsttitle">最近的说说</h2><hr>
+                    <div id="shuoshuo2" class="shuoshuo2" style="text-align: center;"></div>
+                    <div class="article-content" style="text-align: center;"></div>
+                    <div id="speak-loading" class="article-loading flex-center" style="text-align: center;">
+                        <svg style="visibility: hidden" class="loading-indicator" width="128" height="128">
+                            <g class="circle-rotating">
+                                <g class="circle-step">
+                                    <circle cx="64" cy="64" r="56" class="circle-line"></circle>
+                                </g>
+                            </g>
+                        </svg>
+                        <span class="text-center">Loading...</span>
+                    </div>
                     <!--End-->
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!-- MoreCard No.3-->
+    <div class="mdui-dialog" id="morecard3" style="overflow-y: scroll;">
+        <div class="mdui-card-content mdui-typo" style="text-align: center;">
+            <div class="mdui-container">
+                <div class="mdui-row">
+                    <!--可输入其他内容-->
+                    <h2 style="text-align: center;" id="firsttitle">最近的博客文章</h2><hr>
+                    <div id="bloglist" class="shuoshuo2" style="text-align: center;"></div>
+                    <div class="article-content" style="text-align: center;"></div>
+                    <div id="article-loading" class="article-loading flex-center" style="text-align: center;">
+                        <svg style="visibility: hidden" class="loading-indicator" width="128" height="128">
+                            <g class="circle-rotating">
+                                <g class="circle-step">
+                                    <circle cx="64" cy="64" r="56" class="circle-line"></circle>
+                                </g>
+                            </g>
+                        </svg>
+                        <span class="text-center">Loading...</span>
+                    </div>
+                <!--End-->
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 
@@ -226,7 +270,8 @@
 <script src="./mdui/js/mdui.min.js"></script>
 <script>
     (function () {
-        var feedPath = "https://kkapi.imfmkli.top/api/ispeak?author=62fb537eea70bbc9782bcf6d&page=1&pageSize=10";
+        var Bloglist = "https://blog.imfmkli.top/wp-json/wp/v2/posts"; //Blog文章解析，目前只支持Wordpress，Json格式
+        var feedPath = "https://kkapi.imfmkli.top/api/ispeak?author=62fb537eea70bbc9782bcf6d&page=1&pageSize=10";//说说解析，目前只支持KKapi
         var bgArr = [{
             "url": "https://www.imfmkli.top/images/place.jpg",
             "thumb": "https://www.imfmkli.top/images/place.jpg"
@@ -263,7 +308,7 @@
             }
         ];
 
-        Init(feedPath, bgArr, senArr);
+        Init(feedPath, bgArr, senArr, Bloglist);
     })();
 </script>
 <style>

@@ -20,7 +20,7 @@
     scrollbar-width: none;
 }
 .shuoshuo2{
-    width: 299px;
+    width: calc(100% -50);
     white-space:normal;
     word-break:break-all;
 }

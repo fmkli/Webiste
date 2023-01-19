@@ -14,7 +14,7 @@ NodeList.prototype.forEach = NodeList.prototype.forEach || function (callback) {
     }
 };
 
-function Init(feedPath, bgArr, senArr) {
+function Init(feedPath, bgArr, senArr, Bloglist) {
 
     function qSlt(selector) {
         return document.querySelector(selector);
@@ -46,71 +46,119 @@ function Init(feedPath, bgArr, senArr) {
             set[i] = p;
         }
     }
-    function articleOutput(){
-        document.getElementById('article-loading').style.display = 'none'
-        document.getElementById('shuoshuo2').innerHTML = '<p><h3>No.1</h3><h3>Title: ' + title + '</h3><h5>发布于: ' + time2 + '<br>标签：' + biaoqian + '</h5><p>Content: ' + marked.parse(content2) + '</p></p><hr style="width: 130px;"><p><h3>No.2</h3><h3>Title: ' + title2 + '</h3><h5>发布于: ' + time3 + '<br>标签：' + biaoqian2 + '</h5><p>Content: ' + marked.parse(content3) + '</p></p><hr style="width: 130px;"><p><h3>No.3</h3><h3>Title: ' + title3 + '</h3><h5>发布于: ' + time4 + '<br>标签：' + biaoqian3 + '</h5><p>Content: ' + marked.parse(content4) + '</p></p><hr style="width: 130px;"><p><h3>No.4</h3><h3>Title: ' + title4 + '</h3><h5>发布于: ' + time5 + '<br>标签：' + biaoqian4 + '</h5><p>Content: ' + marked.parse(content5) + '</p></p>';
+    function speakOutput(){
+        document.getElementById('speak-loading').style.display = 'none'
+        document.getElementById('shuoshuo2').innerHTML = '<p><h3>No.1</h3><h3>Title: ' + title + '</h3><h5>发布于: ' + time2 + '<br>标签：' + biaoqian + '</h5><p>Content: ' + marked.parse(content2) + '</p></p><hr><p><h3>No.2</h3><h3>Title: ' + title2 + '</h3><h5>发布于: ' + time3 + '<br>标签：' + biaoqian2 + '</h5><p>Content: ' + marked.parse(content3) + '</p></p><hr><p><h3>No.3</h3><h3>Title: ' + title3 + '</h3><h5>发布于: ' + time4 + '<br>标签：' + biaoqian3 + '</h5><p>Content: ' + marked.parse(content4) + '</p></p><hr><p><h3>No.4</h3><h3>Title: ' + title4 + '</h3><h5>发布于: ' + time5 + '<br>标签：' + biaoqian4 + '</h5><p>Content: ' + marked.parse(content5) + '</p></p>';
         console.log('done3')
     }
+    function articleOutput(){
+        document.getElementById('article-loading').style.display = 'none'
+        document.getElementById('bloglist').innerHTML = '<p><h3>No.1</h3><h3>Title: ' + blogtitle1 + '</h3><h5>发布于: ' + date1 + '<br>最后修改于：' + modified1 + '</h5><a class="link-item-button" href="' + bloglink1 + '"><div>阅读文章</div></a></p><hr><p><h3>No.2</h3><h3>Title: ' + blogtitle2 + '</h3><h5>发布于: ' + date2 + '<br>最后修改于：' + modified2 + '</h5><a class="link-item-button" href="' + bloglink2 + '"><div>阅读文章</div></a></p><hr><p><h3>No.3</h3><h3>Title: ' + blogtitle3 + '</h3><h5>发布于: ' + date3 + '<br>最后修改于：' + modified3 + '</h5><a class="link-item-button" href="' + bloglink3 + '"><div>阅读文章</div></a></p><hr><p><h3>No.4</h3><h3>Title: ' + blogtitle4 + '</h3><h5>发布于: ' + date4 + '<br>最后修改于：' + modified4 + '</h5><a class="link-item-button" href="' + bloglink4 + '"><div>阅读文章</div></a></p><hr><p><h3>No.5</h3><h3>Title: ' + blogtitle5 + '</h3><h5>发布于: ' + date5 + '<br>最后修改于：' + modified5 + '</h5><a class="link-item-button" href="' + bloglink5 + '"><div>阅读文章</div></a></p><hr>';
+        console.log('blogdone3')
+    }
     console.log('loaddone');
+    //说说
     $.ajax({
         type: "GET",
         url: feedPath,
         dataType: "json",
         success: function (json) {
-        console.log('done');
-        title = json.data.items[0].title;
-        content2 = json.data.items[0].content;
-        time2 = json.data.items[0].updatedAt;
-        biaoqian = json.data.items[0].tag.name;
+            console.log('done');
+            title = json.data.items[0].title;
+            content2 = json.data.items[0].content;
+            time2 = json.data.items[0].updatedAt;
+            biaoqian = json.data.items[0].tag.name;
 
-        title2 = json.data.items[1].title;
-        content3 = json.data.items[1].content;
-        time3 = json.data.items[1].updatedAt;
-        biaoqian2 = json.data.items[1].tag.name;
+            title2 = json.data.items[1].title;
+            content3 = json.data.items[1].content;
+            time3 = json.data.items[1].updatedAt;
+            biaoqian2 = json.data.items[1].tag.name;
 
-        title3 = json.data.items[2].title;
-        content4 = json.data.items[2].content;
-        time4 = json.data.items[2].updatedAt;
-        biaoqian3 = json.data.items[2].tag.name;
+            title3 = json.data.items[2].title;
+            content4 = json.data.items[2].content;
+            time4 = json.data.items[2].updatedAt;
+            biaoqian3 = json.data.items[2].tag.name;
 
-        title4 = json.data.items[3].title;
-        content5 = json.data.items[3].content;
-        time5 = json.data.items[3].updatedAt;
-        biaoqian4 = json.data.items[3].tag.name;
+            title4 = json.data.items[3].title;
+            content5 = json.data.items[3].content;
+            time5 = json.data.items[3].updatedAt;
+            biaoqian4 = json.data.items[3].tag.name;
 
-        if (title == ""){
-            title = "无题"
-        }
-        if (title2 == ""){
-            title2 = "无题"
-        }
-        if (title3 == ""){
-            title3 = "无题"
-        }
-        if (title4 == ""){
-            title4 = "无题"
-        }
-        if (content2 == "该内容需登录后查看"){
-            content2 = "请前往[说说页面](https://www.imfmkli.top/talk2.html)登录查看"
-            title = "登录可查看"
-        }
-        if (content3 == "该内容需登录后查看"){
-            content3 = "请前往[说说页面](https://www.imfmkli.top/talk2.html)登录查看"
-            title2 = "登录可查看"
-        }
-        if (content4 == "该内容需登录后查看"){
-            content4 = "请前往[说说页面](https://www.imfmkli.top/talk2.html)登录查看"
-            title3 = "登录可查看"
-        }
-        if (content5 == "该内容需登录后查看"){
-            content5 = "请前往[说说页面](https://www.imfmkli.top/talk2.html)登录查看"
-            title4 = "登录可查看"
-        }
-        //t += `<li><a href="${link}" target="_blank">${title} <span class="meta">/ ${time}</span></a></li>`;
-        //$('.archive-list').html(t);
-        articleOutput();
+            if (title == ""){
+                title = "无题"
+            }
+            if (title2 == ""){
+                title2 = "无题"
+            }
+            if (title3 == ""){
+                title3 = "无题"
+            }
+            if (title4 == ""){
+                title4 = "无题"
+            }
+            if (content2 == "该内容需登录后查看"){
+                content2 = "请前往[说说页面](https://www.imfmkli.top/talk2.html)登录查看"
+                title = "登录可查看"
+            }
+            if (content3 == "该内容需登录后查看"){
+                content3 = "请前往[说说页面](https://www.imfmkli.top/talk2.html)登录查看"
+                title2 = "登录可查看"
+            }
+            if (content4 == "该内容需登录后查看"){
+                content4 = "请前往[说说页面](https://www.imfmkli.top/talk2.html)登录查看"
+                title3 = "登录可查看"
+            }
+            if (content5 == "该内容需登录后查看"){
+                content5 = "请前往[说说页面](https://www.imfmkli.top/talk2.html)登录查看"
+                title4 = "登录可查看"
+            }
+            //t += `<li><a href="${link}" target="_blank">${title} <span class="meta">/ ${time}</span></a></li>`;
+            //$('.archive-list').html(t);
+            speakOutput();
         },
     });
+    console.log('blogdone');
+
+    // Blog
+    $.ajax({
+        type: "GET",
+        url: Bloglist,
+        dataType: "json",
+
+        success: function (json2) {
+            console.log('blogdone');
+
+            bloglink1 = json2[0].guid.link
+            date1 = json2[0].date
+            modified1 = json2[0].modified
+            blogtitle1 = json2[0].title.rendered
+
+            bloglink2 = json2[1].guid.link
+            date2 = json2[1].date
+            modified2 = json2[1].modified
+            blogtitle2 = json2[1].title.rendered
+
+            bloglink3 = json2[2].guid.link
+            date3 = json2[2].date
+            modified3 = json2[2].modified
+            blogtitle3 = json2[2].title.rendered
+
+            bloglink4 = json2[3].guid.link
+            date4 = json2[3].date
+            modified4 = json2[3].modified
+            blogtitle4 = json2[3].title.rendered
+
+            bloglink5 = json2[4].guid.link
+            date5 = json2[4].date
+            modified5 = json2[4].modified
+            blogtitle5 = json2[4].title.rendered
+
+            //t += `<li><a href="${link}" target="_blank">${title} <span class="meta">/ ${time}</span></a></li>`;
+            //$('.archive-list').html(t);
+            articleOutput();
+        },
+    });
+
     var sBg = bgArr[Math.floor(Math.random() * bgArr.length)];
     qSlt(".background-layer").style.backgroundImage = "url(" + sBg.thumb + ")";
     var bgLoader = new Image();
