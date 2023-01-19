@@ -84,7 +84,7 @@ function chouqian(){
     } else if (num4 == 5) {
         document.getElementById('qianza').innerText = '不给了不给了（刷新再来）'
         num4 = num4 + 1
-    }else if (num4 == 5) {
+    }else if (num4 == 6) {
 		window.location.href="https://www.imfmkli.top/video/114514.mp4";
         num4 = 0
     }
