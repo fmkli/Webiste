@@ -128,27 +128,27 @@ function Init(feedPath, bgArr, senArr, Bloglist) {
         success: function (json2) {
             console.log('blogdone');
 
-            bloglink1 = json2[0].guid.link
+            bloglink1 = json2[0].link
             date1 = json2[0].date
             modified1 = json2[0].modified
             blogtitle1 = json2[0].title.rendered
 
-            bloglink2 = json2[1].guid.link
+            bloglink2 = json2[1].link
             date2 = json2[1].date
             modified2 = json2[1].modified
             blogtitle2 = json2[1].title.rendered
 
-            bloglink3 = json2[2].guid.link
+            bloglink3 = json2[2].link
             date3 = json2[2].date
             modified3 = json2[2].modified
             blogtitle3 = json2[2].title.rendered
 
-            bloglink4 = json2[3].guid.link
+            bloglink4 = json2[3].link
             date4 = json2[3].date
             modified4 = json2[3].modified
             blogtitle4 = json2[3].title.rendered
 
-            bloglink5 = json2[4].guid.link
+            bloglink5 = json2[4].link
             date5 = json2[4].date
             modified5 = json2[4].modified
             blogtitle5 = json2[4].title.rendered
