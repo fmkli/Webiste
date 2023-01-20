@@ -1,6 +1,5 @@
 .center{
-    text-align: center;
-    
+    text-align: center; 
 }
 .info-container::-webkit-scrollbar {
     width: 0 !important 
