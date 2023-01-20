@@ -1,7 +1,7 @@
 
 test0 = 1
-if (test1233 != ''){
 test1233 = window.location.search;
+if (test1233 != ''){
 xinxi1 = test1233.split("test=")
 xinxi2 = xinxi1[1].substr(0,4) 
 }
