@@ -112,7 +112,7 @@ console.log(date.isDuringDate('2018/09/17', '2030/09/17'))
 
 if (date.isDuringDate('2023/01/1', '2023/02/01')){
     mdui.snackbar({
-        message: 'Happy New Year！',
+        message: '公告：<br>博客已经做好了自选',
         position: 'top'
       });
 }
