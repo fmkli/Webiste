@@ -1,10 +1,5 @@
 
-test0 = 1
-test1233 = window.location.search;
-xinxi1 = test1233.split("test=")
-xinxi2 = xinxi1[1].substr(0,4) 
-
-if (xinxi2 = "open"){
+function jstest(){
     console.log("%c网页内部开启了调试模式", "font-size:20px;color:#f44336;")
     window.addEventListener('error',  args => {
         if (test0 == 1){
