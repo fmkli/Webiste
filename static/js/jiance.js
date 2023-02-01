@@ -22,10 +22,10 @@ if (xinxi2 = "open"){
 }
 
 if (navigator.serviceWorker) {
-  navigator.serviceWorker.register('sw.js')
+  navigator.serviceWorker.unregister('sw.js')
   .then(function(registration) {
-    console.log('service worker 注册成功');
+    console.log('service worker 卸载成功');
   }).catch(function (err) {
-    console.log('servcie worker 注册失败');
+    console.log('servcie worker 卸载失败');
   });
 }
