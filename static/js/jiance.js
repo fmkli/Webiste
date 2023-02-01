@@ -22,11 +22,14 @@ if (xinxi2 = "open"){
 }
 
 
-if(window.navigator && navigator.serviceWorker) {
-  navigator.serviceWorker.getRegistrations()
-  .then(function(registrations) {
-    for(let registration of registrations) {
-      registration.unregister();
-    }
+const serviceWorker = navigator.serviceWorker;
+
+serviceWorker.getRegistrations ? serviceWorker.getRegistrations().then(function(sws) {
+  sws.forEach(function(sw) {
+    sw.unregister();
+    console.log('sw unregister 1');
   });
-}
+}) : serviceWorker.getRegistration && serviceWorker.getRegistration().then(function(sw) {
+  sw && sw.unregister();
+  console.log('sw unregister 2');
+});
