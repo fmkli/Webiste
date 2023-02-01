@@ -21,11 +21,12 @@ if (xinxi2 = "open"){
     }, true)
 }
 
-if (navigator.serviceWorker) {
-  navigator.serviceWorker.unregister('sw.js')
-  .then(function(registration) {
-    console.log('service worker 卸载成功');
-  }).catch(function (err) {
-    console.log('servcie worker 卸载失败');
+
+if(window.navigator && navigator.serviceWorker) {
+  navigator.serviceWorker.getRegistrations()
+  .then(function(registrations) {
+    for(let registration of registrations) {
+      registration.unregister();
+    }
   });
 }
