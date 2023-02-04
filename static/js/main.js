@@ -47,11 +47,9 @@ function Init(feedPath, bgArr, senArr, Bloglist) {
         }
     }
     function speakOutput(){
-        document.getElementById('speak-loading').style.display = 'none'
         document.getElementById('shuoshuo2').innerHTML = '<p><h3>No.1</h3><h3>Title: ' + title + '</h3><h5>发布于: ' + time2 + '<br>标签：' + biaoqian + '</h5><p>Content: ' + marked.parse(content2) + '</p></p><hr><p><h3>No.2</h3><h3>Title: ' + title2 + '</h3><h5>发布于: ' + time3 + '<br>标签：' + biaoqian2 + '</h5><p>Content: ' + marked.parse(content3) + '</p></p><hr><p><h3>No.3</h3><h3>Title: ' + title3 + '</h3><h5>发布于: ' + time4 + '<br>标签：' + biaoqian3 + '</h5><p>Content: ' + marked.parse(content4) + '</p></p><hr><p><h3>No.4</h3><h3>Title: ' + title4 + '</h3><h5>发布于: ' + time5 + '<br>标签：' + biaoqian4 + '</h5><p>Content: ' + marked.parse(content5) + '</p></p>';
     }
     function articleOutput(){
-        document.getElementById('article-loading').style.display = 'none'
         document.getElementById('bloglist').innerHTML = '<p><h3>No.1</h3><h3>Title: ' + blogtitle1 + '</h3><h5>发布于: ' + date1 + '<br>最后修改于：' + modified1 + '</h5><a class="link-item-button" href="' + bloglink1 + '"><div>阅读文章</div></a></p><hr><p><h3>No.2</h3><h3>Title: ' + blogtitle2 + '</h3><h5>发布于: ' + date2 + '<br>最后修改于：' + modified2 + '</h5><a class="link-item-button" href="' + bloglink2 + '"><div>阅读文章</div></a></p><hr><p><h3>No.3</h3><h3>Title: ' + blogtitle3 + '</h3><h5>发布于: ' + date3 + '<br>最后修改于：' + modified3 + '</h5><a class="link-item-button" href="' + bloglink3 + '"><div>阅读文章</div></a></p><hr><p><h3>No.4</h3><h3>Title: ' + blogtitle4 + '</h3><h5>发布于: ' + date4 + '<br>最后修改于：' + modified4 + '</h5><a class="link-item-button" href="' + bloglink4 + '"><div>阅读文章</div></a></p><hr><p><h3>No.5</h3><h3>Title: ' + blogtitle5 + '</h3><h5>发布于: ' + date5 + '<br>最后修改于：' + modified5 + '</h5><a class="link-item-button" href="' + bloglink5 + '"><div>阅读文章</div></a></p><hr>';
     }
     //说说
