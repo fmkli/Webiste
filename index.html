@@ -2,345 +2,48 @@
 <html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
-    <title>Fmkli的主页</title>
-    <meta name="keywords" content="鸽子主页,Fmkli,imfmkli"/>
-    <meta name="description" content="菜菜鸽子的主页，来吧来吧"/>
-    <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <script src="./static/js/jiance.js"></script>
-    <link rel="stylesheet" href="static/css/loading.css">
-    <link rel="stylesheet" href="static/css/qita.css">
-    <link rel="stylesheet" href="https://unpkg.com/aplayer@1.10.1/dist/APlayer.min.css">
-    <link rel="stylesheet" href="./mdui/css/mdui.min.css">
-    <script src="jquery.min.js"></script>
-    <script src="https://unpkg.com/marked@4.2.5/marked.min.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fmkli的网站 | 无知小站</title>
+    <link rel="stylesheet" href="/static/css/style.css">
 </head>
-<body class="locked mdui-theme-primary-indigo mdui-theme-accent-pink">
-    <div class="self-avatar flex-center">
-        <div class="loading-mask fixed-layer no-delay"></div>
-        <div class="loading-wrapper">
-            <svg class="loading-indicator no-delay" width="128" height="128">
-                <g class="circle-rotating">
-                    <g class="circle-step">
-                        <circle cx="64" cy="64" r="56" class="circle-line"></circle>
-                    </g>
-                </g>
-            </svg>
-            <img alt="Fmkli" src="https://www.imfmkli.top/pigen.png" class="avatar-img no-delay"/>
-        </div>
-        <div class="loading-text text-center">
-            <p class="loading-pre">Loading...</p>
-            <p class="avatar-name">鸽子Fmkli</p>
-            <p class="dokidoki-text"></p>
-        </div>
-        <br>
-    </div>
-    <div class="background-layer fixed-layer"></div>
-    <div class="background-filter fixed-layer"></div>
-    <div class="content-layer flex-center">
-        <div class="content-container">
-            <div class="self-wrapper">
-                <div class="self-content links-container flex-center text-center">
-                    <a href="https://blog.imfmkli.top/" class="link-item">
-                        <div class="link-icon"><i class="fa fa-book"></i></div>
-                        <div>博客</div>
-                    </a>
-                    <a href="https://blog2.imfmkli.top/" class="link-item">
-                        <div class="link-icon"><i class="fa fa-book"></i></div>
-                        <div>备用博客 - 1</div>
-                    </a>
-                    </a>
-                    <a href="https://www.imfmkli.top/talk2.html" class="link-item">
-                        <div class="link-icon"><i class="fa fa-pencil"></i></div>
-                        <div>留言板</div>
-                    </a>
-                    <a href="https://www.imfmkli.top/say.html" class="link-item">
-                        <div class="link-icon"><i class="fa fa-list-ul"></i></div>
-                        <div>说说</div>
-                    </a>
-                    <a href="https://support.qq.com/products/345713" class="link-item">
-                        <div class="link-icon"><i class="fa fa-bullhorn"></i></div>
-                        <div>Fmkli的兔小巢</div>
-                    </a>
-                    <a href="http://no-paid-music.imfmkli.top/" class="link-item">
-                        <div class="link-icon"><i class="fa fa-music"></i></div>
-                        <div>音乐解锁</div>
-                    </a>
-                    <a href="https://www.imfmkli.top/goodpassword" class="link-item">
-                        <div class="link-icon"><i class="fa fa-lock"></i></div>
-                        <div>密码生成</div>
-                    </a>
-                    <a href="https://may.gee.bar/" class="link-item">
-                        <div class="link-icon"><i class="fa fa-question-circle"></i></div>
-                        <div>怪网站</div>
-                    </a>
-                </div>
-                <div class="self-content article-container">
-                    <button class="link-item-button" mdui-dialog="{target: '#morecard2'}">
-                        <div>最近の说说</div>
-                    </button>
-                    <hr>
-                    <button class="link-item-button" mdui-dialog="{target: '#morecard3'}">
-                        <div>最近の文章</div>
-                    </button>
-                    <hr>
-                    <button class="link-item-button" mdui-dialog="{target: '#morecard4'}">
-                        <div>Fmkli的联系方式</div>
-                    </button>
-                    <hr>
-                    <button class="link-item-button" mdui-dialog="{target: '#morecard'}">
-                        <div>关于Fmkli</div>
-                    </button>
-                    <hr>
-                    <button class="link-item-button" mdui-dialog="{target: '#morecard5'}">
-                        <div>Games</div>
-                    </button>
-                    <hr id="caidanlahr" style="display: none;">
-                    <button class="link-item-button" onclick="chouqian();" id="caidanla" style="display: none;">
-                        <div id="qianza">抽签</div>
-                    </button>
-                </div>
-                <div class="self-content">
-                    <div class="info-container center">
-                        <h3>关于本站</h3>
-                        N个挣扎存活于网络边缘的网站，默默无闻
-                        <br>站长开学后只在周五、周六、周日上线，封校除外。 
-                        <hr>
-                        <h3>其他</h3>
-                        <br>Friend Links：<a class="lianjie" href="https://dwp.xn--vl1a.tech/">DzxiumWebPages</a>--<a class="lianjie" href="https://boblive.vercel.app/">BOB实况</a>--<a class="lianjie" href="https://www.zxqblog.cn/">小钊的博客</a>
-                        <br><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
-                        <br><span id="lasttime">载入倒计时...</span>
-                        <br>本站已经开启了<a target="_blank" title="51la网站统计" href="https://v6.51.la/land/JgapU3Sla12DMquS">统计（使用51.la）</a>啦~
-                        <br><h2><a href="https://www.imfmkli.top/video/114514.mp4">这是一个可点击的链接</a></h2>
-                    </div>
+<body>
+    <div class="box center">
 
-                </div>
-            </div>
-            <div class="self-switcher">
-                <div class="switcher-btn text-center" id="switcher-btn-1">
-                    <div class="btn-icon"><i class="fa fa-link"></i></div>
-                    <div class="btn-text">链接</div>
-                </div>
-                <div class="switcher-btn text-center" id="switcher-btn-2">
-                    <div class="btn-icon"><i class="fa fa-heart-o"></i></div>
-                    <div class="btn-text">More</div>
-                </div>
-                <div class="switcher-btn text-center" id="switcher-btn-3">
-                    <div class="btn-icon"><i class="fa fa-info-circle"></i></div>
-                    <div class="btn-text">关于</div>
-                </div>
-                <div class="btn-select-indicator"></div>
-            </div>
-        </div>
-        <div class="footer-container text-center">
-            © 2022 By <a href="#">Fmkli</a> | Make by <a href="https://github.com/KawaiiZapic">Zapic</a>
-            <br><a href="https://icp.gov.moe/?keyword=20221145" rel="noopener" target="_blank" rel="nofollow" class="a-p">萌ICP备20221145号</a>
-        </div>
-    </div>
-    <meting-js
-        id="7547597075"
-        lrc-type="0"
-        server="netease"
-        order="list"
-        type="playlist"
-        list-olded="true"
-        autoplay="false"
-        mutex="true"
-        list-folded="true"
-    ></meting-js>
+        <p style="text-align:center;"><img src="https://www.imfmkli.top/pigen.png" width="15%">
+        <h2 style="text-align:center;" alt="fmkli">Fmkli的主页 -- 无聊破站</h2></p>
+        
+        <hr>
+        <h3>About Me</h3>
+        <p>这只是一个无聊的小站，站长搭建来自娱自乐罢了<br>站长开学后只在周五、周六、周日上线，封校除外。 </p>
 
-    <!-- MoreCard No.1 Fmkli-->
-    <div class="mdui-dialog" id="morecard" style="overflow-y: scroll;">
-        <div class="mdui-card-content mdui-typo">
-            <div class="mdui-container">
-                <div class="mdui-row">
-                    <div class="mdui-col-sm-11 mdui-col-md-11" style="text-align: center;">
-                        <div class="mdui-card">
-                            <div class="mdui-card-header">
-                                <img class="mdui-card-header-avatar" src="https://www.imfmkli.top/pigen.png"/>
-                                <div class="mdui-card-header-title">Fmkli</div>
-                                    <div class="mdui-card-header-subtitle">鸽子咕咕咕</div>
-                                </div>
-                                <div class="mdui-card-media">
-                                    <img src="https://www.imfmkli.top/images/place.jpg"/>
-                                </div>
-                                <div class="mdui-card-primary">
-                                    <div class="mdui-card-primary-title">Fmkli</div>
-                                        <div class="mdui-card-primary-subtitle">鸽子咕咕咕</div>
-                                    </div>
-                                    <div class="mdui-card-content">
-                                        一只鸽子
-                                    </div>
-                                    <div class="mdui-card-actions">
-                                        <button class="mdui-btn mdui-ripple"><a href="https://www.imfmkli.top/">鸽子主页</a></button>
-                                        <button class="mdui-btn mdui-ripple"><a href="https://blog.imfmkli.top/">鸽子博客</a></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <hr>
-                <!--可输入其他内容-->
-                <h4>Fmkli开学后无法活跃，Why？<br>可能因为</h4>
-                <ul>
-                    <li>Fmkli被Homework打败了</li>
-                    <li>Fmkli被学校禁锢了（住宿）</li>
-                    <li>懒啦！</li>
-                    <li><h3>Error 404!</h3></li>
-                </ul>
-                <!--End-->
-        </div>
+        <hr>
+        <h3>Links</h3>
+        <p>Links： <a href="https://blog.imfmkli.top/">Blog</a> -- <a href="https://www.imfmkli.top/talk2.html">留言板</a> -- <a href="https://www.imfmkli.top/say.html">说说</a> -- <a href="https://support.qq.com/products/345713">兔小巢</a> -- <a href="https://blog2.imfmkli.top/">备用Blog</a></p>
+        <p>Links - 工具： <a href="http://no-paid-music.imfmkli.top/">音乐解锁</a> -- <a href="https://www.imfmkli.top/goodpassword">密码生成</a>
+        <p>Links - 游戏： <a href="https://dino.imfmkli.top/">小恐龙</a> -- <a href="https://sg.imfmkli.top/?lang=zh_cn">小黑屋</a> -- <a href="https://eatkano.imfmkli.top/">吃掉小菜狗</a>
+        <p>Links - Fmkli的联系方式： <a href="https://github.com/fmkli">Github</a> -- <a href="https://space.bilibili.com/543825809">BiliBili</a> -- <a href="https://www.ccw.site/student/5d08e95bb73fd803276dd7b2">CCW</a> -- <a href="mailto:fmkli2@qq.com">Email</a> -- <a href="tencent://message/?uin=2058264685&Site=&Menu=yes">QQ</a>
+        
+        <hr>
+        <h3>其他</h3>
+        <p>
+            Friend Links：<a class="lianjie" href="https://dwp.xn--vl1a.tech/">DzxiumWebPages</a>--<a class="lianjie" href="https://boblive.vercel.app/">BOB实况</a>--<a class="lianjie" href="https://www.zxqblog.cn/">小钊的博客</a>
+            <br><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+            <br><span id="lasttime">载入倒计时...</span>
+            <br>本站已经开启了<a target="_blank" title="51la网站统计" href="https://v6.51.la/land/JgapU3Sla12DMquS">统计（使用51.la）</a>啦~
+            <h2><a href="https://www.imfmkli.top/video/114514.mp4">这是一个可点击的链接</a></h2>
+        </p>
+
     </div>
 
-    <!-- MoreCard No.2 说说列表-->
-    <div class="mdui-dialog" id="morecard2" style="overflow-y: scroll;">
-        <div class="mdui-card-content mdui-typo" style="text-align: center; height: 100%;">
-            <div class="mdui-container">
-                <div class="mdui-row">
-                    <!--可输入其他内容-->
-                    <h2 style="text-align: center;" id="firsttitle">最近の说说</h2><hr>
-                    <div id="shuoshuo2" class="shuoshuo2" style="text-align: center;"></div>
-                    <div class="article-content" style="text-align: center;"></div>
-                    <!--End-->
-                </div>
-            </div>
-        </div>
+    <div class="footer center">
+        <!-- 需要做到吸底的区域 -->
+        © 2023 Made By <a href="#">Fmkli</a>
+        <br><a href="https://icp.gov.moe/?keyword=20221145" rel="noopener" target="_blank" class="a-p">萌ICP备20221145号</a>
+        <br>自己做的，很简陋，但是很简洁，也还能用 ~ 
     </div>
 
-    <!-- MoreCard No.3 博客文章-->
-    <div class="mdui-dialog" id="morecard3" style="overflow-y: scroll;">
-        <div class="mdui-card-content mdui-typo" style="text-align: center; height: 100%;">
-            <div class="mdui-container">
-                <div class="mdui-row">
-                    <!--可输入其他内容-->
-                    <h2 style="text-align: center;" id="firsttitle">最近の博客文章</h2><hr>
-                    <div id="bloglist" class="shuoshuo2" style="text-align: center;"></div>
-                    <div class="article-content" style="text-align: center;"></div>
-                    <!--End-->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- MoreCard No.4 联系方式-->
-    <div class="mdui-dialog" id="morecard4" style="overflow-y: scroll;">
-        <div class="mdui-card-content mdui-typo" style="text-align: center; height: 100%;">
-            <div class="mdui-container">
-                <div class="mdui-row">
-                    <!--可输入其他内容-->
-                    <h2 style="text-align: center;" id="firsttitle">鸽子の联系方式</h2><hr>
-                    <a href="https://github.com/fmkli" class="link-item">
-                        <div class="link-icon"><i class="fa fa-github"></i></div>
-                        <div>Github</div>
-                    </a>
-                    <a href="https://space.bilibili.com/543825809" class="link-item">
-                        <div class="link-icon"><i class="fa fa-address-book"></i></div>
-                        <div>BiliBili</div>
-                    </a>
-                    <a href="https://www.ccw.site/student/5d08e95bb73fd803276dd7b2" class="link-item">
-                        <div class="link-icon"><i class="fa fa-address-book"></i></div>
-                        <div>CCW</div>
-                    </a>
-                    <a href="mailto:fmkli2@qq.com" class="link-item">
-                        <div class="link-icon"><i class="fa fa-envelope"></i></div>
-                        <div>Mail</div>
-                    </a>
-                    <a href="tencent://message/?uin=2058264685&Site=&Menu=yes" class="link-item">
-                        <div class="link-icon"><i class="fa fa-qq"></i></div>
-                        <div>QQ</div>
-                    </a>
-                    <!--End-->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- MoreCard No.5 Games-->
-    <div class="mdui-dialog" id="morecard5" style="overflow-y: scroll;">
-        <div class="mdui-card-content mdui-typo" style="text-align: center; height: 100%;">
-            <div class="mdui-container">
-                <div class="mdui-row">
-                    <!--可输入其他内容-->
-                    <h2 style="text-align: center;" id="firsttitle">游戏捏~</h2><hr>
-                    <a href="https://dino.imfmkli.top/" class="link-item">
-                        <div class="link-icon"><i class="fa fa-gamepad"></i></div>
-                        <div>小恐龙</div>
-                    </a>                    
-                    <a href="https://sg.imfmkli.top/?lang=zh_cn" class="link-item">
-                        <div class="link-icon"><i class="fa fa-gamepad"></i></div>
-                        <div>小黑屋</div>
-                    </a>                    
-                    <a href="https://eatkano.imfmkli.top/" class="link-item">
-                        <div class="link-icon"><i class="fa fa-gamepad"></i></div>
-                        <div>吃掉小菜狗</div>
-                    </a>
-                    <!--End-->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!--方便用户查看报错的调试模式-->
-
-
+    <!-- JS -->
+    <script src="./static/js/index.js"></script>
 </body>
-
-
-<link rel="stylesheet" href="static/css/main.css">
-<link rel="stylesheet" href="https://jsd.onmicrosoft.cn/gh/ClassicOldSong/typinyin.js@0.1.3/typinyin.css">
-<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Google+Sans" media="none" onload="this.media='all'">
-<script src="https://jsd.onmicrosoft.cn/gh/ClassicOldSong/typinyin.js@master/typinyin.js"></script>
-<script src="./mdui/js/mdui.min.js"></script>
-<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
-<script src="static/js/main.js"></script>
-<script src="static/js/qita.js"></script>
-<script>
-    (function () {
-        var Bloglist = "https://blog.imfmkli.top/wp-json/wp/v2/posts"; //Blog文章解析，目前只支持Wordpress，Json格式
-        var feedPath = "https://kkapi.imfmkli.top/api/ispeak?author=62fb537eea70bbc9782bcf6d&page=1&pageSize=10";//说说解析，目前只支持KKapi
-        var bgArr = [{
-            "url": "https://www.imfmkli.top/images/place.jpg",
-            "thumb": "https://www.imfmkli.top/images/place.jpg"
-        },
-        {
-            "url": "https://www.imfmkli.top/images/places.jpg",
-            "thumb": "https://www.imfmkli.top/images/places.jpg" // 如果没有缩略图,可以留空.
-        },
-        {
-            "url": "https://www.imfmkli.top/i2023.png",
-            "thumb": "https://www.imfmkli.top/i2023.png" // 如果没有缩略图,可以留空.
-        }/*,
-        {
-            "url": "https://alpha-q3.sourcegcdn.com/2023/01/12/m63Lq25Y.gif",
-            "thumb": "https://alpha-q3.sourcegcdn.com/2023/01/12/SlYS590N.jpg" // 如果没有缩略图,可以留空.
-        }*/,
-        ];
-        var senArr = [
-            {
-                ch: ["Welcome here!"],
-                py: ["Welcome here!"],
-            }, {
-                ch: ["欢迎", "来到", "这里", "。"],
-                py: ["huan'ying", "lai'dao", "zhe'li", "。"],
-            }, {
-                ch: ["只想", "做", "一个","安静的","小站", "。"],
-                py: ["zhi'xiang", "zuo", "yi'ge","an'jing'de","xiao'zhan", "。"],
-            }, {
-                ch: ["一个", "挣扎", "存活","于","网络", "边缘", "的", "网站", "，", "默默无闻"],
-                py: ["yi'ge", "zheng'zha", "cun'huo","yv","wang'luo", "bian'yvan", "de", "wang'zhan", "，", "mo'mo'wu'wen"],
-            }, {
-                ch: ["Never Gonna Give You Up!"],
-                py: ["Never Gonna Give You Up!"],
-            }
-        ];
-
-        Init(feedPath, bgArr, senArr, Bloglist);
-    })();
-</script>
-<style>
-
-</style>
 </html>
