@@ -78,7 +78,7 @@ function Init(feedPath, bgArr, senArr, Bloglist) {
         }
         detectOS2 = "other";
     }
-		detectOS();
+	detectOS();
     if (detectOS2 !== "Win10 or Win11"){
         document.getElementById('footer-container').innerText = '您所使用的系统为 ' + detectOS2 + ' ，如果使用低于Win8的系统则可能受到证书兼容性影响无法正常使用'
     }
