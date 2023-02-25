@@ -52,37 +52,7 @@ function Init(feedPath, bgArr, senArr, Bloglist) {
     function articleOutput(){
         document.getElementById('bloglist').innerHTML = '<p><h3>No.1</h3><h3>Title: ' + blogtitle1 + '</h3><h5>发布于: ' + date1 + '<br>最后修改于：' + modified1 + '</h5><a class="link-item-button" href="' + bloglink1 + '"><div>阅读文章</div></a></p><hr><p><h3>No.2</h3><h3>Title: ' + blogtitle2 + '</h3><h5>发布于: ' + date2 + '<br>最后修改于：' + modified2 + '</h5><a class="link-item-button" href="' + bloglink2 + '"><div>阅读文章</div></a></p><hr><p><h3>No.3</h3><h3>Title: ' + blogtitle3 + '</h3><h5>发布于: ' + date3 + '<br>最后修改于：' + modified3 + '</h5><a class="link-item-button" href="' + bloglink3 + '"><div>阅读文章</div></a></p><hr><p><h3>No.4</h3><h3>Title: ' + blogtitle4 + '</h3><h5>发布于: ' + date4 + '<br>最后修改于：' + modified4 + '</h5><a class="link-item-button" href="' + bloglink4 + '"><div>阅读文章</div></a></p><hr><p><h3>No.5</h3><h3>Title: ' + blogtitle5 + '</h3><h5>发布于: ' + date5 + '<br>最后修改于：' + modified5 + '</h5><a class="link-item-button" href="' + bloglink5 + '"><div>阅读文章</div></a></p><hr>';
     }
-
-    function detectOS() {
-        var sUserAgent = navigator.userAgent;
-        var isWin = (navigator.platform == "Win32") || (navigator.platform == "Windows");
-        var isMac = (navigator.platform == "Mac68K") || (navigator.platform == "MacPPC") || (navigator.platform == "Macintosh") || (navigator.platform == "MacIntel");
-        if (isMac) detectOS2 = "Mac";
-        var isUnix = (navigator.platform == "X11") && !isWin && !isMac;
-        if (isUnix) detectOS2 =  "Unix";
-        var isLinux = (String(navigator.platform).indexOf("Linux") > -1);
-        if (isLinux) detectOS2 = "Linux";
-        if (isWin) {
-            var isWin2K = sUserAgent.indexOf("Windows NT 5.0") > -1 || sUserAgent.indexOf("Windows 2000") > -1;
-            if (isWin2K) detectOS2 = "Win2000";
-            var isWinXP = sUserAgent.indexOf("Windows NT 5.1") > -1 || sUserAgent.indexOf("Windows XP") > -1;
-            if (isWinXP) detectOS2 = "WinXP";
-            var isWin2003 = sUserAgent.indexOf("Windows NT 5.2") > -1 || sUserAgent.indexOf("Windows 2003") > -1;
-            if (isWin2003) detectOS2 = "Win2003";
-            var isWinVista= sUserAgent.indexOf("Windows NT 6.0") > -1 || sUserAgent.indexOf("Windows Vista") > -1;
-            if (isWinVista) detectOS2 = "WinVista";
-            var isWin7 = sUserAgent.indexOf("Windows NT 6.1") > -1 || sUserAgent.indexOf("Windows 7") > -1;
-            if (isWin7) detectOS2 = "Win7";
-            var isWin10 = sUserAgent.indexOf("Windows NT 10.0") > -1 || sUserAgent.indexOf("Windows 10") > -1;
-            if (isWin10) detectOS2 = "Win10 or Win11";
-        }
-        detectOS2 = "other";
-    }
-	detectOS();
-    if (detectOS2 !== "Win10 or Win11"){
-        document.getElementById('footer-container').innerText = '您所使用的系统为 ' + detectOS2 + ' ，如果使用低于Win8的系统则可能受到证书兼容性影响无法正常使用'
-    }
-
+    
     //说说
     $.ajax({
         type: "GET",
