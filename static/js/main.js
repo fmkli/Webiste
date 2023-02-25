@@ -57,29 +57,31 @@ function Init(feedPath, bgArr, senArr, Bloglist) {
         var sUserAgent = navigator.userAgent;
         var isWin = (navigator.platform == "Win32") || (navigator.platform == "Windows");
         var isMac = (navigator.platform == "Mac68K") || (navigator.platform == "MacPPC") || (navigator.platform == "Macintosh") || (navigator.platform == "MacIntel");
-        if (isMac) return "Mac";
+        if (isMac) detectOS2 = "Mac";
         var isUnix = (navigator.platform == "X11") && !isWin && !isMac;
-        if (isUnix) return "Unix";
+        if (isUnix) detectOS2 =  "Unix";
         var isLinux = (String(navigator.platform).indexOf("Linux") > -1);
-        if (isLinux) return "Linux";
+        if (isLinux) detectOS2 = "Linux";
         if (isWin) {
             var isWin2K = sUserAgent.indexOf("Windows NT 5.0") > -1 || sUserAgent.indexOf("Windows 2000") > -1;
-            if (isWin2K) return "Win2000";
+            if (isWin2K) detectOS2 = "Win2000";
             var isWinXP = sUserAgent.indexOf("Windows NT 5.1") > -1 || sUserAgent.indexOf("Windows XP") > -1;
-            if (isWinXP) return "WinXP";
+            if (isWinXP) detectOS2 = "WinXP";
             var isWin2003 = sUserAgent.indexOf("Windows NT 5.2") > -1 || sUserAgent.indexOf("Windows 2003") > -1;
-            if (isWin2003) return "Win2003";
+            if (isWin2003) detectOS2 = "Win2003";
             var isWinVista= sUserAgent.indexOf("Windows NT 6.0") > -1 || sUserAgent.indexOf("Windows Vista") > -1;
-            if (isWinVista) return "WinVista";
+            if (isWinVista) detectOS2 = "WinVista";
             var isWin7 = sUserAgent.indexOf("Windows NT 6.1") > -1 || sUserAgent.indexOf("Windows 7") > -1;
-            if (isWin7) return "Win7";
+            if (isWin7) detectOS2 = "Win7";
             var isWin10 = sUserAgent.indexOf("Windows NT 10.0") > -1 || sUserAgent.indexOf("Windows 10") > -1;
-            if (isWin10) return "Win10 or Win11";
+            if (isWin10) detectOS2 = "Win10 or Win11";
         }
-        return "other";
+        detectOS2 = "other";
     }
-     
-    document.getElementById('footer-container').innerText = '您所使用的系统为 ' + detectOS() + ' ，如果使用低于Win8的系统则可能受到证书兼容性影响无法正常使用'
+		detectOS();
+    if (detectOS2 !== "Win10 or Win11"){
+        document.getElementById('footer-container').innerText = '您所使用的系统为 ' + detectOS2 + ' ，如果使用低于Win8的系统则可能受到证书兼容性影响无法正常使用'
+    }
 
     //说说
     $.ajax({
