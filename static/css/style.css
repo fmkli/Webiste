@@ -115,7 +115,7 @@ a:hover{
 .morethings{
     position: absolute;
     bottom: 0;
-    height: calc(10% + 120px);
+    height: calc(10% + 250px);
     width: 100%;
     background-color: rgb(109, 109, 109);
 }
