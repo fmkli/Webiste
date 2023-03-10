@@ -60,14 +60,14 @@ a:hover{
         left: 200px;
     }
 }
-@media screen and (max-height:792px){
-    .button2{
+/*@media screen and (max-height:792px){
+   .button2{
         display: none;
     }
     .button3{
         display: none;
     }
-}
+}*/
 @media screen and (min-height:675px){
     .button{
         height: 45px;
