@@ -3,20 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="Fmkli,鸽子Fmkli,鸽子主页">
-    <meta name="description" contect="只是鸽子Fmkli搭建来自娱自乐的网站罢了">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fmkli的网站 | 无知小站</title>
     <link rel="stylesheet" href="/static/css/style.css">
+    <link href="/static/fa/css/fontawesome.css" rel="stylesheet">
+    <link href="/static/fa/css/brands.css" rel="stylesheet">
+    <link href="/static/fa/css/solid.css" rel="stylesheet">
 </head>
 <body>
     <div class="box center">
 
-        <p style="text-align:center;">
-            <img src="https://www.imfmkli.top/pigen.png" width="15%" alt="fmkli">
-            <h2 style="text-align:center;" alt="fmkli">Fmkli的主页 -- 无聊破站</h2>
-            <br><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=298 height=52 src="//music.163.com/outchain/player?type=2&id=1849196940&auto=1&height=32"></iframe>
-        </p>
+        <p style="text-align:center;"><img src="https://www.imfmkli.top/pigen.png" width="15%">
+        <h2 style="text-align:center;" alt="fmkli">Fmkli的主页 -- 无聊破站</h2></p>
         
         <hr>
         <h3>About Me</h3>
@@ -24,7 +22,7 @@
 
         <hr>
         <h3>Links</h3>
-        <p>Links： <a href="https://blog.imfmkli.top/">Blog</a> -- <a href="https://www.imfmkli.top/talk2.html">留言板</a> -- <a href="https://www.imfmkli.top/say.html">说说</a> -- <a href="https://support.qq.com/products/345713">兔小巢</a> -- <a href="https://blog2.imfmkli.top/">备用Blog</a></p>
+        <p>Links： <a href="https://blog.imfmkli.top/">Blog</a> -- <a href="https://www.imfmkli.top/talk2.html">留言板</a> -- <a href="https://www.imfmkli.top/say.html">说说</a> -- <a href="https://blog2.imfmkli.top/">备用Blog</a></p>
         <p>Links - 工具： <a href="http://no-paid-music.imfmkli.top/">音乐解锁</a> -- <a href="https://www.imfmkli.top/goodpassword">密码生成</a>
         <p>Links - 游戏： <a href="https://dino.imfmkli.top/">小恐龙</a> -- <a href="https://sg.imfmkli.top/?lang=zh_cn">小黑屋</a> -- <a href="https://eatkano.imfmkli.top/">吃掉小菜狗</a>
         <p>Links - Fmkli的联系方式： <a href="https://github.com/fmkli">Github</a> -- <a href="https://space.bilibili.com/543825809">BiliBili</a> -- <a href="https://www.ccw.site/student/5d08e95bb73fd803276dd7b2">CCW</a> -- <a href="mailto:fmkli2@qq.com">Email</a> -- <a href="tencent://message/?uin=2058264685&Site=&Menu=yes">QQ</a>
@@ -38,14 +36,30 @@
             <br>本站已经开启了<a target="_blank" title="51la网站统计" href="https://v6.51.la/land/JgapU3Sla12DMquS">统计（使用51.la）</a>啦~
             <h2><a href="https://www.imfmkli.top/video/114514.mp4">这是一个可点击的链接</a></h2>
         </p>
-
     </div>
-
-    <div class="footer center">
-        <!-- 需要做到吸底的区域 -->
-        © 2023 Made By <a href="#">Fmkli</a>
-        <br><a href="https://icp.gov.moe/?keyword=20221145" rel="noopener" target="_blank" class="a-p">萌ICP备20221145号</a>
-        <br>这个网页是自己做的，很简陋，但是很简洁，也还能用 ~ 
+    <div class="button" onclick="morethings2();">
+        <span class="fas fa-star center2">More</span> <!-- using a <span> element to reference the icon -->
+    </div>
+    <div class="morethings center" id="morethings" style="display: none;">
+        <h3>About</h3>
+        <p id="xinxi">
+            © 2023 Made By <a href="#">Fmkli</a>
+            <br><a href="https://icp.gov.moe/?keyword=20221145" rel="noopener" target="_blank" class="a-p">萌ICP备20221145号</a>
+            <br>自己做的，很简陋，但是很简洁，也还能用 ~ 
+        </p>
+        <div class="button" onclick="closemore();">
+            <span class="fas fa-ban center2">close</span> <!-- using a <span> element to reference the icon -->
+        </div>
+        <a href="https://www.imfmkli.top/say.html" class="ablack">
+            <div class="button2">
+                <span class="fas fa-comment-alt center2">&nbsp说说</span> <!-- using a <span> element to reference the icon -->
+            </div>
+        </a>
+        <a href="https://www.imfmkli.top/talk2.html" class="ablack">
+            <div class="button3">
+                <span class="fas fa-external-link-alt center2">&nbsp留言</span> <!-- using a <span> element to reference the icon -->
+            </div>
+        </a>
     </div>
 
     <!-- JS -->
