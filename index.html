@@ -1,67 +1,196 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
+<html lang="zh">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fmkli的网站 | 无知小站</title>
-    <link rel="stylesheet" href="/static/css/style.css">
-    <link href="/static/fa/css/fontawesome.css" rel="stylesheet">
-    <link href="/static/fa/css/brands.css" rel="stylesheet">
-    <link href="/static/fa/css/solid.css" rel="stylesheet">
+
+    <!-- 资源引入 -->
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/mdui/css/mdui.min.css">
+    <script src="./static/mdui/js/mdui.min.js"></script>
+
+    <title>鸽子的网站</title>
 </head>
-<body>
-    <div class="box center">
+<body class="mdui-theme-primary-cyan mdui-drawer-body-left">
+    <!-- 网页内容 -->
+    <div class="mdui-container">
+        <div class="mdui-row">
 
-        <p style="text-align:center;"><img src="https://www.imfmkli.top/pigen.png" width="15%">
-        <h2 style="text-align:center;" alt="fmkli">Fmkli的主页 -- 无聊破站</h2></p>
-        
-        <hr>
-        <h3>About Me</h3>
-        <p>这只是一个无聊的小站，站长搭建来自娱自乐罢了<br>站长开学后只在周五、周六、周日上线，封校除外。 </p>
+        <!-- 顶部工具栏 -->
+        <div class="mdui-toolbar mdui-color-theme">
+            <a href="javascript:;" mdui-drawer="{target: '#left-drawer'}" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
+            <span class="mdui-typo-title">鸽の破站</span>
+            <div class="mdui-toolbar-spacer"></div>
+        </div><br>
 
-        <hr>
-        <h3>Links</h3>
-        <p>Links： <a href="https://blog.imfmkli.top/">Blog</a> -- <a href="https://www.imfmkli.top/talk2.html">留言板</a> -- <a href="https://www.imfmkli.top/say.html">说说</a> -- <a href="https://blog2.imfmkli.top/">备用Blog</a></p>
-        <p>Links - 工具： <a href="http://no-paid-music.imfmkli.top/">音乐解锁</a> -- <a href="https://www.imfmkli.top/goodpassword">密码生成</a>
-        <p>Links - 游戏： <a href="https://dino.imfmkli.top/">小恐龙</a> -- <a href="https://sg.imfmkli.top/?lang=zh_cn">小黑屋</a> -- <a href="https://eatkano.imfmkli.top/">吃掉小菜狗</a>
-        <p>Links - Fmkli的联系方式： <a href="https://github.com/fmkli">Github</a> -- <a href="https://space.bilibili.com/543825809">BiliBili</a> -- <a href="https://www.ccw.site/student/5d08e95bb73fd803276dd7b2">CCW</a> -- <a href="mailto:fmkli2@qq.com">Email</a> -- <a href="tencent://message/?uin=2058264685&Site=&Menu=yes">QQ</a>
-        
-        <hr>
-        <h3>其他</h3>
-        <p>
-            Friend Links：<a class="lianjie" href="https://dwp.xn--vl1a.tech/">DzxiumWebPages</a>--<a class="lianjie" href="https://boblive.vercel.app/">BOB实况</a>--<a class="lianjie" href="https://www.zxqblog.cn/">小钊的博客</a>
-            <br><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
-            <br><span id="lasttime">载入倒计时...</span>
-            <br>本站已经开启了<a target="_blank" title="51la网站统计" href="https://v6.51.la/land/JgapU3Sla12DMquS">统计（使用51.la）</a>啦~
-            <h2><a href="https://www.imfmkli.top/video/114514.mp4">这是一个可点击的链接</a></h2>
-        </p>
-    </div>
-    <div class="button" onclick="morethings2();">
-        <span class="fas fa-star center2">More</span> <!-- using a <span> element to reference the icon -->
-    </div>
-    <div class="morethings center" id="morethings" style="display: none;">
-        <h3>About</h3>
-        <p id="xinxi">
-            © 2023 Made By <a href="#">Fmkli</a>
-            <br><a href="https://icp.gov.moe/?keyword=20221145" rel="noopener" target="_blank" class="a-p">萌ICP备20221145号</a>
-            <br>自己做的，很简陋，但是很简洁，也还能用 ~ 
-        </p>
-        <div class="button" onclick="closemore();">
-            <span class="fas fa-ban center2">close</span> <!-- using a <span> element to reference the icon -->
+        <!-- 左侧抽屉栏 -->
+        <div class="mdui-drawer mdui-drawer-full-height mdui-color-white" id="left-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+
+                <!-- 菜单一 -->
+                <li class="mdui-collapse-item mdui-collapse-item-open">
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">web</i>
+                        <div class="mdui-list-item-content">Website - 博客</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <ul class="mdui-collapse-item-body mdui-list">
+                        <a class="mdui-list-item mdui-ripple" href="https://blog.imfmkli.top/">
+                            <div class="mdui-list-item-content">博客</div>
+                        </a>
+                        <a class="mdui-list-item mdui-ripple" href="https://blog2.imfmkli.top/">
+                            <div class="mdui-list-item-content">备用博客</div>
+                        </a>
+                    </ul>
+                </li>
+
+                <!-- 菜单二 -->
+                <li class="mdui-collapse-item mdui-collapse-item-open">
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">web</i>
+                        <div class="mdui-list-item-content">Website - 其他</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <ul class="mdui-collapse-item-body mdui-list">
+                        <a class="mdui-list-item mdui-ripple" href="https://www.imfmkli.top/talk2.html">
+                            <div class="mdui-list-item-content">留言板</div>
+                        </a>
+                        <a class="mdui-list-item mdui-ripple" href="https://www.imfmkli.top/say.html">
+                            <div class="mdui-list-item-content">说说</div>
+                        </a>
+                    </ul>
+                </li>
+
+                <!-- 菜单三 -->
+                <li class="mdui-collapse-item mdui-collapse-item-close">
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">web</i>
+                        <div class="mdui-list-item-content">Website - 工具</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <ul class="mdui-collapse-item-body mdui-list">
+                        <a class="mdui-list-item mdui-ripple" href="http://no-paid-music.imfmkli.top/">
+                            <div class="mdui-list-item-content">音乐解锁</div>
+                        </a>
+                        <a class="mdui-list-item mdui-ripple" href="https://www.imfmkli.top/goodpassword">
+                            <div class="mdui-list-item-content">密码生成</div>
+                        </a>
+                    </ul>
+                </li>
+
+                <!-- 菜单四 -->
+                <li class="mdui-collapse-item mdui-collapse-item-close">
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">web</i>
+                        <div class="mdui-list-item-content">Website - 游戏</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <ul class="mdui-collapse-item-body mdui-list">
+                        <a class="mdui-list-item mdui-ripple" href="https://dino.imfmkli.top/">
+                            <div class="mdui-list-item-content">小恐龙</div>
+                        </a>
+                        <a class="mdui-list-item mdui-ripple" href="https://sg.imfmkli.top/?lang=zh_cn">
+                            <div class="mdui-list-item-content">A Dark Room</div>
+                        </a>
+                        <a class="mdui-list-item mdui-ripple" href="https://eatkano.imfmkli.top/">
+                            <div class="mdui-list-item-content">吃掉小菜狗</div>
+                        </a>
+                    </ul>
+                </li>
+
+                <!-- 菜单四 -->
+                <li class="mdui-collapse-item mdui-collapse-item-close">
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">web</i>
+                        <div class="mdui-list-item-content">Website - 联系方式</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
+                    </div>
+                    <ul class="mdui-collapse-item-body mdui-list">
+                        <a class="mdui-list-item mdui-ripple" href="https://github.com/fmkli">
+                            <div class="mdui-list-item-content">Github</div>
+                        </a>
+                        <a class="mdui-list-item mdui-ripple" href="https://space.bilibili.com/543825809">
+                            <div class="mdui-list-item-content">BiliBili</div>
+                        </a>
+                        <a class="mdui-list-item mdui-ripple" href="https://www.ccw.site/student/5d08e95bb73fd803276dd7b2">
+                            <div class="mdui-list-item-content">CCW</div>
+                        </a>
+                        <a class="mdui-list-item mdui-ripple" href="mailto:fmkli2@qq.com">
+                            <div class="mdui-list-item-content">Mail</div>
+                        </a>
+                        <a class="mdui-list-item mdui-ripple" href="tencent://message/?uin=2058264685&Site=&Menu=yes">
+                            <div class="mdui-list-item-content">吃掉小菜狗</div>
+                        </a>
+                    </ul>
+                </li>
+            </ul> 
         </div>
-        <a href="https://www.imfmkli.top/say.html" class="ablack">
-            <div class="button2">
-                <span class="fas fa-comment-alt center2">&nbsp说说</span> <!-- using a <span> element to reference the icon -->
-            </div>
-        </a>
-        <a href="https://www.imfmkli.top/talk2.html" class="ablack">
-            <div class="button3">
-                <span class="fas fa-external-link-alt center2">&nbsp留言</span> <!-- using a <span> element to reference the icon -->
-            </div>
-        </a>
-    </div>
 
+        <div class="mdui-col-sm-6 mdui-col-md-4">
+            <div class="mdui-card">
+                <div class="mdui-card-header">
+                    <img class="mdui-card-header-avatar" src="https://blog.imfmkli.top/wp-content/uploads/2022/08/cropped-username.png"/>
+                    <div class="mdui-card-header-title">鸽子Fmkli</div>
+                    <div class="mdui-card-header-subtitle">作为鸽子应该咕咕咕！</div>
+                </div>
+                <div class="mdui-card-media">
+                    <img src="https://i.328888.xyz/2023/03/31/iwBZdb.jpeg"/>
+                </div>
+                    <div class="mdui-card-actions">
+                        <a href="https://blog.imfmkli.top/" class="mdui-btn mdui-ripple">博客</a>
+                        <a href="https://www.imfmkli.top/say.html" class="mdui-btn mdui-ripple">说说</a>
+                    </div>
+                </div>
+        </div>
+
+        <!-- 卡片一 -->
+        <div class="mdui-card card">
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">公告</div>
+                <div class="mdui-card-primary-subtitle">破公告栏</div>
+            </div>
+            <!-- 卡片的内容 -->
+            <div class="mdui-card-content" id="posts">
+                <p>作为鸽子，我居然又做了一个主页！</p>
+            </div>
+        </div><br>
+
+        <!-- About Me -->
+        <div class="mdui-card card">
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">About Me</div>
+                <div class="mdui-card-primary-subtitle">UwU</div>
+            </div>
+            <!-- 卡片的内容 -->
+            <div class="mdui-card-content" id="posts">
+                <p>这只是一个无聊的小站，站长搭建来自娱自乐罢了
+                    <br>站长开学后只在周五、周六、周日上线，封校除外。
+                </p>
+            </div>
+        </div><br>
+
+        <!-- 其他 -->
+        <div class="mdui-card card">
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">其他</div>
+                <div class="mdui-card-primary-subtitle">UwU</div>
+            </div>
+            <!-- 卡片的内容 -->
+            <div class="mdui-card-content" id="posts">
+                <p>
+                    Friend Links：<a class="lianjie" href="https://dwp.xn--vl1a.tech/">DzxiumWebPages</a>--<a class="lianjie" href="https://boblive.vercel.app/">BOB实况</a>--<a class="lianjie" href="https://www.zxqblog.cn/">小钊的博客</a>
+                    <br><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+                    <br><span id="lasttime">载入倒计时...</span>
+                    <br>本站已经开启了<a target="_blank" title="51la网站统计" href="https://v6.51.la/land/JgapU3Sla12DMquS">统计（使用51.la）</a>啦~
+                    <h2><a href="https://www.imfmkli.top/video/114514.mp4">这是一个可点击的链接</a></h2>
+                </p>
+            </div>
+        </div><br>
+
+
+
+    </div>
     <!-- JS -->
     <script src="./static/js/index.js"></script>
 </body>
