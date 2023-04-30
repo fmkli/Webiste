@@ -59,11 +59,11 @@ document.getElementById("footer").style.display = "none"
 function openfooter(){
     if (ab == 1){
         document.getElementById("footer").style.display = ""
-        document.getElementById("openfooter").style.top = "70%"
+        document.getElementById("openfooter").style.top = "1%"
         ab = 2
     }else if (ab == 2){
         document.getElementById("footer").style.display = "none"
-        document.getElementById("openfooter").style.top = "95%"
+        document.getElementById("openfooter").style.top = "95.55%"
         ab = 1
     }
 }
