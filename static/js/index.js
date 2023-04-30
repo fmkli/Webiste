@@ -60,10 +60,12 @@ function openfooter(){
     if (ab == 1){
         document.getElementById("footer").style.display = ""
         document.getElementById("openfooter").style.top = "1%"
+        document.getElementById("openfooter").innerText = "点我关闭脚页"
         ab = 2
     }else if (ab == 2){
         document.getElementById("footer").style.display = "none"
         document.getElementById("openfooter").style.top = "95.55%"
+        document.getElementById("openfooter").innerText = "点我打开脚页"
         ab = 1
     }
 }
