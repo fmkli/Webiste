@@ -55,17 +55,17 @@ createtime();
 console.log('统计开启~')
 
 ab = 1
-document.getElementById("footer").style.display = "none"
+document.getElementById("no2page").style.display = "none"
 function openfooter(){
     if (ab == 1){
-        document.getElementById("footer").style.display = ""
-        document.getElementById("openfooter").style.top = "1%"
-        document.getElementById("openfooter").innerText = "点我关闭脚页"
+        document.getElementById("no1page").style.display = "none"
+        document.getElementById("no2page").style.display = ""
+        document.getElementById("openfooter").innerText = "点我回归！"
         ab = 2
     }else if (ab == 2){
-        document.getElementById("footer").style.display = "none"
-        document.getElementById("openfooter").style.top = "95.55%"
-        document.getElementById("openfooter").innerText = "点我打开脚页"
+        document.getElementById("no2page").style.display = "none"
+        document.getElementById("no1page").style.display = ""
+        document.getElementById("openfooter").innerText = "点我查看其他"
         ab = 1
     }
 }
