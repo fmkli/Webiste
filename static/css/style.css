@@ -1,8 +1,143 @@
 a{
-    color: rgb(0, 51, 128);
+    color: rgb(44, 110, 0);
     text-decoration: none;
 }
 a:hover{
-    color: rgb(0, 2, 128);
+    color: rgb(44, 110, 0);
     text-decoration: underline;
+}
+.mainbox{
+    background-color: rgb(241, 241, 241);
+    position: absolute;
+    top: 50%;
+    left: 26%;
+    transform: translate(-50%,-50%);
+    height: 75%;
+    width: 45%;
+    display: flex;
+    border-radius:9px;
+    border-style: solid;
+    border-width:2px;
+    border-color:#cfcfcf;
+    padding: 4px;
+}
+.mainbox2{
+    background-color: rgb(241, 241, 241);
+    position: absolute;
+    top: 50%;
+    left: 74%;
+    transform: translate(-50%,-50%);
+    height: 75%;
+    width: 45%;
+    display: flex;
+    border-radius:9px;
+    border-style: solid;
+    border-width:2px;
+    border-color:#cfcfcf;
+    padding: 4px;
+}
+.fmkliheadpage{
+    width: 65px;
+    border-radius:50%;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 25%;
+    left: -100%;
+}
+.jianjie{
+    position: absolute;
+    top: 5%;
+    left: 43%;
+}
+.name{
+    font-size: 2.1em;
+    line-height: 5%;
+}
+html{
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+}
+@media screen and (min-width: 900px){
+    .mainbox{
+        width: 410px;
+    }
+    .mainbox2{
+        width: 410px;
+    }
+}
+@media screen and (max-width: 480px){
+    .mainbox{
+        height: 42.5%;
+        top:23.5%;
+        left: 50%;
+        width: 90%;
+    }
+    .mainbox2{
+        height: 42.5%;
+        width: 90%;
+        top: 68.5%;
+        left: 50%;
+    }
+}
+.links{
+    z-index: 1;
+    width: 80%;
+    margin-left: 9%;
+    overflow: auto;
+}
+.Abouts{
+    z-index: 1;
+    width: 80%;
+    margin-left: 9%;
+    margin-top: 130px;
+    overflow: auto;
+}
+.openfooter{
+    position: absolute;
+    bottom: 1%;
+    left: 10%;
+    background-color: #cfcfcf;
+    width: 80%;
+    height: 30px;
+    border-radius:5px;
+    font-size: 1.3em;
+    padding: 2px;
+}
+@media screen and (max-height: 650px){
+    .fmkliheadpage{
+        position: absolute;
+        top: 10%;
+        left: -100%;
+    }
+    .jianjie{
+        position: absolute;
+        top: 1%;
+        left: 43%;
+    }
+    .Abouts{
+        z-index: 1;
+        width: 80%;
+        margin-left: 9%;
+        margin-top: 75px;
+        overflow: auto;
+    }
+    .jianjie2{
+        position: absolute;
+        top: 34px;
+    }
+
+}
+.linkbutton{
+    width: 40px;
+    background-color: rgb(228, 228, 228);
+}
+.footer{
+    position: absolute;
+    bottom: 0;
+    height: calc(20% + 40px);
+    width: calc(100% - 15px);
+    background-color: rgb(233, 233, 233);
+    border-radius:5px;
+    padding: 3px;
 }
