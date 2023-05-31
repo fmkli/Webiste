@@ -1,9 +1,17 @@
+body{
+    z-index:-10;/*因为背景图片应该放在最下方，所以设置一个层级*/
+    background-image: url(../img/background.jpg);
+    background-size:cover; /* ---把背景图片放大到适合元素容器的尺寸，图片比例不变，但某些部分被切割无法显示完整背景图像 */
+    background-attachment:fixed; /* 当内容高度大于图片高度时，背景图像的位置相对于 可视窗口 固定，此条属性必须设置 */
+    background-position:center;
+    color: aliceblue;
+}
 a{
-    color: rgb(44, 110, 0);
+    color: rgb(255, 194, 194);
     text-decoration: none;
 }
 a:hover{
-    color: rgb(44, 110, 0);
+    color: rgb(206, 255, 174);
     text-decoration: underline;
 }
 .mainbox{
@@ -16,26 +24,41 @@ a:hover{
     display: flex;
 }
 .mainbox2{
+    background-color: rgb(97, 97, 97, 0.3);
     position: absolute;
     top: 26%;
     left: 74%;
     transform: translate(-50%,-50%);
-    height: 40%;
+    height: auto;
     width: 45%;
     display: flex;
     border-radius:9px;
-    padding: 4px;
+    padding: 6px;
 }
 .mainbox3{
     position: absolute;
-    top: 70%;
+    background-color: rgb(97, 97, 97, 0.3);
+    top: 76%;
     left: 74%;
     transform: translate(-50%,-50%);
-    height: 40%;
+    height: auto;
     width: 45%;
     display: flex;
     border-radius:9px;
-    padding: 4px;
+    padding: 6px;
+}
+.mainbox4{
+    position: absolute;
+    background-color: rgb(97, 97, 97, 0.3);
+    top: 53.5%;
+    left: 74%;
+    transform: translate(-50%,-50%);
+    height: auto;
+    width: 45%;
+    display: flex;
+    border-radius:9px;
+    padding: 3px;
+    word-break: break-word;
 }
 .fmkliheadpage{
     width: 65px;
@@ -75,6 +98,14 @@ html{
     .mainbox3{
         width: 552px;
     }
+    .mainbox4{
+        width: 552px;
+    }
+}
+@media screen and (max-height: 700px){
+    .mainbox4{
+        display: none;
+    }
 }
 @media screen and (max-width: 480px){
     .mainbox{
@@ -84,13 +115,16 @@ html{
         width: 90%;
     }
     .mainbox2{
-        height: 32.5%;
+        background-color: rgb(97, 97, 97, 0.3);
         width: 90%;
         top: 37%;
         left: 50%;
     }
+    .mainbox4{
+        display: none;
+    }
     .mainbox3{
-        height: 32.5%;
+        background-color: rgb(97, 97, 97, 0.3);
         width: 90%;
         top: 73.5%;
         left: 50%;
@@ -118,17 +152,6 @@ html{
     margin-top: 130px;
     overflow: auto;
 }
-.openfooter{
-    position: absolute;
-    top: 100%;
-    left: 8%;
-    background-color: #cfcfcf;
-    width: 80%;
-    height: 30px;
-    border-radius:5px;
-    font-size: 1.3em;
-    padding: 2px;
-}
 @media screen and (max-height: 650px){
     .Abouts{
         z-index: 1;
@@ -146,4 +169,27 @@ html{
 .linkbutton{
     width: 40px;
     background-color: rgb(228, 228, 228);
+}
+
+.footer2{
+    position: absolute;
+    bottom: 39px;
+    width: calc(100% - 20px);
+    height: auto;
+    padding: 3px;
+    background-color: rgb(117, 117, 117);
+}
+.openfooterimg{
+    width: 16px;
+    position: absolute;
+    top: 6px;
+
+
+}
+.openfooter2{
+    position: absolute;
+    background-color: rgb(85, 85, 85);
+    width: calc(100% - 18px);
+    bottom: 5px;
+    padding: 3px;
 }

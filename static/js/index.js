@@ -54,18 +54,35 @@ createtime();
 !function(p){"use strict";!function(t){var s=window,e=document,i=p,c="".concat("https:"===e.location.protocol?"https://":"http://","sdk.51.la/js-sdk-pro.min.js"),n=e.createElement("script"),r=e.getElementsByTagName("script")[0];n.type="text/javascript",n.setAttribute("charset","UTF-8"),n.async=!0,n.src=c,n.id="LA_COLLECT",i.d=n;var o=function(){s.LA.ids.push(i)};s.LA?s.LA.ids&&o():(s.LA=p,s.LA.ids=[],o()),r.parentNode.insertBefore(n,r)}()}({id:"JgapU3Sla12DMquS",ck:"JgapU3Sla12DMquS"});
 console.log('统计开启~')
 
+document.getElementById("footer2").style.display = "none"
+
 ab = 1
-document.getElementById("no2page").style.display = "none"
 function openfooter(){
     if (ab == 1){
-        document.getElementById("no1page").style.display = "none"
-        document.getElementById("no2page").style.display = ""
-        document.getElementById("openfooter").innerText = "点我回归！"
+        document.getElementById("footer2").style.display = ""
+        document.getElementById("openfooter2").innerHTML = '<img src="static/img/more.svg" class="openfooterimg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Close! '
         ab = 2
     }else if (ab == 2){
-        document.getElementById("no2page").style.display = "none"
-        document.getElementById("no1page").style.display = ""
-        document.getElementById("openfooter").innerText = "点我查看其他"
+        document.getElementById("footer2").style.display = "none"
+        document.getElementById("openfooter2").innerHTML = '<img src="static/img/more.svg" class="openfooterimg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;More! '
         ab = 1
     }
 }
+
+$.ajax({
+    type: 'GET',
+    url: 'https://v1.hitokoto.cn',
+    success (data) {
+      document.getElementById("hitokoto_text").innerHTML = data.hitokoto
+      if (data.from_who == null){
+      document.getElementById("zuozhe").innerHTML = "無名"
+      }else{
+        document.getElementById("zuozhe").innerHTML = data.from_who
+      }
+
+    },
+    error (jqXHR, textStatus, errorThrown) {
+      // 错误信息处理
+      console.error(textStatus, errorThrown)
+    }
+})

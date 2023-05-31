@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/css/style.css">
+    <!-- JQUERY INPUT -->
+    <script src="./jquery.min.js"></script>
     <title>Fmkli的简洁主页</title>
 </head>
 <body>
@@ -28,6 +30,13 @@
             </p>
         </div>
     </div>
+    <div class="mainbox4">
+        <div class="links">
+            <p>
+                <span id="hitokoto_text"></span><br>--<span id="zuozhe"></span>
+            </p>
+        </div>
+    </div>
     <div class="mainbox3">
         <div class="links">
             <div class="no1page" id="no1page">
@@ -37,21 +46,28 @@
                 Game: <a href="https://dino.imfmkli.top/">小恐龙</a>--<a href="https://sg.imfmkli.top/?lang=zh_cn">A Dark Room</a>--<a href="https://eatkano.imfmkli.top/">吃掉小菜狗</a><br>
                 Contact Me: <a class="mdui-list-item mdui-ripple" href="https://github.com/fmkli">Github</a>--<a class="mdui-list-item mdui-ripple" href="https://space.bilibili.com/543825809">BiliBili</a>--<a class="mdui-list-item mdui-ripple" href="https://www.ccw.site/student/5d08e95bb73fd803276dd7b2">CCW</a>--<a class="mdui-list-item mdui-ripple" href="mailto:fmkli2@qq.com">Mail</a>--<a class="mdui-list-item mdui-ripple" href="tencent://message/?uin=2058264685&Site=&Menu=yes">QQ</a><br>
             </div>
-            <div class="no2page" id="no2page">
-                <p>
-                    <h3 class="">其它</h3>
-                    Friend Links：<a class="lianjie" href="https://dwp.xn--vl1a.tech/">DzxiumWebPages</a>--<a class="lianjie" href="https://boblive.vercel.app/">BOB实况</a>--<a class="lianjie" href="https://www.zxqblog.cn/">小钊的博客</a>
-                    <br><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
-                    <br><span id="lasttime">载入倒计时...</span>
-                    <br>本站已经开启了<a target="_blank" title="51la网站统计" href="https://v6.51.la/land/JgapU3Sla12DMquS">统计（使用51.la）</a>啦~
-                    <h2><a href="https://www.imfmkli.top/video/114514.mp4">这是一个可点击的链接</a></h2>
-                </p>
-            </div>
-            <div class="openfooter" id="openfooter" onclick="openfooter();">点我查看其他</div>
         </div>
     </div>
+    <div class="footer2" id="footer2">
+        <p>
+            <h3 class="">其它</h3>
+            Friend Links：<a class="lianjie" href="https://dwp.xn--vl1a.tech/">DzxiumWebPages</a>--<a class="lianjie" href="https://boblive.vercel.app/">BOB实况</a>--<a class="lianjie" href="https://www.zxqblog.cn/">小钊的博客</a>
+            <br><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+            <br><span id="lasttime">载入倒计时...</span>
+            <br>本站已经开启了<a target="_blank" title="51la网站统计" href="https://v6.51.la/land/JgapU3Sla12DMquS">统计（使用51.la）</a>啦~
+            <h2><a href="https://www.imfmkli.top/video/114514.mp4">这是一个可点击的链接</a></h2>
+            <span id="power">Copyright&nbsp;©
+                <script>
+                    document.write((new Date()).getFullYear());
+                </script>
+                <a href="https://www.imfmkli.top" id="power-text">Fmkli</a>
+            </span>
+            <span id="made">&amp;&nbsp;Made&nbsp;by&nbsp;<a href="https://www.imfmkli.top" target="_blank">Fmkli</a></span>
+        </p>
+    </div>
 
-    <p class="copy">Made By Fmkli</p>
+    <div class="openfooter2" id="openfooter2" onclick="openfooter()"><img src="static/img/more.svg" class="openfooterimg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;More! </div>
+
     <!-- JS INPUT -->
     <script src="./static/js/index.js"></script>
 </body>
