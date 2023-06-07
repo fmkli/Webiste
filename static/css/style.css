@@ -1,10 +1,14 @@
 body{
     z-index:-10;/*因为背景图片应该放在最下方，所以设置一个层级*/
-    background-image: url(../img/background.jpg);
+    background-color: rgb(168, 168, 168);
     background-size:cover; /* ---把背景图片放大到适合元素容器的尺寸，图片比例不变，但某些部分被切割无法显示完整背景图像 */
     background-attachment:fixed; /* 当内容高度大于图片高度时，背景图像的位置相对于 可视窗口 固定，此条属性必须设置 */
     background-position:center;
     color: aliceblue;
+}
+.yiyan2{
+    position: absolute;
+    left: 05%;
 }
 a{
     color: rgb(255, 194, 194);
@@ -16,7 +20,7 @@ a:hover{
 }
 .mainbox{
     position: absolute;
-    top: 50%;
+    top: 35%;
     left: 26%;
     transform: translate(-50%,-50%);
     height: 75%;
@@ -25,8 +29,8 @@ a:hover{
 }
 .mainbox2{
     position: absolute;
-    top: 26%;
-    left: 74%;
+    top: 60%;
+    left: 26%;
     transform: translate(-50%,-50%);
     height: auto;
     width: 45%;
@@ -36,7 +40,7 @@ a:hover{
 }
 .mainbox3{
     position: absolute;
-    top: 76%;
+    top: 60%;
     left: 74%;
     transform: translate(-50%,-50%);
     height: auto;
@@ -47,7 +51,7 @@ a:hover{
 }
 .mainbox4{
     position: absolute;
-    top: 53.5%;
+    top: 30%;
     left: 74%;
     transform: translate(-50%,-50%);
     height: auto;
@@ -57,6 +61,7 @@ a:hover{
     padding: 3px;
     word-break: break-word;
 }
+
 .fmkliheadpage{
     width: 65px;
     border-radius:50%;
@@ -99,23 +104,108 @@ html{
         width: 552px;
     }
 }
+.footer2{
+    position: absolute;
+    bottom: 39px;
+    width: calc(100% - 20px);
+    height: auto;
+    padding: 3px;
+    background-color: rgb(117, 117, 117);
+    overflow:auto;
+}
 @media screen and (max-height: 700px){
     .mainbox4{
         display: none;
     }
+    .mainbox{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        height: 75%;
+        width: 45%;
+    }
+    .mainbox2:hover{
+        .openyiy{
+            display:inline;
+        }
+    }
+    .openyiy{
+        writing-mode:vertical-lr;
+        background-color: rgb(99, 99, 99);
+        border-radius: 4px;
+        padding: 4px;
+        position: absolute;
+        left: 90%;
+        top: 20%;
+        height: 130px;
+        display: none;
+    }
+}
+@media screen and (max-height: 480px){
+
+    .no1page{
+        display: none;
+    }
+    .footer2{
+        height: calc(100% - 30px);
+        position: fixed;
+    }
+    .mainbox2{
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 80%;
+    }
+    .mainbox2:hover{
+        .openyiy{
+            display:inline;
+        }
+        left: 43%;
+    }
+    .openyiy{
+        writing-mode:vertical-lr;
+        background-color: rgb(99, 99, 99);
+        border-radius: 4px;
+        padding: 4px;
+        position: absolute;
+        left: 90%;
+        top: 20%;
+        height: 130px;
+        display: none;
+    }
+
+}
+@media screen and (min-height: 480px){
+    .Links2{
+        display: none;
+    }
+    .openyiy{
+        display: none;
+    }
 }
 @media screen and (max-width: 480px){
+    @media screen and (max-height: 480px){
+        .mainbox2{
+            width: 80%;
+            top: 50%;
+            left: 50%;
+        }
+    }
+    @media screen and (min-height: 480px){
+        .mainbox2{
+            width: 80%;
+            top: 42%;
+            left: 50%;
+        }
+    }
     .mainbox{
         height: 42.5%;
         top:23.5%;
         left: 50%;
         width: 90%;
     }
-    .mainbox2{
-        width: 90%;
-        top: 37%;
-        left: 50%;
-    }
+
     .mainbox4{
         display: none;
     }
@@ -134,6 +224,7 @@ html{
     
     }
 }
+
 .links{
     z-index: 1;
     width: 80%;
@@ -147,32 +238,11 @@ html{
     margin-top: 130px;
     overflow: auto;
 }
-@media screen and (max-height: 650px){
-    .Abouts{
-        z-index: 1;
-        width: 80%;
-        margin-left: 9%;
-        margin-top: 75px;
-        overflow: auto;
-    }
-    .jianjie2{
-        position: absolute;
-        top: 34px;
-    }
-
-}
 .linkbutton{
     width: 40px;
     background-color: rgb(228, 228, 228);
 }
 
-.footer2{
-    position: absolute;
-    bottom: 39px;
-    width: calc(100% - 20px);
-    height: auto;
-    padding: 3px;
-}
 .openfooterimg{
     width: 16px;
     position: absolute;

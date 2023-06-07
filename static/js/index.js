@@ -69,15 +69,66 @@ function openfooter(){
     }
 }
 
+abc = 0
+document.getElementById("yiyan2").style.display = "none"
+winHeight = document.documentElement.clientHeight;
+window.onresize=function(){  
+    winHeight = document.documentElement.clientHeight;
+    console.log(winHeight)
+} 
+function openyiy2(){
+    if (winHeight < 700){
+        if (abc == 0){
+            document.getElementById("about2").style.display = "none"
+            document.getElementById("yiyan2").style.display = ""
+            document.getElementById("openyiy").innerText = "点击返回！"
+            $.ajax({
+                type: 'GET',
+                url: 'https://v1.hitokoto.cn/?min_length=22',
+                success (data) {
+                document.getElementById("hitokoto_text").innerHTML = data.hitokoto
+                document.getElementById("hitokoto_text2").innerHTML = data.hitokoto
+                if (data.from_who == null){
+                document.getElementById("zuozhe").innerHTML = "無名"
+                document.getElementById("zuozhe2").innerHTML = "無名"
+                }else{
+                    document.getElementById("zuozhe").innerHTML = data.from_who
+                    document.getElementById("zuozhe2").innerHTML = data.from_who
+                }
+            
+                },
+                error (jqXHR, textStatus, errorThrown) {
+                // 错误信息处理
+                console.error(textStatus, errorThrown)
+                }
+            })
+            abc = 1
+        }else if (abc == 1){
+            document.getElementById("about2").style.display = ""
+            document.getElementById("yiyan2").style.display = "none"
+            document.getElementById("openyiy").innerText = "点击查看一言！"
+            abc = 0
+        }
+    }else if (winHeight > 700){
+        document.getElementById("about2").style.display = ""
+        document.getElementById("yiyan2").style.display = "none"
+        document.getElementById("openyiy").innerText = "点击查看一言！"
+        abc = 0
+    }
+}
+
 $.ajax({
     type: 'GET',
-    url: 'https://v1.hitokoto.cn',
+    url: 'https://v1.hitokoto.cn/?min_length=22',
     success (data) {
       document.getElementById("hitokoto_text").innerHTML = data.hitokoto
+      document.getElementById("hitokoto_text2").innerHTML = data.hitokoto
       if (data.from_who == null){
       document.getElementById("zuozhe").innerHTML = "無名"
+      document.getElementById("zuozhe2").innerHTML = "無名"
       }else{
         document.getElementById("zuozhe").innerHTML = data.from_who
+        document.getElementById("zuozhe2").innerHTML = data.from_who
       }
 
     },
