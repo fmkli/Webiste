@@ -137,3 +137,32 @@ $.ajax({
       console.error(textStatus, errorThrown)
     }
 })
+
+$.ajax({
+    type: 'GET',
+    url: 'https://kkapi.imfmkli.top/api/ispeak?author=62fb537eea70bbc9782bcf6d&page=1&pageSize=1',
+    dataType:"json",
+    error: function(XMLHttpRequest, textStatus, errorThrown) {
+        alert(XMLHttpRequest.status);
+        alert(XMLHttpRequest.readyState);
+        alert(textStatus);
+    },
+    success (data2) {
+    console.log(data2);  
+      speak = data2.data.items[0].content
+      speak = speak.replace(/\n/g,"<br>")
+      document.getElementById("speakinner").innerHTML = speak
+      document.getElementById("speaktime").innerHTML = data2.data.items[0].updatedAt
+      document.getElementById("speaktag").innerHTML = data2.data.items[0].tag.name
+      if (data2.from_who == null){
+      document.getElementById("zuozhe2").innerHTML = "無名"
+      }else{
+        document.getElementById("zuozhe2").innerHTML = data2.from_who
+      }
+
+    },
+    error (jqXHR, textStatus, errorThrown) {
+      // 错误信息处理
+      console.error(textStatus, errorThrown)
+    }
+})
