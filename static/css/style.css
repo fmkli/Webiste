@@ -1,259 +1,55 @@
-body{
-    z-index:-10;/*因为背景图片应该放在最下方，所以设置一个层级*/
-    background-color: rgb(168, 168, 168);
-    background-size:cover; /* ---把背景图片放大到适合元素容器的尺寸，图片比例不变，但某些部分被切割无法显示完整背景图像 */
-    background-attachment:fixed; /* 当内容高度大于图片高度时，背景图像的位置相对于 可视窗口 固定，此条属性必须设置 */
-    background-position:center;
-    color: aliceblue;
-}
-.yiyan2{
-    position: absolute;
-    left: 05%;
-}
-a{
-    color: rgb(255, 194, 194);
-    text-decoration: none;
-}
-a:hover{
-    color: rgb(206, 255, 174);
-    text-decoration: underline;
-}
-.mainbox{
-    position: absolute;
-    top: 35%;
-    left: 26%;
-    transform: translate(-50%,-50%);
-    height: 75%;
-    width: 45%;
-    display: flex;
-}
-.mainbox2{
-    position: absolute;
-    top: 60%;
-    left: 26%;
-    transform: translate(-50%,-50%);
-    height: auto;
-    width: 45%;
-    display: flex;
-    border-radius:9px;
-    padding: 6px;
-}
-.mainbox3{
-    position: absolute;
-    top: 60%;
-    left: 74%;
-    transform: translate(-50%,-50%);
-    height: auto;
-    width: 45%;
-    display: flex;
-    border-radius:9px;
-    padding: 6px;
-}
-.mainbox4{
-    position: absolute;
-    top: 30%;
-    left: 74%;
-    transform: translate(-50%,-50%);
-    height: auto;
-    width: 45%;
-    display: flex;
-    border-radius:9px;
-    padding: 3px;
-    word-break: break-word;
-}
-
-.fmkliheadpage{
-    width: 65px;
-    border-radius:50%;
-    background-color: rgb(255, 255, 255);
-    position: absolute;
-    top: 25%;
-    left: -100%;
-}
-.copy{
-    position: absolute;
-    bottom: 0;
-    left: 20%;
-
-}
-.jianjie{
-    position: absolute;
-    top: 35%;
-    left: 43%;
-}
-.name{
-    font-size: 2.1em;
-    line-height: 5%;
-}
-html{
-    text-align: center;
-    justify-content: center;
+*{
     margin: 0;
+    padding: 0;
+    line-height: 22px;
 }
-@media screen and (min-width: 1200px){
-    .mainbox{
-        width: 410px;
-    }
-    .mainbox2{
-        width: 552px;
-    }
-    .mainbox3{
-        width: 552px;
-    }
-    .mainbox4{
-        width: 552px;
-    }
+hr{
+    margin-top:10px;
+    margin-bottom: 10px;
 }
-.footer2{
+@font-face{
+    font-family: 'Minecraft AE'; 
+    src: url('../front/Minecraft.ttf');
+}
+.box{
+    font-family: 'Minecraft AE';
     position: absolute;
-    bottom: 39px;
-    width: calc(100% - 20px);
-    height: auto;
-    padding: 3px;
-    background-color: rgb(117, 117, 117);
-    overflow:auto;
+    left: calc(50% - 225px);
+    width: 450px;
+    top: 5%;
+    text-align: center;
 }
-@media screen and (max-height: 700px){
-    .mainbox4{
-        display: none;
-    }
-    .mainbox{
-        position: absolute;
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%,-50%);
-        height: 75%;
-        width: 45%;
-    }
-    .mainbox2:hover{
-        .openyiy{
-            display:inline;
-        }
-    }
-    .openyiy{
-        writing-mode:vertical-lr;
-        background-color: rgb(99, 99, 99);
-        border-radius: 4px;
-        padding: 4px;
-        position: absolute;
-        left: 90%;
-        top: 20%;
-        height: 130px;
-        display: none;
-    }
+@media screen and (max-width:450px){
+    .box{
+        left: 0;
+        width: 100%;
+    } 
 }
-@media screen and (max-height: 480px){
-
-    .no1page{
-        display: none;
-    }
-    .footer2{
-        height: calc(100% - 30px);
-        position: fixed;
-    }
-    .mainbox2{
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        width: 80%;
-    }
-    .mainbox2:hover{
-        .openyiy{
-            display:inline;
-        }
-        left: 43%;
-    }
-    .openyiy{
-        writing-mode:vertical-lr;
-        background-color: rgb(99, 99, 99);
-        border-radius: 4px;
-        padding: 4px;
-        position: absolute;
-        left: 90%;
-        top: 20%;
-        height: 130px;
-        display: none;
-    }
-
+.headimg{
+    width: 130px;
 }
-@media screen and (min-height: 480px){
-    .Links2{
-        display: none;
-    }
-    .openyiy{
-        display: none;
-    }
-}
-@media screen and (max-width: 480px){
-    @media screen and (max-height: 480px){
-        .mainbox2{
-            width: 80%;
-            top: 50%;
-            left: 50%;
-        }
-    }
-    @media screen and (min-height: 480px){
-        .mainbox2{
-            width: 80%;
-            top: 42%;
-            left: 50%;
-        }
-    }
-    .mainbox{
-        height: 42.5%;
-        top:23.5%;
-        left: 50%;
-        width: 90%;
-    }
-
-    .mainbox4{
-        display: none;
-    }
-    .mainbox3{
-        width: 90%;
-        top: 73.5%;
-        left: 50%;
-    }
-    .jianjie{
-        top:5%;
-    }
-    .copy{
-        position: absolute;
-        top: 0;
-        left: 25%;
-    
-    }
+.Fmklihead{
+    font-size: 40px;
 }
 
-.links{
-    z-index: 1;
-    width: 80%;
-    margin-left: 9%;
-    overflow: auto;
+/*搬运自 https://blog.csdn.net/weixin_44494373/article/details/104344323 */
+a:link,a:visited{
+color: #000;
 }
-.Abouts{
-    z-index: 1;
-    width: 80%;
-    margin-left: 9%;
-    margin-top: 130px;
-    overflow: auto;
+a:hover,a:active{
+background-color:#7A991A;
 }
-.linkbutton{
-    width: 40px;
-    background-color: rgb(228, 228, 228);
-}
+/* 搬运End */
+ 
+.zhongyaolink{
+    display:block;
+    font-weight:bold;
+    font-size:14px;
+    font-family:Verdana, Arial, Helvetica, sans-serif;
+    color:#FFFFFF;
+    background-color:#98bf21;
+    text-align:center;
+    padding:4px;
+    text-decoration:none;
 
-.openfooterimg{
-    width: 16px;
-    position: absolute;
-    top: 6px;
-
-
-}
-.openfooter2{
-    position: absolute;
-    background-color: rgb(85, 85, 85);
-    width: calc(100% - 18px);
-    bottom: 5px;
-    padding: 3px;
 }

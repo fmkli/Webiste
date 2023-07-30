@@ -1,95 +1,53 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="zh-cn">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fmkli's Website</title>
     <link rel="stylesheet" href="./static/css/style.css">
-    <!-- JS INPUT -->
-    <script src="./jquery.min.js"></script>
-    <title>Fmkli的简洁主页</title>
 </head>
 <body>
-    <div class="mainbox">
-        <div class="jianjie">
-            <img src="https://blog.imfmkli.top/wp-content/uploads/2022/08/cropped-username.png" class="fmkliheadpage">
-            <p class="name">Fmkli</p>
-            <p class="jianjie2">鸽子一只</p>
-        </div>
-    </div>
-    <div class="mainbox2" onclick="openyiy2();">
-        <div class="links about2" id="about2">
-            <p>
-                <h3 class="">About Me</h3>
-                一名专注潜水的鸽子！<br>
-                喜欢玩Among Us、Train Sim World2、人类一败涂地以及Minecraft！<br>
-                只在周五、六、日以及节假日上线
-            </p>
-        </div>
-        <div class="openyiy" id="openyiy">
-            点击查看一言！
-        </div>
-        <div class="yiyan2" id="yiyan2">
-            <div class="links">
-                <p>
-                    <span id="hitokoto_text2"></span><br>--<span id="zuozhe2"></span>
-                </p>
-            </div>
-        </div>
-    </div>
-    <div class="mainbox4">
-        <div class="links">
-            <p>
-                <span id="hitokoto_text"></span><br>--<span id="zuozhe"></span>
-            </p>
-        </div>
-    </div>
-    <div class="mainbox3">
-        <div class="links">
-            <div class="no1page" id="no1page">
-                <h3 class="">Links</h3>
-                Blog: <a href="https://blog.imfmkli.top">Blog</a>--<a href="https://blog2.imfmkli.top/">备用Blog</a><br>
-                Other: <a href="https://www.imfmkli.top/talk2.html">留言板</a>--<a href="https://www.imfmkli.top/say.html">说说</a>--<a href="https://www.imfmkli.top/goodpassword">密码生成</a><br>
-                Game: <a href="https://dino.imfmkli.top/">小恐龙</a>--<a href="https://sg.imfmkli.top/?lang=zh_cn">A Dark Room</a>--<a href="https://eatkano.imfmkli.top/">吃掉小菜狗</a><br>
-                Contact Me: <a class="mdui-list-item mdui-ripple" href="https://github.com/fmkli">Github</a>--<a class="mdui-list-item mdui-ripple" href="https://space.bilibili.com/543825809">BiliBili</a>--<a class="mdui-list-item mdui-ripple" href="https://www.ccw.site/student/5d08e95bb73fd803276dd7b2">CCW</a>--<a class="mdui-list-item mdui-ripple" href="mailto:fmkli2@qq.com">Mail</a>--<a class="mdui-list-item mdui-ripple" href="tencent://message/?uin=2058264685&Site=&Menu=yes">QQ</a><br>
-            </div>
-        </div>
-    </div>
-    <div class="footer2" id="footer2">
-        <p>
-            <h3>最新说说</h3>
-            内容：<br><span id="speakinner"></span>
-            <br>时间：<span id="speaktime"></span>
-            <br>标签：<span id="speaktag"></span>
-            <hr>
-            <div class="Links2">
-                <h3 class="">Links</h3>
-                Blog: <a href="https://blog.imfmkli.top">Blog</a>--<a href="https://blog2.imfmkli.top/">备用Blog</a><br>
-                Other: <a href="https://www.imfmkli.top/talk2.html">留言板</a>--<a href="https://www.imfmkli.top/say.html">说说</a>--<a href="https://www.imfmkli.top/goodpassword">密码生成</a><br>
-                Game: <a href="https://dino.imfmkli.top/">小恐龙</a>--<a href="https://sg.imfmkli.top/?lang=zh_cn">A Dark Room</a>--<a href="https://eatkano.imfmkli.top/">吃掉小菜狗</a><br>
-                Contact Me: <a class="mdui-list-item mdui-ripple" href="https://github.com/fmkli">Github</a>--<a class="mdui-list-item mdui-ripple" href="https://space.bilibili.com/543825809">BiliBili</a>--<a class="mdui-list-item mdui-ripple" href="https://www.ccw.site/student/5d08e95bb73fd803276dd7b2">CCW</a>--<a class="mdui-list-item mdui-ripple" href="mailto:fmkli2@qq.com">Mail</a>--<a class="mdui-list-item mdui-ripple" href="tencent://message/?uin=2058264685&Site=&Menu=yes">QQ</a><br>
-                <hr>
-            </div>
-            <h3 class="">其它</h3>
-            Friend Links：<a class="lianjie" href="https://dwp.xn--vl1a.tech/">DzxiumWebPages</a>--<a class="lianjie" href="https://boblive.vercel.app/">BOB实况</a>--<a class="lianjie" href="https://www.zxqblog.cn/">小钊的博客</a>
-            <br><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
-            <br><span id="lasttime">载入倒计时...</span>
-            <br>本站已经开启了<a target="_blank" title="51la网站统计" href="https://v6.51.la/land/JgapU3Sla12DMquS">统计（使用51.la）</a>啦~
-            <h2><a href="https://www.imfmkli.top/video/114514.mp4">这是一个可点击的链接</a></h2>
-            <span id="power">Copyright&nbsp;©
-                <script>
-                    document.write((new Date()).getFullYear());
-                </script>
-                <a href="https://www.imfmkli.top" id="power-text">Fmkli</a>
-            </span>
-            <span id="made">&amp;&nbsp;Made&nbsp;by&nbsp;<a href="https://www.imfmkli.top" target="_blank">Fmkli</a></span>
-        </p>
+    <!-- 主体~~~~！ -->
+    <div class="box">
+        <img alt="Fmkli's HeadImage" src="./static/image/pigeon.png" class="headimg">
+        <br><p class="Fmklihead">Fmkli</p>
+        <br>只是一个网站而已 ~
+        <br>简陋的不能再简陋了
+        <hr>公告：
+        <br>过段时间会将博客停摆，维护太™麻烦辣
+        <hr>Links：
+        <br>Blog: <a href="https://blog.imfmkli.top">Blog</a>--<a href="https://blog2.imfmkli.top/">备用Blog</a><br>
+        Other: <a href="https://www.imfmkli.top/talk2.html">留言板</a>--<a href="https://www.imfmkli.top/say.html">说说</a>--<a href="https://www.imfmkli.top/goodpassword">密码生成</a><br>
+        Game: <a href="https://dino.imfmkli.top/">小恐龙</a>--<a href="https://sg.imfmkli.top/?lang=zh_cn">A Dark Room</a>--<a href="https://eatkano.imfmkli.top/">吃掉小菜狗</a><br>
+        Contact Me: <a class="mdui-list-item mdui-ripple" href="https://github.com/fmkli">Github</a>--<a class="mdui-list-item mdui-ripple" href="https://space.bilibili.com/543825809">BiliBili</a>--<a class="mdui-list-item mdui-ripple" href="https://www.ccw.site/student/5d08e95bb73fd803276dd7b2">CCW</a>--<a class="mdui-list-item mdui-ripple" href="mailto:fmkli2@qq.com">Mail</a>--<a class="mdui-list-item mdui-ripple" href="tencent://message/?uin=2058264685&Site=&Menu=yes">QQ</a><br>
+        Play Minecraft With Me：<a class="mdui-list-item mdui-ripple" href="https://namemc.com/profile/Imfmkli.1">NameMC</a>--<a class="mdui-list-item mdui-ripple" href="https://account.xbox.com/zh-cn/Profile?csrf=ZsW_GcUpY5dqva3pDTFAKhUimU18l77Pjgpovdfw4v186lQxGrJm4SsEnBGxqCv5xU4XXwdJDSO6cVCNiw1wvBw9R2w1">Xbox档案</a><br>
+        <br><a href="https://www.imfmkli.top/talk2.html" class="zhongyaolink">留言板</a>
+        <br><a href="https://www.imfmkli.top/say.html" class="zhongyaolink">说说</a>
+        <hr>
+        <h3 class="">About Me</h3>
+        一名专注潜水的鸽子！<br>
+        喜欢玩Minecraft！<br>
+        只在周五、六、日以及节假日上线<hr>
+        <h3 class="">其它</h3>
+        Friend Links：<a class="lianjie" href="https://dwp.xn--vl1a.tech/">DzxiumWebPages</a>--<a class="lianjie" href="https://boblive.vercel.app/">BOB实况</a>--<a class="lianjie" href="https://www.zxqblog.cn/">小钊的博客</a>
+        <br><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+        <br><span id="lasttime">载入倒计时...</span>
+        <br>本站已经开启了<a target="_blank" title="51la网站统计" href="https://v6.51.la/land/JgapU3Sla12DMquS">统计（使用51.la）</a>啦~
+        <br><span id="power">Copyright
+            <script>
+                document.write((new Date()).getFullYear());
+            </script>
+            <a href="https://www.imfmkli.top" id="power-text">Fmkli</a>
+        </span>
+        <span id="made">; Made by <a href="https://www.imfmkli.top" target="_blank">Fmkli</a></span>
     </div>
 
-    <div class="openfooter2" id="openfooter2" onclick="openfooter()"><img src="static/img/more.svg" class="openfooterimg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;More! </div>
 
-    <!-- JS INPUT -->
+
+
+
+
+
     <script src="./static/js/index.js"></script>
-    <script src="./wel.js"></script>
 </body>
 </html>
