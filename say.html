@@ -12,64 +12,17 @@
                 <div class="mdui-card-primary">
                     <div class="mdui-card-primary-title">说说</div>
                 </div>
-		            <h1>其实呢，说说评论摆烂了，加载速度较慢</h1>
-                <!-- 卡片的内容 -->
-                <div class="mdui-card-content mdui-typo">
-                  <div id="tip" style="text-align:center;">ispeak加载中</div>
-                  <div id="ispeak"></div>
-                  <link
-                    rel="stylesheet"
-                    href="https://cdn.staticfile.org/highlight.js/10.6.0/styles/atom-one-dark.min.css"
-                  />
-                  <link
-                    rel="stylesheet"
-                    href="https://github.elemecdn.com/ispeak@4.4.0/style.css"
-                  />
-                  
-                  <script src="https://cdn.staticfile.org/highlight.js/10.6.0/highlight.min.js"></script>
-                  <script src="https://cdn.staticfile.org/marked/2.0.0/marked.min.js"></script>
-                  <script src="https://github.elemecdn.com/ispeak@4.4.0/ispeak.umd.js"></script>
-                    <!-- 脚本文件 -->
-                    <script src="https://unpkg.com/@waline/client@v2/dist/waline.js"></script>
-                    <!-- 样式文件 -->
-                    <link
-                      rel="stylesheet"
-                      href="https://unpkg.com/@waline/client@v2/dist/waline.css"
-                    />
-
-                  <script>
-                    var head = document.getElementsByTagName('head')[0]
-                    var meta = document.createElement('meta')
-                    meta.name = 'referrer'
-                    meta.content = 'no-referrer'
-                    head.appendChild(meta)
-                    if (ispeak) {
-                      ispeak
-                        .init({
-                          el: '#ispeak',
-                          api: 'https://kkapi.imfmkli.top/',
-                          author: '62fb537eea70bbc9782bcf6d',
-                          pageSize: 10,
-                          loading_img: 'https://www.imfmkli.top/pigen.png',
-                          speakPage: "/say.html",  //这里是说说的页面路径，对应于 github app 中填写的 speak 页面路径（用双引号括起来，我不知道为啥单引号不行）
-                          githubClientId: 'Iv1.ebd0d6c52bd5e051',  //github app 的 Client ID
-
-                          comment: function (speak) {
-                            // 4.4.0 之后在此回调函数中初始化评论
-                            const { _id, title, content } = speak
-                            const contentSub = content.substring(0, 30)
-
-
-                          }
-                        })
-                        .then(function () {
-                          console.log('ispeak 加载完成')
-                          document.getElementById('tip').style.display = 'none'
-                        })
-                    } else {
-                      document.getElementById('tip').innerHTML = 'ispeak依赖加载失败！'
-                    }
-                  </script>
+<!-- 引用 artitalk -->
+<script type="text/javascript" src="https://unpkg.com/artitalk"></script>
+<!-- 存放说说的容器 -->
+<div id="artitalk_main"></div>
+<script>
+new Artitalk({
+    serverURL: 'https://leanapi.imfmkli.top',
+    appId: 'aCkeIw0WxZuSnJpYcHH7hfYv-MdYXbMMI', // Your LeanCloud appId
+    appKey: 'Dp9lAWLWp1iYIKKQG5VQkwKa' // Your LeanCloud appKey
+})
+</script>
                   
                 </div>
 	    </div>
