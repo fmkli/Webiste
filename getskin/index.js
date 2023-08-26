@@ -19,12 +19,12 @@ $.ajax({
 	type: "get",
 	url: 'https://crafatar.com/capes/' + data1.data.player.id,
 	success: function(data2){
-		document.getElementById('cape').innerHtml = '<a href="https://crafatar.com/capes/'  + data1.data.player.id + '">此玩家有披风，点我查看</a>'
+		document.getElementById('cape').innerHTML = '<a href="https://crafatar.com/capes/'  + data1.data.player.id + '">此玩家有披风，点我查看</a>'
 console.log('2')
 
 	},
     error : function(){
-        document.getElementById('cape').innerText = "玩家无披风（接口提示404）"
+        document.getElementById('cape').innerText = "玩家可能无披风（接口错误）"
 
     }
 });
