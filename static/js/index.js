@@ -48,7 +48,7 @@ function createtime() {
         return num2 < 10 ? '0' + num2 : num2;
     }
     
-    document.getElementById("lasttime").innerHTML = "距离网站三周年庆还有" + day + "天 " + hour + "小时 " + minutes2 + "分钟 " + seconds2 + "秒" 
+    document.getElementById("lasttime").innerHTML = "距离网站四周年还有" + day + "天 " + hour + "小时 " + minutes2 + "分钟 " + seconds2 + "秒" 
 }
     
 setInterval("createtime()", 250);
