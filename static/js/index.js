@@ -27,7 +27,7 @@ function createtime() {
     document.getElementById("timeDate").innerHTML = " 本站已经挣扎度过了 " + dnum + " 天 ";
     document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
     // 倒计时截止时间
-    var EndTime = new Date('2023/08/26 12:00:00');
+    var EndTime = new Date('2024/08/26 12:00:00');
     // 现在的事件
     var NowTime = new Date();
     // 时间差（时间单位：ms）
