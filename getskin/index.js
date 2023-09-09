@@ -24,7 +24,7 @@ console.log('2')
 
 	},
     error : function(){
-        document.getElementById('cape').innerText = "玩家可能无披风（接口错误）"
+        document.getElementById('cape').innerText = "玩家可能并未穿着披风（接口错误）"
 
     }
 });
