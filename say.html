@@ -12,16 +12,52 @@
                 <div class="mdui-card-primary">
                     <div class="mdui-card-primary-title">说说</div>
                 </div>
-<!-- 引用 artitalk -->
-<script type="text/javascript" src="https://unpkg.com/artitalk"></script>
-<!-- 存放说说的容器 -->
-<div id="artitalk_main"></div>
+<div id="tip" style="text-align:center;">ispeak加载中</div>
+<div id="ispeak"></div>
+<link
+  rel="stylesheet"
+  href="https://cdn.staticfile.org/highlight.js/10.6.0/styles/atom-one-dark.min.css"
+/>
+<link
+  rel="stylesheet"
+  href="https://npm.elemecdn.com/ispeak@4.4.0/style.css"
+/>
+
+<script src="https://cdn.staticfile.org/highlight.js/10.6.0/highlight.min.js"></script>
+<script src="https://cdn.staticfile.org/marked/2.0.0/marked.min.js"></script>
+<script src="https://npm.elemecdn.com/ispeak@4.4.0/ispeak.umd.js"></script>
+<script src='//npm.elemecdn.com/@waline/client@v2/dist/waline.js'></script>
+<link href='//npm.elemecdn.com/@waline/client@v2/dist/waline.css' rel='stylesheet' />
 <script>
-new Artitalk({
-    serverURL: 'https://leanapi.imfmkli.top',
-    appId: 'aCkeIw0WxZuSnJpYcHH7hfYv-MdYXbMMI', // Your LeanCloud appId
-    appKey: 'Dp9lAWLWp1iYIKKQG5VQkwKa' // Your LeanCloud appKey
-})
+  var head = document.getElementsByTagName('head')[0]
+  var meta = document.createElement('meta')
+  meta.name = 'referrer'
+  meta.content = 'no-referrer'
+  head.appendChild(meta)
+  if (ispeak) {
+    ispeak
+      .init({
+        el: '#ispeak',
+        api: 'https://kkapi.imfmkli.top/',
+        author: '62fb537eea70bbc9782bcf6d',
+        pageSize: 10,
+        loading_img: 'https://www.imfmkli.top/static/image/pigeon.png',
+        comment: function (speak) {
+	    Waline.init({
+	      el: '.ispeak-comment',
+	      serverURL: 'https://waline.imfmkli.top/',
+	      requiredMeta: ['nick', 'mail']
+	    });
+          })
+        }
+      })
+      .then(function () {
+        console.log('ispeak 加载完成')
+        document.getElementById('tip').style.display = 'none'
+      })
+  } else {
+    document.getElementById('tip').innerHTML = 'ispeak依赖加载失败！'
+  }
 </script>
                   
                 </div>
