@@ -83,3 +83,7 @@ function coloregg4(){
         coloregg2 = 5
     }
 }
+
+var currentTime = new Date();
+var year = currentTime.getFullYear()
+document.getElementById("getyear").innerText = year
