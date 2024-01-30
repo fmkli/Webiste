@@ -58,32 +58,42 @@ async function wait(time){
     await sleep(time);
     fun();
 }
-coloregg2 = 1
-function coloregg(){
-    if (coloregg2 == 1){
-        $(".coloregg").fadeToggle(1000);
-        $(".link-item").fadeToggle(1000);
-        coloregg2 = 2
-    } else if(coloregg2 == 2){
-        $(".coloregg").fadeToggle(1000);
-        coloregg2 = 3
-    } else if(coloregg2 == 5){
-        window.location.replace("https://www.bilibili.com/video/BV1GJ411x7h7")
-        coloregg2 = 1
-    }
-}
-function coloregg4(){
-    if (coloregg2 == 3){
-        $(".link-item").fadeToggle(1000);
-        alert("QWQ")
-        coloregg2 = 4
-    } else if(coloregg2 == 4){
-        $(".coloregg").fadeToggle(1000);
-        $(".link-item").fadeToggle(1000);
-        coloregg2 = 5
-    }
-}
-
 var currentTime = new Date();
 var year = currentTime.getFullYear()
 document.getElementById("getyear").innerText = year
+
+/*Copy By https://www.cnblogs.com/henuyuxiang/p/6690166.html*/
+function cookiesave(n, v, mins, dn, path) {
+    if (n) {
+        if (!mins)
+            mins = 365 * 24 * 60;
+        if (!path)
+            path = "/";
+        var date = new Date();
+        date.setTime(date.getTime() + (mins * 60 * 1000));
+        var expires = "; expires=" + date.toGMTString();
+        if (dn)
+            dn = "domain=" + dn + "; ";
+        document.cookie = n + "=" + v + expires + "; " + dn + "path="
+                + path;
+    }
+}
+function cookieget(n) {
+    var name = n + "=";
+    var ca = document.cookie.split(';');
+    for (var i = 0; i < ca.length; i++) {
+        var c = ca[i];
+        while (c.charAt(0) == ' ')
+            c = c.substring(1, c.length);
+        if (c.indexOf(name) == 0)
+            return c.substring(name.length, c.length);
+    }
+    return "";
+}
+function closeclick() {
+    document.getElementById('gonggao').style.display = 'none';
+    cookiesave('closeclick', 'closeclick', '', '', '');
+}
+function clickclose() {
+    cookiesave('closeclick', 'closeclick', '', '', '');
+}

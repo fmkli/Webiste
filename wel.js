@@ -1,1 +1,0 @@
-console.log("\n %c 鸽子主页 v1.10.1 %c 速速V我50 https://www.imfmkli.top/wx.png \n","color: #fadfa3; background: #030307; padding:5px 0;","background: #fadfa3; padding:5px 0;")

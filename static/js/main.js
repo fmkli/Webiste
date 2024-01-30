@@ -108,6 +108,8 @@ function Init(feedType, feedPath, bgArr, senArr) {
                 qSlt(".content-layer").classList.remove("finished");
                 qSlt(".self-avatar").classList.add("no-delay");
                 doki.init();
+                opengg();
+                clickclose();
             }, 1500);
             qSltAll(".switcher-btn").forEach(function (v) {
                 var id = v.id.substr(-1);
