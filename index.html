@@ -2,215 +2,140 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>Fmkli的主页</title>
-    <meta name="keywords" content="个人主页,Fmkli,imfmkli,个人网站,个人说说,鸽子的网站"/>
-    <meta name="description" content="Fmkli，一名学生，是个草根站长，这个是我的个人网站，从2020年开设至今，开来玩的，主要展示个人说说"/>
-    <meta name="anthor" content="Imfmkli,fmkli2@qq.com">
-    <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="static/css/loading.css">
-    <link rel="stylesheet" href="static/css/qita.css">
-    <link rel="stylesheet" href="static/mdui/mdui.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 资源引入 -->
+    <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/mdui/css/mdui.min.css">
+    <script src="./static/mdui/js/mdui.min.js"></script>
+
+    <title>鸽子的网站</title>
 </head>
-<body class="locked" >
-    <div class="self-avatar flex-center">
-        <div class="loading-mask fixed-layer no-delay"></div>
-        <div class="loading-wrapper">
-            <svg class="loading-indicator no-delay" width="128" height="128">
-                <g class="circle-rotating">
-                    <g class="circle-step">
-                        <circle cx="64" cy="64" r="56" class="circle-line"></circle>
-                    </g>
-                </g>
-            </svg>
-            <img alt="这个是我的头像辣~" src="https://cutee.top/pigen.png" class="avatar-img no-delay" id="avatar-img"/>
-        </div>
-        <div class="loading-text text-center">
-            <p class="loading-pre">Loading...</p>
-            <p class="avatar-name">鸽子Fmkli</p>
-            <p class="dokidoki-text"></p>
-        </div>
-    </div>
-    <div class="background-layer fixed-layer"></div>
-    <div class="background-filter fixed-layer"></div>
-    <div class="content-layer flex-center">
-        <div class="content-container">
-            <div class="self-wrapper">
-                <div class="self-content links-container flex-center text-center">
-                    <a href="https://cutee.top/talk2.html" class="link-item" id="link-item">
-                        <div class="link-icon"><i class="fa fa-pencil"></i></div>
-                        <div class="linktitle">留言板</div>
-                    </a>
-                    <a href="https://cutee.top/say.html" class="link-item" id="link-item">
-                        <div class="link-icon"><i class="fa fa-list-ul"></i></div>
-                        <div class="linktitle">说说</div>
-                    </a>
-                    <a href="https://fmkli.github.io/Privacy-policy/" class="link-item" id="link-item">
-                        <div class="link-icon"><i class="fa fa-question-circle"></i></div>
-                        <div class="linktitle">隐私政策</div>
-                    </a>
-                    <a href="https://cutee.top/goodpassword" class="link-item" id="link-item">
-                        <div class="link-icon"><i class="fa fa-lock"></i></div>
-                        <div class="linktitle">密码生成</div>
-                    </a>
-                    <a href="https://dino.cutee.top/" class="link-item" id="link-item">
-                        <div class="link-icon"><i class="fa fa-gamepad"></i></div>
-                        <div class="linktitle">小恐龙</div>
-                    </a>                    
-                    <a href="https://sg.cutee.top/?lang=zh_cn" class="link-item" id="link-item">
-                        <div class="link-icon"><i class="fa fa-gamepad"></i></div>
-                        <div class="linktitle">小黑屋</div>
-                    </a>                    
-                    <a href="https://eatkano.cutee.top/" class="link-item" id="link-item">
-                        <div class="link-icon"><i class="fa fa-gamepad"></i></div>
-                        <div class="linktitle">吃掉小菜狗</div>
-                    </a>
-                    <a href="https://cutee.top/getskin/" class="link-item" id="link-item">
-                        <div class="link-icon"><i class="fa fa-gamepad"></i></div>
-                        <div class="linktitle">Minecraft<br>正版查询</div>
-                    </a>
-                    <span class="link-item coloregg" id="coloregg" onclick="opengg2();">
-                        <div class="link-icon"><i class="fa fa-gamepad"></i></div>
-                        <div class="linktitle">公告</div>
-                    </span>
+<body class="mdui-theme-primary-cyan mdui-drawer-body-left">
+    <!-- 网页内容 -->
+    <div class="mdui-container">
+        <div class="mdui-row">
 
-                </div>
-                <div class="self-content article-container">
-                    <!--<div class="article-content"></div>-->
-                    <!--<div class="article-loading flex-center" id="speakin">
-                        <svg style="visibility: hidden" class="loading-indicator" width="128" height="128">
-                            <g class="circle-rotating">
-                                <g class="circle-step">
-                                    <circle cx="64" cy="64" r="56" class="circle-line"></circle>
-                                </g>
-                            </g>
-                        </svg>
-                        <span class="text-center">Loading...</span>
-                    </div>-->
-                    <center>
-                    Play Games With Me?
-                    <br><a class="contactmelink" href="https://namemc.com/profile/Imfmkli.1">NameMC</a>--<a class="contactmelink" href="https://account.xbox.com/zh-cn/Profile?csrf=ZsW_GcUpY5dqva3pDTFAKhUimU18l77Pjgpovdfw4v186lQxGrJm4SsEnBGxqCv5xU4XXwdJDSO6cVCNiw1wvBw9R2w1">Xbox档案</a>--<a class="contactmelink" href="https://steamcommunity.com/id/fmkli/">Steam档案</a>
-                    </center>
-                </div>
-                <div class="self-content">
-                    <div class="info-container center">
-                        一个挣扎存活于网络边缘的网站，默默无闻
-                        <br>站长开学后只在周五、周六、周日上线，封校除外。 
-                        <hr><h3 class="">Contact Me</h3>
-                        找到我 / 联系我：
-                        <br><a class="contactmelink" href="https://github.com/fmkli">Github</a>--<a class="contactmelink" href="https://space.bilibili.com/543825809">BiliBili</a>--<a class="contactmelink" href="https://www.ccw.site/student/5d08e95bb73fd803276dd7b2">CCW</a>--<a class="contactmelink" href="mailto:fmkli2@qq.com">Mail A</a>--<a class="contactmelink" href="mailto:uwu@cutee.top">Mail B</a>--<a class="contactmelink" href="tencent://message/?uin=2058264685&Site=&Menu=yes">QQ</a><br>
-                        <hr>
-                        <h3 class="">Play Minecraft With Me</h3>
-                        什么没人和我玩？呜呜呜
-                        <br><a class="contactmelink" href="https://namemc.com/profile/Imfmkli.1">NameMC</a>--<a class="contactmelink" href="https://account.xbox.com/zh-cn/Profile?csrf=ZsW_GcUpY5dqva3pDTFAKhUimU18l77Pjgpovdfw4v186lQxGrJm4SsEnBGxqCv5xU4XXwdJDSO6cVCNiw1wvBw9R2w1">Xbox档案</a><br>
-                        联系方式在上面哇！
-                        <hr>
-                        <h3>其他</h3>
-                        <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
-                        <br><span id="lasttime">载入倒计时...</span>
-                        <br>本站已经开启了<a target="_blank" title="51la网站统计" href="https://v6.51.la/land/JgapU3Sla12DMquS">统计（使用51.la）</a>啦~
-                        <br><a href="https://icp.gov.moe/?keyword=20221145" rel="noopener" target="_blank" rel="nofollow" class="a-p">萌ICP备20221145号</a>
-                        <br>Friend：<a href="//tdbbs.top">TDBBS</a>
+        <!-- 顶部工具栏 -->
+        <div class="mdui-toolbar mdui-color-theme">
+            <a href="javascript:;" mdui-drawer="{target: '#left-drawer'}" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
+            <span class="mdui-typo-title">鸽の破站</span>
+            <div class="mdui-toolbar-spacer"></div>
+        </div><br>
 
+        <!-- 左侧抽屉栏 -->
+        <div class="mdui-drawer mdui-drawer-full-height mdui-color-white" id="left-drawer">
+            <ul class="mdui-list" mdui-collapse="{accordion: true}">
+
+                <!-- 菜单二 -->
+                <li class="mdui-collapse-item mdui-collapse-item-open">
+                    <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+                        <i class="mdui-list-item-icon mdui-icon material-icons">web</i>
+                        <div class="mdui-list-item-content">其他</div>
+                        <i class="mdui-collapse-item-arrow mdui-icon material-icons">keyboard_arrow_down</i>
                     </div>
+                    <ul class="mdui-collapse-item-body mdui-list">
+                        <a class="mdui-list-item mdui-ripple" href="https://cutee.top/talk2.html">
+                            <div class="mdui-list-item-content">留言板</div>
+                        </a>
+                    </ul>
+                </li>
+                
 
+            <li class="mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">move_to_inbox</i>
+                <div class="mdui-list-item-content">Inbox</div>
+            </li>
+            <li class="mdui-list-item mdui-ripple">
+                <i class="mdui-list-item-icon mdui-icon material-icons">star</i>
+                <div class="mdui-list-item-content">Starred</div>
+            </li>
+            </ul> 
+        </div>
+
+        <div class="mdui-col-sm-6 mdui-col-md-4">
+            <div class="mdui-card">
+                <div class="mdui-card-header">
+                    <img class="mdui-card-header-avatar" src="https://blog.imfmkli.top/wp-content/uploads/2022/08/cropped-username.png"/>
+                    <div class="mdui-card-header-title">鸽子Fmkli</div>
+                    <div class="mdui-card-header-subtitle">作为鸽子应该咕咕咕！</div>
+                </div>
+                <div class="mdui-card-media">
+                </div>
+                <div class="mdui-card-actions">
+                    <a href="https://cutee.top/" class="mdui-btn mdui-ripple">喵喵喵</a>
                 </div>
             </div>
-            <div class="self-switcher">
-                <div class="switcher-btn text-center" id="switcher-btn-1">
-                    <div class="btn-icon"><i class="fa fa-link"></i></div>
-                    <div class="btn-text">链接</div>
-                </div>
-                <div class="switcher-btn text-center" id="switcher-btn-2">
-                    <div class="btn-icon"><i class="fa fa-game"></i></div>
-                    <div class="btn-text">Game</div>
-                </div>
-                <div class="switcher-btn text-center" id="switcher-btn-3">
-                    <div class="btn-icon"><i class="fa fa-info-circle"></i></div>
-                    <div class="btn-text">关于</div>
-                </div>
-                <div class="btn-select-indicator"></div>
+        </div>
+        <div class="ggline"></div>
+        <!-- 卡片一 -->
+        <div class="mdui-card card">
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">公告</div>
+                <div class="mdui-card-primary-subtitle">破公告栏</div>
             </div>
-        </div>
-        <div class="footer-container text-center">
-            © <span id="getyear">0000</span> By <a href="#">Fmkli</a>
-            <br>Make by <a href="https://github.com/KawaiiZapic">Zapic</a> | Friend：<a href="//tdbbs.top">TDBBS</a>
-        </div>
+            <!-- 卡片的内容 -->
+            <div class="mdui-card-content" id="posts">
+                <p>无</p>
+            </div>
+        </div><br>
+
+        <!-- About Me -->
+        <div class="mdui-card card">
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">About Me</div>
+                <div class="mdui-card-primary-subtitle">UwU</div>
+            </div>
+            <!-- 卡片的内容 -->
+            <div class="mdui-card-content" id="posts">
+                <p>这只是一个无聊的小站，站长搭建来自娱自乐罢了
+                    <br>站长开学后只在周五、周六、周日上线，封校除外。
+                </p>
+            </div>
+        </div><br>
+
+        <!-- Games -->
+        <div class="mdui-card card">
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">和我玩游戏</div>
+                <div class="mdui-card-primary-subtitle">UwU</div>
+            </div>
+            <!-- 卡片的内容 -->
+            <div class="mdui-card-content" id="posts middle">
+                <p>速速来加我陪我玩游戏：
+                <br><a class="contactmelink" href="https://namemc.com/profile/Imfmkli.1">NameMC</a>--<a class="contactmelink" href="https://account.xbox.com/zh-cn/Profile?csrf=ZsW_GcUpY5dqva3pDTFAKhUimU18l77Pjgpovdfw4v186lQxGrJm4SsEnBGxqCv5xU4XXwdJDSO6cVCNiw1wvBw9R2w1">Xbox档案</a>--<a class="contactmelink" href="https://steamcommunity.com/id/fmkli/">Steam档案</a>
+                <br>Nintendo Switch 好友码：SW-1346-0641-9810
+                <div class="mdui-divider"></div><br>
+                不准，看看就好<br>
+                <img width="460" height="182" src="https://ns.yuy1n.io/card/268eb6d38d1c8a96" />
+                <div class="mdui-divider"></div><br>
+                <img width="400" height="140" src="https://card.yuy1n.io/card/76561199141582458/dark,en,badge,group,bg-game-1687950">                </p>
+            </div>
+        </div><br>
+
+        <!-- 其他 -->
+        <div class="mdui-card card">
+            <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">其他</div>
+                <div class="mdui-card-primary-subtitle">UwU</div>
+            </div>
+            <!-- 卡片的内容 -->
+            <div class="mdui-card-content" id="posts">
+                <p>
+                    以前的朋友：<a class="lianjie" href="https://boblive.vercel.app/">BOB实况</a>
+                    <br><span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+                    <br><span id="lasttime">载入倒计时...</span>
+                    <br>本站已经开启了<a target="_blank" title="51la网站统计" href="https://v6.51.la/land/JgapU3Sla12DMquS">统计（使用51.la）</a>啦~
+                    <h2><a href="https://cutee.top/video/114514.mp4">这是一个可点击的链接</a></h2>
+                </p>
+            </div>
+        </div><br>
+
+
+
     </div>
-
-    <!-- MDUI对话框 - 公告 - Copy By MDUI Docs-->
-    <mdui-dialog
-    headline="公告"
-    close-on-esc
-    close-on-overlay-click
-    class="example-ecs"
-    id="gonggao"
-    >
-    <p>本站换域名了，由 <a href="//www.imfmkli.top">www.imfmkli.top</a> 更换为 <a href="//cutee.top">cutee.top</a></a><br>本公告只会显示一次，会调用 COOKIE 储存！</p>
-    <mdui-button slot="action" onclick="closeclick()">OK</mdui-button>
-    </mdui-dialog>
-
+    <!-- JS -->
+    <script src="./static/js/index.js"></script>
 </body>
-
-<link rel="stylesheet" href="static/css/main.css">
-<link rel="stylesheet" href="https://fastly.jsdelivr.net/gh/ClassicOldSong/typinyin.js@0.1.3/typinyin.css">
-<link href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://fonts.loli.net/css?family=Google+Sans" media="none" onload="this.media='all'">
-<script src="https://fastly.jsdelivr.net/gh/ClassicOldSong/typinyin.js@master/typinyin.min.js"></script>
-<script src="static/js/main.js"></script>
-<script src="static/js/qita.js"></script>
-<script src="static/js/jquery.js"></script>
-<script src="static/mdui/mdui.js"></script>
-<script>
-    (function () {
-        var feedType = "xml";
-        var feedPath = "https://kkapi.imfmkli.top/api/ispeak?author=62fb537eea70bbc9782bcf6d&page=1&pageSize=5";
-        var bgArr = [{
-            "url": "https://api.dujin.org/bing/1920.php",
-            "thumb": "https://api.dujin.org/bing/1920.php"
-        }];
-        var senArr = [
-            {
-                ch: ["Welcome here!"],
-                py: ["Welcome here!"],
-            }, {
-                ch: ["欢迎", "来到", "这里", "。"],
-                py: ["huan'ying", "lai'dao", "zhe'li", "。"],
-            }, {
-                ch: ["公告", "等", "你", "看", "！"],
-                py: ["gong'gao", "deng", "ni", "kan", "！"],
-            }
-        ];
-
-        Init(feedType, feedPath, bgArr, senArr);
-    })();
-
-    /*Copy By MDUI Docs*/
-    const dialog = document.querySelector(".example-ecs");
-    const openButton = dialog.nextElementSibling;
-    const closeButton = dialog.querySelector("mdui-button");
-
-    openButton.addEventListener("click", () => dialog.open = true);
-    closeButton.addEventListener("click", () => dialog.open = false);
-
-    allCookies = document.cookie;
-
-    function opengg(){
-        if (cookieget('closeclick') == 'closeclick') {
-            dialog.open = false;
-        } else {
-            dialog.open = true;
-        }
-    }
-    function opengg2(){
-        dialog.open = true;
-    }
-
-</script>
-
-<style>
-
-</style>
-
 </html>

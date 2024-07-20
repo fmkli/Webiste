@@ -1,60 +1,17 @@
-*{
-    margin: 0;
-    padding: 0;
-    line-height: 22px;
+a{
+    color: rgb(0, 51, 128);
+    text-decoration: none;
 }
-hr{
-    margin-top:10px;
-    margin-bottom: 10px;
+a:hover{
+    color: rgb(0, 2, 128);
+    text-decoration: underline;
 }
-@font-face{
-    font-family: 'Minecraft AE'; 
-    src: url('../front/Minecraft.ttf');
-}
-.box{
-    font-family: 'Minecraft AE';
-    position: absolute;
-    left: calc(50% - 225px);
-    width: 450px;
-    top: 5%;
-    text-align: center;
-}
-@media screen and (max-width:450px){
-    .box{
-        left: 0;
-        width: 100%;
-    } 
-}
-.headimg{
-    width: 130px;
-}
-.Fmklihead{
-    font-size: 40px;
-}
-
-/*搬运自 https://blog.csdn.net/weixin_44494373/article/details/104344323 */
-a:link,a:visited{
-color: #000;
-}
-a:hover,a:active{
-background-color:#7A991A;
-}
-/* 搬运End */
- 
-.zhongyaolink{
-    display:block;
-    font-weight:bold;
-    font-size:14px;
-    font-family:Verdana, Arial, Helvetica, sans-serif;
-    color:#FFFFFF;
-    background-color:#98bf21;
-    text-align:center;
-    padding:4px;
-    text-decoration:none;
-
-}
-
-.footer2{
-    height: 78px;
-    width: auto;
+@media (max-width: 600px){
+    .ggline {
+        white-space: pre-wrap;
+      }
+      
+      .ggline::before {
+        content: "\A";
+      }
 }
