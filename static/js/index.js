@@ -23,7 +23,7 @@ function createtime() {
     document.getElementById("timeDate").innerHTML = " 本站已经挣扎度过了 " + dnum + " 天 ";
     document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒";
     // 倒计时截止时间
-    var EndTime = new Date('2024/08/26 12:00:00');
+    var EndTime = new Date('2025/08/26 12:00:00');
     // 现在的事件
     var NowTime = new Date();
     // 时间差（时间单位：ms）
@@ -44,7 +44,7 @@ function createtime() {
         return num2 < 10 ? '0' + num2 : num2;
     }
     
-    document.getElementById("lasttime").innerHTML = "距离网站四周年还有" + day + "天 " + hour + "小时 " + minutes2 + "分钟 " + seconds2 + "秒" 
+    document.getElementById("lasttime").innerHTML = "距离网站五周年还有" + day + "天 " + hour + "小时 " + minutes2 + "分钟 " + seconds2 + "秒" 
 }
     
 setInterval("createtime()", 250);
