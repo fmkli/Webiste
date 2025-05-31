@@ -52,7 +52,7 @@ document.onreadystatechange = function () {
                     }
                     //saymaintext[i] = data.items[i].content;
                     Maintext[`${i}`] = data.items[i].content;
-                    Maintime[`${i}`] = data.items[i].createdAt;
+                    Maintime[`${i}`] = data.items[i].title;
                     element.id = "smallspeak" + i;
                     element.href = "javascript:saysay2" + i + "()";
                     container.appendChild(element);
