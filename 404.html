@@ -6,15 +6,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>404 Not Found</title>
-    <script charset="UTF-8" id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
-    <script>LA.init({id:"JgapU3Sla12DMquS",ck:"JgapU3Sla12DMquS"})</script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+        integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/home.css">
 </head>
 
-<body>
-<center>
-<h1>404 Not Found</h1>
-<img src="https://alpha-q3.sourcegcdn.com/2023/01/12/m63Lq25Y.gif"><br><h4><a href="/">HomePage</a></h4>
-</center>
+<body class="">
+    <!-- Banner -->
+    <div class="mdui-appbar mdui-shadow-0 mdui-appbar-fixed mdui-text-color-white">
+        <div class="mdui-toolbar mdui-color-theme">
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon"
+                mdui-drawer="{target: '#left-drawer',overlay: true}"><i class="mdui-icon material-icons">menu</i></a>
+            <a href="/" class="mdui-typo-title">YFun</a>
+            <div class="mdui-toolbar-spacer"></div>
+        </div>
+    </div>
+    <nav id="banner" class="mdui-container-fluid mdui-valign">
+        <h2 style="color:white!important;" class="banner-title mdui-center mdui-text-color-theme">
+            Page Not Found
+        </h2>
+    </nav>
+
+    <!-- 介绍卡片 -->
+    <div class="mdui-card card">
+
+        <div class="mdui-card-primary">
+            <div class="mdui-card-primary-title">页面不存在</div>
+        </div>
+
+        <!-- 卡片的内容 -->
+        <div class="mdui-card-content mdui-typo">这里似乎没有你所寻找的内容，试着检查地址栏和域名是否正确。
+            <br>
+            您所寻找的页面可能在 YFun's Blog 可用：<span id="blog-link"></span>
+
+        </div>
+
+    </div>
+
+
+    <!-- 抽屉栏 -->
+    <div class="mdui-drawer mdui-color-white mdui-drawer-close" id="left-drawer">
+        <ul class="mdui-list">
+            <li class="mdui-subheader">相关链接</li>
+
+            <li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://blog.yfun.top'">
+                <i class="mdui-list-item-icon mdui-icon material-icons">library_books</i>
+                <div class="mdui-list-item-content">YFun's Blog</div>
+            </li>
+            <li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://note.yfun.top'">
+                <i class="mdui-list-item-icon mdui-icon material-icons">library_books</i>
+                <div class="mdui-list-item-content">YFun's Note</div>
+            </li>
+
+            <li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://blog.yfun.top/status/'"> <i
+                    class="mdui-list-item-icon mdui-icon material-icons">center_focus_weak</i>
+                <div class="mdui-list-item-content">状态监控</div>
+            </li>
+
+            <li class="mdui-list-item mdui-ripple" onclick="window.location.href='https://cdn.yfun.top/info.html'"> <i
+                    class="mdui-list-item-icon mdui-icon material-icons">wifi_tethering</i>
+                <div class="mdui-list-item-content">公共服务</div>
+            </li>
+
+            <li class="mdui-subheader">找到我</li>
+            <li class="mdui-list-item mdui-ripple" onclick="window.open('http://github.com/oCoke');"> <i
+                    class="mdui-list-item-icon mdui-icon material-icons">code</i>
+                <div class="mdui-list-item-content">GitHub</div>
+            </li>
+            <li class="mdui-list-item mdui-ripple" onclick="window.open('https://t.me/always_explore');"> <i
+                    class="mdui-list-item-icon mdui-icon material-icons">group</i>
+                <div class="mdui-list-item-content">Telegram 频道</div>
+            </li>
+            <li class="mdui-list-item mdui-ripple" onclick="window.open('https://t.me/yfun2021');"> <i
+                    class="mdui-list-item-icon mdui-icon material-icons">airplanemode_active</i>
+                <div class="mdui-list-item-content">Telegram</div>
+            </li>
+            <li class="mdui-list-item mdui-ripple" onclick="mdui.alert('awa#outlook.ie (# => @)')"> <i
+                    class="mdui-list-item-icon mdui-icon material-icons">mail</i>
+                <div class="mdui-list-item-content">Email</div>
+            </li>
+        </ul>
+
+    </div>
+
+
+    <footer class="mdui-text-center">
+        <p>&copy; 2021 YFun (@oCoke)</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+        integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+        crossorigin="anonymous"></script>
+    <script src="/404.js"></script>
 </body>
 
 </html>
