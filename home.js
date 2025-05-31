@@ -45,7 +45,11 @@ document.onreadystatechange = function () {
                     //element.href = "1" ;
                     // element.href = "https://blog.yfun.top" + data[i].url;
                     element.classList = "mdui-list-item mdui-ripple";
-                    element.textContent = data.items[i].content.slice(0, 18) + "......";
+                    if (data.items[i].title == ""){
+                        element.textContent = "<无题>" + "：" + data.items[i].content.slice(0, 10) + "......";
+                    } else {
+                        element.textContent = "<" + data.items[i].title.slice(0, 18) + ">：" + data.items[i].content.slice(0, 10) + "......";
+                    }
                     //saymaintext[i] = data.items[i].content;
                     Maintext[`${i}`] = data.items[i].content;
                     Maintime[`${i}`] = data.items[i].createdAt;
