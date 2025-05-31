@@ -52,7 +52,8 @@ document.onreadystatechange = function () {
                     }
                     //saymaintext[i] = data.items[i].content;
                     Maintext[`${i}`] = data.items[i].content;
-                    Maintime[`${i}`] = "说说[" + i + "]：" + data.items[i].title;
+                    o = i + 1;
+                    Maintime[`${i}`] = "说说[" + o + "]：" + data.items[i].title;
                     element.id = "smallspeak" + i;
                     element.href = "javascript:saysay2" + i + "()";
                     container.appendChild(element);
